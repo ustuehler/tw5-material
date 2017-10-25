@@ -1,0 +1,35 @@
+title: $:/themes/ustuehler/material/PageTemplate/drawer
+
+<$scrollable fallthrough="no" class="tc-sidebar-scrollable mdc-permanent-drawer">
+
+<nav class="tc-sidebar-header sidebar-wrapper">
+
+<div class="sidebar-content mdc-toolbar-fixed-adjust">
+
+<div class="mdc-list-group">
+
+<nav class="mdc-list">
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/Drawer]!has[draft.of]]">
+
+<$transclude mode="inline"/>
+
+</$list>
+
+</nav>
+
+<nav class="mdc-list">
+
+</nav>
+
+</div>
+
+</div>
+
+<div class="sidebar-footer">
+
+</div>
+
+</nav>
+
+</$scrollable>

@@ -1,0 +1,3 @@
+title: $:/themes/ustuehler/material/PageTemplate/toolbar-title
+
+<span class="mdc-toolbar__title catalog-title">{{$:/SiteTitle}}&nbsp;&nbsp;&nbsp;&nbsp;{{$:/SiteSubtitle}}</span>

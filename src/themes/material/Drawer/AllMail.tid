@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/AllMail
+tags: $:/tags/Drawer
+link-to: All Mail
+caption: All Mail
+icon: email
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

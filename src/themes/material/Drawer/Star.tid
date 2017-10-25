@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/Star
+tags: $:/tags/Drawer
+link-to: Star
+caption: Star
+icon: star
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

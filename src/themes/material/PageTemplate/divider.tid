@@ -1,0 +1,4 @@
+title: $:/themes/ustuehler/material/PageTemplate/divider
+tags: $:/tags/Drawer
+
+<hr class="mdc-list-divider">

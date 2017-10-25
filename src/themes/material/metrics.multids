@@ -1,0 +1,13 @@
+title: $:/themes/ustuehler/material/metrics/
+
+bodyfontsize: inherit
+bodylineheight: inherit
+fontsize: inherit
+lineheight: inherit
+storyleft: inherit
+storytop: inherit
+storyright: inherit
+storywidth: inherit
+tiddlerwidth: inherit
+sidebarbreakpoint: 960px
+sidebarwidth: 350px

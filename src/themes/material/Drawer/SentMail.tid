@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/SentMail
+tags: $:/tags/Drawer
+link-to: Sent Mail
+caption: Sent Mail
+icon: send
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

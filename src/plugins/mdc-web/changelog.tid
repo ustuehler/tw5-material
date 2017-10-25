@@ -1,0 +1,9 @@
+created: 20171025220415929
+modified: 20171025220901698
+title: $:/plugins/ustuehler/mdc-web/changelog
+type: text/vnd.tiddlywiki
+
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
+!! 0.1.1
+!!! Changed
+* Reworded the plugin description.

@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/Inbox
+tags: $:/tags/Drawer
+link-to: Inbox
+caption: Inbox
+icon: inbox
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

@@ -1,0 +1,20 @@
+# Vim's swap files
+.*.sw?
+
+# NPM packages
+/node_modules/
+
+# Compressed copy of the plugins in this repository
+/editions/material/plugins/
+/editions/material/themes/
+
+# Created when opening the dev edition locally
+/editions/material/tiddlers/-$*.tid
+/editions/material/tiddlers/$*.tid
+
+# Generated for gh-pages branch
+/index.html
+
+# Generated for in-browser testing
+/editions/test/output/test.html
+/test.out

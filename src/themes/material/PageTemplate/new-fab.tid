@@ -1,0 +1,25 @@
+created: 20171025190243509
+link-to: New Tiddler
+mdc-fab-icon: add
+modified: 20171025201954178
+tags: $:/tags/ViewTemplate
+title: $:/themes/ustuehler/material/PageTemplate/new-fab
+type: text/vnd.tiddlywiki
+
+\define newHereButtonIcon()
+<$transclude field="mdc-fab-icon">
+<$view tiddler="$:/themes/ustuehler/material/PageTemplate/new-fab" field="mdc-fab-icon"/>
+</$transclude>
+\end
+\define newHereButtonTags()
+[[$(currentTiddler)$]]
+\end
+\define newHereButton()
+<span class="mdc-fab material-icons tc-fab--absolute" aria-label={{$:/language/Buttons/NewHere/Caption}}>
+<$button tooltip={{$:/language/Buttons/NewHere/Hint}} class="mdc-fab-icon">
+<$action-sendmessage $message="tm-new-tiddler" tags=<<newHereButtonTags>>/>
+<<newHereButtonIcon>>
+</$button>
+</span>
+\end
+<<newHereButton>>

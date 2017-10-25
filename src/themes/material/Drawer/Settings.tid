@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/Settings
+tags: $:/tags/Drawer
+link-to: $:/ControlPanel
+caption: Settings
+icon: settings
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

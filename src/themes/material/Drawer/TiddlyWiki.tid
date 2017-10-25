@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/TiddlyWiki
+tags: $:/tags/Drawer
+link-to: TiddlyWiki
+caption: ~TiddlyWiki
+icon: &#x1f421;
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

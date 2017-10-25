@@ -1,0 +1,4 @@
+title: TiddlyWiki
+caption: ~TiddlyWiki
+
+{{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

@@ -1,0 +1,19 @@
+created: 20171025190817336
+mdc-fab-icon: add
+modified: 20171025190818434
+title: $:/plugins/ustuehler/mdc/ui/FloatingActionButton
+type: text/vnd.tiddlywiki
+
+<span class="mdc-fab material-icons tc-fab--absolute" aria-label="New">
+
+<$link to={{!!link-to}} class="mdc-fab__icon">
+
+<$transclude field="mdc-fab-icon" mode="inline">
+
+<$transclude tiddler="$:/plugins/ustuehler/mdc-web/components/FloatingActionButton" field="mdc-fab-icon" mode="inline"/>
+
+</$transclude>
+
+</$link>
+
+</span>

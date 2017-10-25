@@ -1,0 +1,6 @@
+title: $:/plugins/ustuehler/mdc/changelog
+
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
+!! 0.1.1
+!!! Changed
+* Reworded the plugin description.

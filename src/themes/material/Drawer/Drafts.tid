@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/Drafts
+tags: $:/tags/Drawer
+link-to: Drafts
+caption: Drafts
+icon: drafts
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

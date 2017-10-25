@@ -1,0 +1,7 @@
+title: $:/plugins/ustuehler/material/Drawer/Trash
+tags: $:/tags/Drawer
+link-to: Trash
+caption: Trash
+icon: delete
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item}}

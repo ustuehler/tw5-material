@@ -1,7 +1,11 @@
-title: $:/plugins/ustuehler/material/Drawer/AllMail
-tags: $:/tags/Drawer
-link-to: All Mail
 caption: All Mail
+created: 20171025225148378
 icon: email
+link-to: All Mail
+list: 
+modified: 20171025225148378
+tags: $:/tags/DrawerTemplate
+title: $:/plugins/ustuehler/material/Drawer/AllMail
+type: text/vnd.tiddlywiki
 
 {{||$:/themes/ustuehler/material/PageTemplate/list-item}}

@@ -1,7 +1,11 @@
-title: $:/plugins/ustuehler/material/Drawer/TiddlyWiki
-tags: $:/tags/Drawer
-link-to: TiddlyWiki
 caption: ~TiddlyWiki
+created: 20171025225148368
 icon: &#x1f421;
+link-to: TiddlyWiki
+list: 
+modified: 20171025225148368
+tags: $:/tags/DrawerTemplate
+title: $:/plugins/ustuehler/material/Drawer/TiddlyWiki
+type: text/vnd.tiddlywiki
 
 {{||$:/themes/ustuehler/material/PageTemplate/list-item}}

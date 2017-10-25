@@ -1,8 +1,0 @@
-title: $:/tags/Drawer
-list: $:/plugins/ustuehler/material/Drawer/Inbox $:/plugins/ustuehler/material/Drawer/Star $:/plugins/ustuehler/material/Drawer/SentMail $:/plugins/ustuehler/material/Drawer/Drafts $:/themes/ustuehler/material/PageTemplate/divider $:/plugins/ustuehler/material/Drawer/AllMail $:/plugins/ustuehler/material/Drawer/Trash $:/plugins/ustuehler/material/Drawer/Settings $:/plugins/ustuehler/material/Drawer/TiddlyWiki
-
-The <<tag>> identifies Tiddlers which should be transcluded as menu items ni
-the sidebar, wrapped in a `.mdc-list-item`. The list of menu items is defined
-by the `list` field of this Tiddler.
-
-<<list-links '[all[current]listed[]]'>>

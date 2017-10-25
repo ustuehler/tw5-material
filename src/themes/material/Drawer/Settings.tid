@@ -1,7 +1,11 @@
-title: $:/plugins/ustuehler/material/Drawer/Settings
-tags: $:/tags/Drawer
-link-to: $:/ControlPanel
 caption: Settings
+created: 20171025225148371
 icon: settings
+link-to: $:/ControlPanel
+list: 
+modified: 20171025225148371
+tags: $:/tags/DrawerTemplate
+title: $:/plugins/ustuehler/material/Drawer/Settings
+type: text/vnd.tiddlywiki
 
 {{||$:/themes/ustuehler/material/PageTemplate/list-item}}

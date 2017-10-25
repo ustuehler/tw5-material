@@ -1,4 +1,8 @@
+created: 20171025225148364
+list: 
+modified: 20171025225148364
+tags: $:/tags/DrawerTemplate
 title: $:/themes/ustuehler/material/PageTemplate/divider
-tags: $:/tags/Drawer
+type: text/vnd.tiddlywiki
 
 <hr class="mdc-list-divider">

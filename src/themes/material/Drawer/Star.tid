@@ -1,7 +1,11 @@
-title: $:/plugins/ustuehler/material/Drawer/Star
-tags: $:/tags/Drawer
-link-to: Star
 caption: Star
+created: 20171025225148370
 icon: star
+link-to: Star
+list: 
+modified: 20171025225148370
+tags: $:/tags/DrawerTemplate
+title: $:/plugins/ustuehler/material/Drawer/Star
+type: text/vnd.tiddlywiki
 
 {{||$:/themes/ustuehler/material/PageTemplate/list-item}}

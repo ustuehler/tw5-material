@@ -1,12 +1,12 @@
 created: 20171025232245094
 link-to: 
 mdc-class: mdc-list-item
-modified: 20171025234253784
+modified: 20171025234728991
 tags: 
 title: $:/plugins/ustuehler/mdc/list-item
 type: text/vnd.tiddlywiki
 
-<$link to={{!!link-to}} class=<<mdc-class>>>
+<$link to={{!!link-to}} class={{$:/plugins/ustuehler/mdc/list-item!!mdc-class}}>
 
 {{||$:/plugins/ustuehler/mdc/components/list-item-icon}}
 

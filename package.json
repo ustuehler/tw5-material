@@ -41,7 +41,7 @@
     "ignore": [
       "editions/material/plugins/*",
       "editions/material/themes/*",
-      "editions/material/tiddlers/*"
+      "editions/material/tiddlers/*.tid"
     ],
     "delay": "1000"
   }

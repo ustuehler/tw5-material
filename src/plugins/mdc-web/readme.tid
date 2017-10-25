@@ -1,8 +1,8 @@
 created: 20171025215853613
-modified: 20171025215905028
+modified: 20171025223255265
 title: $:/plugins/ustuehler/mdc-web/readme
 type: text/vnd.tiddlywiki
 
-This plugin provides the latest version of the [[MDC-Web|https://github.com/material-components/material-components-web]] fonts, styles and scripts. The size of this plugin is around 500 kilobytes. If that is an issue for you, consider installing the [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]] plugin, instead.
+This plugin provides the latest version of the [[MDC-Web|https://github.com/material-components/material-components-web]] fonts, styles and scripts. The size of this plugin is around 500 kilobytes. If that is an issue for you, consider installing the [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]] plugin, instead. For comparison: The size of TiddlyWiki core alone is a little over 2 megabytes.
 
 [[Source code|https://github.com/ustuehler/tw5-material/tree/master/src/plugins/mdc-web]]

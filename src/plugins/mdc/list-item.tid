@@ -1,0 +1,19 @@
+created: 20171025232245094
+link-to: 
+mdc-class: mdc-list-item
+modified: 20171025233715163
+tags: 
+title: $:/plugins/ustuehler/mdc/list-item
+type: text/vnd.tiddlywiki
+
+<$link to={{!!link-to}} class="mdc-list-item">
+
+{{||$:/plugins/ustuehler/mdc/components/list-item-icon}}
+
+<$transclude field="caption">
+
+<$view field="title"/>
+
+</$transclude>
+
+</$link>

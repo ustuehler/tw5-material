@@ -52,6 +52,7 @@ gulp.task('server', function() {
 });
 
 gulp.task("commit", [], shell.task([
+  "git add -A",
   "git commit -a -m wip"
 ]));
 

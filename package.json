@@ -41,7 +41,9 @@
     "ignore": [
       "editions/material/plugins/*",
       "editions/material/themes/*",
-      "editions/material/tiddlers/*.tid"
+      "editions/material/tiddlers/content/-*.tid",
+      "editions/material/tiddlers/content/$*.tid",
+      "editions/material/tiddlers/content/Draft of *.tid"
     ],
     "delay": "1000"
   }

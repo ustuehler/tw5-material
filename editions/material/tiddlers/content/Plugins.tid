@@ -1,7 +1,9 @@
 created: 20171025215759551
+icon: module
+link-to: Plugins
 list: 
-modified: 20171025225148362
-tags: $:/tags/DrawerTemplate
+modified: 20171025230403416
+tags: $:/tags/Drawer
 title: Plugins
 type: text/vnd.tiddlywiki
 
@@ -9,4 +11,6 @@ type: text/vnd.tiddlywiki
 
 This is a demo of TiddlyWiki incorporating the plugins listed below.
 
-<$list filter="[all[system+tiddlers]has[plugin-type]author[Uwe Stuehler]]" template="$:/core/ui/Components/plugin-info"/>
+<$list
+  filter="[all[system+tiddlers]has[plugin-type]author[Uwe Stuehler]]"
+  template="$:/core/ui/Components/plugin-info"/>

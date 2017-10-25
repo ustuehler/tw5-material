@@ -9,8 +9,8 @@
 /editions/material/themes/
 
 # Created when opening the dev edition locally
-/editions/material/tiddlers/-$*.tid
-/editions/material/tiddlers/$*.tid
+/editions/material/tiddlers/content/-$*.tid
+/editions/material/tiddlers/content/$*.tid
 
 # Generated for gh-pages branch
 /index.html

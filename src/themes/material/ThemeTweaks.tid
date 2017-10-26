@@ -48,7 +48,7 @@ caption: {{$:/language/ThemeTweaks/ThemeTweaks}}
 |<$link to="$:/themes/ustuehler/material/options/sidebarlayout"><<lingo Options/SidebarLayout>></$link> |<$select tiddler="$:/themes/ustuehler/material/options/sidebarlayout"><option value="fixed-fluid"><<lingo Options/SidebarLayout/Fixed-Fluid>></option><option value="fluid-fixed"><<lingo Options/SidebarLayout/Fluid-Fixed>></option></$select> |
 |<$link to="$:/themes/ustuehler/material/options/stickytitles"><<lingo Options/StickyTitles>></$link><br>//<<lingo Options/StickyTitles/Hint>>// |<$select tiddler="$:/themes/ustuehler/material/options/stickytitles"><option value="no">{{$:/language/No}}</option><option value="yes">{{$:/language/Yes}}</option></$select> |
 |<$link to="$:/themes/ustuehler/material/options/codewrapping"><<lingo Options/CodeWrapping>></$link> |<$select tiddler="$:/themes/ustuehler/material/options/codewrapping"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |
-|<$link to="$:/themes/ustuehler/material/options/floatingactionbutton"><<lingo Options/CodeWrapping>></$link> |<$select tiddler="$:/themes/ustuehler/material/options/codewrapping"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |
+|<$link to="$:/themes/ustuehler/material/options/floatingactionbutton"><<lingo Options/FloatingActionButton>></$link> |<$select tiddler="$:/themes/ustuehler/material/options/floatingactionbutton"><option value="pre">{{$:/language/No}}</option><option value="pre-wrap">{{$:/language/Yes}}</option></$select> |
 
 ! <<lingo Settings>>
 

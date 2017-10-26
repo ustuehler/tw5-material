@@ -1,8 +1,8 @@
 created: 20171025214339041
-modified: 20171026001439609
+modified: 20171026001510973
 title: $:/themes/ustuehler/material/readme
 type: text/vnd.tiddlywiki
 
 This plugin depends on the [[mdc|$:/plugins/ustuehler/mdc]] plugin, and by extension also on either [[mdc-web|$:/plugins/ustuehler/mdc-web]] or [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]].
 
-The plugin structure should follow the $:/core plugin. Search for `[all[shadows+tiddlers]prefix[$:/core/ui]sort[]]` for examples.
+The plugin structure should follow the $:/core plugin. Try the advanced search `[all[shadows+tiddlers]prefix[$:/core/ui]sort[]]` for examples.

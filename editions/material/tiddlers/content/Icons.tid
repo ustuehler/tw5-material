@@ -1,7 +1,7 @@
 created: 20171025230445315
-list-before: $:/plugins/ustuehler/material/Drawer/Settings
+list-before: $:/themes/ustuehler/material/Drawer/Settings
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
-modified: 20171026013210618
+modified: 20171026013816742
 tags: $:/tags/Drawer
 title: Icons
 type: text/vnd.tiddlywiki

@@ -3,6 +3,6 @@
 	"version": "0.1.2",
 	"core-version": ">=5.1.14",
 	"author": "Uwe Stuehler",
-	"description": "Material Design Comopnents (needs MDC-Web assets)",
+	"description": "Material Design Components (needs MDC-Web assets)",
 	"list": "readme usage changelog license"
 }

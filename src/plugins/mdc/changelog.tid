@@ -1,5 +1,5 @@
 created: 20171026021820182
-modified: 20171026025733872
+modified: 20171026025748956
 title: $:/plugins/ustuehler/mdc/changelog
 type: text/vnd.tiddlywiki
 
@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 * Adjusted naming of plugin tiddlers and moved some List Item related things from the theme into this plugin.
 * Renamed the `icon` field to `list-item-icon` for $:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon.
 !!! Added
-* Now recognizing the `list-item-start-detail` field. If present, it will be transcluded instead of $:/plugins/ustuehler/mdc/ListItem/Icon.
+* Now recognizing the `list-item-start-detail` field. If present, it will be transcluded instead of $:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon.
 !! 0.1.1
 !!! Changed
 * Reworded the plugin description.

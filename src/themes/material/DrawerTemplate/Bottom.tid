@@ -4,6 +4,8 @@ tags: $:/tags/DrawerTemplate
 title: $:/plugins/ustuehler/material/DrawerTemplate/Bottom
 type: text/vnd.tiddlywiki
 
+foo
+
 <$transclude tiddler="$:/plugins/ustuehler/mdc/ListItem/Divider"/>
 
 <$list

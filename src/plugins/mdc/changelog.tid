@@ -1,6 +1,15 @@
+created: 20171026021820182
+modified: 20171026022143701
 title: $:/plugins/ustuehler/mdc/changelog
+type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...HEAD]]
+!! 0.1.2
+!!! Changed
+* Adjusted naming of plugin tiddlers and moved some List Item related things from the theme into this plugin.
+* Renamed the `icon` field to `list-item-icon` for $:/plugins/ustuehler/mdc/ListItem/Icon.
+!!! Added
+* Now recognizing the `list-item-start-detail` field. If present, it will be transcluded instead of $:/plugins/ustuehler/mdc/ListItem/Icon.
 !! 0.1.1
 !!! Changed
 * Reworded the plugin description.

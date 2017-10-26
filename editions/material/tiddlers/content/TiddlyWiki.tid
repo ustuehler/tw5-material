@@ -1,9 +1,8 @@
-caption: Settings
+caption: ~TiddlyWiki
 created: 20171025225148371
 link-to: $:/ControlPanel
-list-before: TiddlyWiki
-list-item-icon: settings
+list-item-icon: &#x1f421;
 modified: 20171026013442532
 tags: $:/tags/Drawer
-title: Settings
+title: TiddlyWiki
 type: text/vnd.tiddlywiki

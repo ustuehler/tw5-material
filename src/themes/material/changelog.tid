@@ -1,11 +1,11 @@
 created: 20171025213955349
-modified: 20171026010312565
+modified: 20171026010407140
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
 !!! Changed
-* Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/ThemeTweaks]].
+* Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].
 !! 0.1.2
 !!! Changed
 * Floating Action Button now creates a new tiddler that is tagged with the current one. In order to have access to the `currentTiddler` variable it had to be moved into the ViewTemplate.

@@ -1,6 +1,6 @@
-title: $:/themes/ustuehler/material/options/
+created: 20171026005714135
+modified: 20171026005715233
+title: $:/themes/ustuehler/material/options/floatingactionbutton
+type: text/vnd.tiddlywiki
 
-stickytitles: no
-sidebarlayout: fixed-fluid
-codewrapping: pre-wrap
-floatingactionbutton: no
+yes

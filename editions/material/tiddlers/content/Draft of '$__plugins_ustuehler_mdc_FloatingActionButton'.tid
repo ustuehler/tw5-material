@@ -1,9 +1,11 @@
 caption: Floating Action Button
 created: 20171025190817336
+draft.of: $:/plugins/ustuehler/mdc/FloatingActionButton
+draft.title: $:/plugins/ustuehler/mdc/FloatingActionButton
 mdc-class: mdc-fab
 mdc-fab-icon: add
-modified: 20171026002554341
-title: $:/plugins/ustuehler/mdc/FloatingActionButton
+modified: 20171026002556622
+title: Draft of '$:/plugins/ustuehler/mdc/FloatingActionButton'
 type: text/vnd.tiddlywiki
 
 <span class="mdc-fab material-icons tc-fab--absolute" aria-label="New">

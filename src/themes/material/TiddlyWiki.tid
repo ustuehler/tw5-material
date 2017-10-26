@@ -1,5 +1,6 @@
 title: TiddlyWiki
 caption: ~TiddlyWiki
 tags: $:/tags/DrawerBottom
+list-item-icon: &#x1f421;
 
 {{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

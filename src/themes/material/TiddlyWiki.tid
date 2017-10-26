@@ -1,4 +1,5 @@
 title: TiddlyWiki
 caption: ~TiddlyWiki
+tags: $:/tags/DrawerBottom
 
 {{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

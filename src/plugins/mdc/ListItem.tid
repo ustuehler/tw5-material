@@ -3,12 +3,12 @@ created: 20171025232245094
 link-to: 
 list-item-icon: list
 mdc-class: mdc-list-item
-modified: 20171026002351846
+modified: 20171026002418765
 tags: 
 title: $:/plugins/ustuehler/mdc/ListItem
 type: text/vnd.tiddlywiki
 
-<$link to={{!!link-to}} class={{$:/plugins/ustuehler/mdc/list-item!!mdc-class}}>
+<$link to={{!!link-to}} class={{$:/plugins/ustuehler/mdc/ListItem!!mdc-class}}>
 
 {{||$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon}}
 

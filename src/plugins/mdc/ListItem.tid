@@ -5,7 +5,7 @@ list-item-icon: list
 mdc-class: mdc-list-item
 modified: 20171025235456077
 tags: 
-title: $:/plugins/ustuehler/mdc/list-item
+title: $:/plugins/ustuehler/mdc/ListItem
 type: text/vnd.tiddlywiki
 
 <$link to={{!!link-to}} class={{$:/plugins/ustuehler/mdc/list-item!!mdc-class}}>

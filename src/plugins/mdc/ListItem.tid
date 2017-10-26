@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 <$link to={{!!link-to}} class={{$:/plugins/ustuehler/mdc/list-item!!mdc-class}}>
 
-{{||$:/plugins/ustuehler/mdc/list-item/start-detail/icon}}
+{{||$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon}}
 
 <$transclude field="caption">
 

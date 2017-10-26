@@ -3,7 +3,7 @@ created: 20171025232245094
 link-to: 
 list-item-icon: list
 mdc-class: mdc-list-item
-modified: 20171025235456077
+modified: 20171026002351846
 tags: 
 title: $:/plugins/ustuehler/mdc/ListItem
 type: text/vnd.tiddlywiki
@@ -12,7 +12,7 @@ type: text/vnd.tiddlywiki
 
 {{||$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon}}
 
-<$transclude field="caption">
+<$transclude field="caption" mode="inline">
 
 <$view field="title"/>
 

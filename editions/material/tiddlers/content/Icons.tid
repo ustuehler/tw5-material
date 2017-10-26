@@ -1,7 +1,10 @@
 created: 20171025230445315
-modified: 20171026010631947
+list-item-start-detail: [img width=64 [https://material.io/icons/webcomponents/custom_components/material-io-nav/static/images/logo.svg]]
+modified: 20171026010948238
 tags: $:/tags/Drawer
 title: Icons
 type: text/vnd.tiddlywiki
 
 https://material.io/icons/
+
+<$transclude field="list-item-start-detail"/>

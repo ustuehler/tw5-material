@@ -3,3 +3,4 @@ title: $:/themes/ustuehler/material/options/
 stickytitles: no
 sidebarlayout: fixed-fluid
 codewrapping: pre-wrap
+floatingActionButton: no

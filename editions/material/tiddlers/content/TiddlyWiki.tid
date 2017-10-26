@@ -1,9 +1,9 @@
 caption: Settings
 created: 20171025225148371
 link-to: $:/ControlPanel
+list-before: TiddlyWiki
 list-item-icon: settings
-modified: 20171026013715877
-tags: $:/tags/DrawerTemplate
-title: $:/plugins/ustuehler/material/Drawer/Settings
+modified: 20171026013442532
+tags: $:/tags/Drawer
+title: Settings
 type: text/vnd.tiddlywiki
-

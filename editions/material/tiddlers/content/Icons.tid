@@ -1,6 +1,6 @@
 created: 20171025230445315
-list-item-start-detail: [img class="mdc-list-item__start-detail" [https://material.io/icons/webcomponents/custom_components/material-io-nav/static/images/logo.svg]]
-modified: 20171026011428836
+list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
+modified: 20171026012235178
 tags: $:/tags/Drawer
 title: Icons
 type: text/vnd.tiddlywiki

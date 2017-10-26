@@ -1,7 +1,7 @@
 created: 20171025215759551
-icon: module
 list-before: Components
-modified: 20171026003415730
+list-item-icon: extension
+modified: 20171026012650356
 tags: $:/tags/Drawer
 title: Plugins
 type: text/vnd.tiddlywiki

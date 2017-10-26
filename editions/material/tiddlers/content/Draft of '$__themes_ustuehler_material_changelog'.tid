@@ -1,6 +1,8 @@
 created: 20171025213955349
-modified: 20171026021231955
-title: $:/themes/ustuehler/material/changelog
+draft.of: $:/themes/ustuehler/material/changelog
+draft.title: $:/themes/ustuehler/material/changelog
+modified: 20171026021249201
+title: Draft of '$:/themes/ustuehler/material/changelog'
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]

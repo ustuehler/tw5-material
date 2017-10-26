@@ -1,10 +1,12 @@
 created: 20171025230427542
+draft.of: Components
+draft.title: Components
 list-before: Icons
 list-item-icon: add
 list-item-start-detail: [img style="background-color:black; class="mdc-list-item__start-detail" [http://material-components-web.appspot.com/images/ic_component_24px_white.svg]]
-modified: 20171026011624231
+modified: 20171026011626425
 tags: $:/tags/Drawer
-title: Components
+title: Draft of 'Components'
 type: text/vnd.tiddlywiki
 
 http://material-components-web.appspot.com/

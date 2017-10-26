@@ -1,14 +1,14 @@
 created: 20171025215759551
 list-before: Components
 list-item-icon: extension
-modified: 20171026022933285
+modified: 20171026025151407
 tags: $:/tags/Drawer
 title: Plugins
 type: text/vnd.tiddlywiki
 
 <a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 
-This is a demo of TiddlyWiki incorporating the plugins listed below.
+This is a demonstration of TiddlyWiki incorporating the plugins listed below.
 
 <$list
   filter="[all[system+tiddlers]has[plugin-type]author[Uwe Stuehler]]"

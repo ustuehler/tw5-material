@@ -7,5 +7,5 @@ type: text/vnd.tiddlywiki
 <$transclude tiddler="$:/plugins/ustuehler/mdc/ListItem/Divider"/>
 
 <$list
-  filter='[tag[$:/tags/DrawerBottom]!has[draft.of]]'
+  filter='[tag[$:/tags/DrawerBottom]!has[draft.of]list[]]'
   template="$:/plugins/ustuehler/mdc/ListItem"/>

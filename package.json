@@ -37,7 +37,7 @@
   },
   "homepage": "https://ustuehler.github.com/tw5-material#readme",
   "nodemonConfig": {
-    "ext": "js,tid,info",
+    "ext": "js,tid,info,multids",
     "ignore": [
       "editions/material/plugins/*",
       "editions/material/themes/*",

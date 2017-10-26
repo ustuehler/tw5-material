@@ -3,4 +3,7 @@ modified: 20171026005719231
 title: $:/themes/ustuehler/material/options/floatingactionbutton
 type: text/vnd.tiddlywiki
 
-no
+stickytitles: no
+sidebarlayout: fixed-fluid
+codewrapping: pre-wrap
+floatingactionbutton: no

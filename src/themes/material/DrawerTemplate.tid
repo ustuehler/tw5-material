@@ -1,11 +1,11 @@
 created: 20171025231304426
-modified: 20171025235731807
+modified: 20171026002712101
 tags: $:/tags/DrawerTemplate
 title: $:/themes/ustuehler/material/DrawerTemplate
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/Drawer]!has[draft.of]]">
 
-<$transclude tiddler="$:/plugins/ustuehler/mdc/list-item"/>
+<$transclude tiddler="$:/plugins/ustuehler/mdc/ListItem"/>
 
 </$list>

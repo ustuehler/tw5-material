@@ -1,9 +1,10 @@
 created: 20171025213955349
-modified: 20171026021231955
+modified: 20171026021431818
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...HEAD]]
+!! 0.1.3
 !!! Changed
 * Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].
 * Removed e-mail related items from the drawer and split the drawer into `$:/tags/Drawer` and `$:/tags/DrawerBottom` sections.

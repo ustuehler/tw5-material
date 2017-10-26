@@ -1,7 +1,8 @@
 created: 20171025230427542
 list-before: Icons
 list-item-icon: add
-modified: 20171026003358935
+list-item-start-detail: [img class="mdc-list-item__start-detail" [http://material-components-web.appspot.com/images/ic_component_24px_white.svg]]
+modified: 20171026011541621
 tags: $:/tags/Drawer
 title: Components
 type: text/vnd.tiddlywiki

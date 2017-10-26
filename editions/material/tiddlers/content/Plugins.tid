@@ -1,12 +1,12 @@
 created: 20171025215759551
 list-before: Components
 list-item-icon: extension
-modified: 20171026013748872
+modified: 20171026022933285
 tags: $:/tags/Drawer
 title: Plugins
 type: text/vnd.tiddlywiki
 
-[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]
+<a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 
 This is a demo of TiddlyWiki incorporating the plugins listed below.
 

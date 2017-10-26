@@ -1,0 +1,12 @@
+created: 20171025235011039
+list-item-icon: favorite
+modified: 20171025235354496
+tags: 
+title: $:/plugins/ustuehler/mdc/list-item/start-detail/icon
+type: text/vnd.tiddlywiki
+
+<i class="material-icons mdc-list-item__start-detail" aria-hidden="true">
+
+<$transclude field="list-item-icon" mode="inline"/>
+
+</i>

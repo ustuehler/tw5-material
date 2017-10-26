@@ -1,7 +1,7 @@
 created: 20171025190243509
 link-to: New Tiddler
 mdc-fab-icon: add
-modified: 20171025201954178
+modified: 20171026005632334
 tags: $:/tags/ViewTemplate
 title: $:/themes/ustuehler/material/PageTemplate/new-fab
 type: text/vnd.tiddlywiki
@@ -22,4 +22,6 @@ type: text/vnd.tiddlywiki
 </$button>
 </span>
 \end
+<$reveal type="match" state="$:/themes/ustuehler/material/Options/floatingactionbutton" text="yes">
 <<newHereButton>>
+</$reveal>

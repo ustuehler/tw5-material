@@ -2,12 +2,12 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027211550212
+modified: 20171027211631170
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
-\define fab()
-<span class="mdc-fab material-icons tc-fab--absolute" aria-label="New">
+\define fab(position)
+<span class="mdc-fab material-icons tc-fab--$(position)$" aria-label="New">
 
 <$link to={{!!link-to}} class="mdc-fab__icon">
 
@@ -23,6 +23,6 @@ type: text/vnd.tiddlywiki
 \end
 <$list
   filter="[<transclusion>prefix[{|$:/core/ui/PageTemplate/sidebar|||}]]"
-  emptyMessage="""<<fab>>""">
-<<fab>>
+  emptyMessage="""<<fab "relative">>""">
+<<fab "absolute">>
 </$list>

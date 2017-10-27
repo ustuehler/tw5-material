@@ -2,7 +2,7 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027211220456
+modified: 20171027211253048
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
@@ -23,6 +23,6 @@ type: text/vnd.tiddlywiki
 \end
 <$list
   filter="[<transclusion>prefix[{|$:/core/ui/PageTemplate/sidebar|||}]]"
-  emptyMessage="This is a template tiddler.">
+  emptyMessage="This is a template tiddler. It can only be transcluded or edited, but not viewed here.">
 <<fab>>
 </$list>

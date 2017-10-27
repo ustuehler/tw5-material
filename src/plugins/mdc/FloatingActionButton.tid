@@ -2,12 +2,12 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027220911334
+modified: 20171027220953736
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
 \define this-transclusion()
-[<transclusion>] +[{$(currentTiddler)$|$(currentTiddler)$|||}]
+[[{$(currentTiddler)$|$(currentTiddler)$|||}]] +[<transclusion>]
 \end
 \define fab(position)
 <span class="mdc-fab material-icons tc-fab--$position$" aria-label="New">

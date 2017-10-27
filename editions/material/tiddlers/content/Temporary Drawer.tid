@@ -1,0 +1,60 @@
+created: 20171027222633215
+modified: 20171027222802232
+tags: 
+title: Temporary Drawer
+type: text/vnd.tiddlywiki
+
+  <div class="mdc-typography demo-body">
+    <div class="mdc-toolbar mdc-toolbar--fixed">
+      <div class="mdc-toolbar__row">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <button class="demo-menu material-icons mdc-toolbar__menu-icon">menu</button>
+          <span class="mdc-toolbar__title catalog-title">Temporary Drawer</span>
+        </section>
+      </div>
+    </div>
+
+    <aside class="mdc-temporary-drawer">
+      <nav class="mdc-temporary-drawer__drawer">
+        <header class="mdc-temporary-drawer__header">
+          <div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
+            Header here
+          </div>
+        </header>
+        <nav class="mdc-temporary-drawer__content mdc-list-group">
+          <div id="icon-with-text-demo" class="mdc-list">
+            <a class="mdc-list-item mdc-temporary-drawer--selected" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
+            </a>
+          </div>
+
+          <hr class="mdc-list-divider">
+
+          <div class="mdc-list">
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
+            </a>
+            <a class="mdc-list-item" href="#">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+            </a>
+          </div>
+        </nav>
+      </nav>
+    </aside>
+    <main class="demo-main mdc-toolbar-fixed-adjust">
+      <h1 class="mdc-typography--display1">Temporary Drawer</h1>
+      <p class="mdc-typography--body1">Click the menu icon above to open.</p>
+    </main>
+  </div>

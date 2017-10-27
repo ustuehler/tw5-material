@@ -2,7 +2,7 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027211849585
+modified: 20171027212010349
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
@@ -23,6 +23,6 @@ type: text/vnd.tiddlywiki
 \end
 <$list
   filter="[<transclusion>prefix[{||||}]]"
-  emptyMessage="""<<fab "relative">>""">
+  emptyMessage="""<<transclusion>><<fab "relative">>""">
 <<fab "absolute">>
 </$list>

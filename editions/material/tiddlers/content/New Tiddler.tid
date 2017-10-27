@@ -1,7 +1,8 @@
 created: 20171027211754466
-modified: 20171027211918207
+mdc-fab-icon: favorite
+modified: 20171027213702628
 tags: 
 title: New Tiddler
 type: text/vnd.tiddlywiki
 
-{{$:/plugins/ustuehler/mdc/FloatingActionButton}}
+{{||$:/plugins/ustuehler/mdc/FloatingActionButton}}

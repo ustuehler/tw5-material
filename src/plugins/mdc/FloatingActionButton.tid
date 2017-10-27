@@ -2,7 +2,7 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027215644203
+modified: 20171027215721621
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
@@ -25,6 +25,7 @@ type: text/vnd.tiddlywiki
   variable=""
   filter="[[<storyTiddler>is[current]]"
   emptyMessage="""<<fab "absolute">>""">
+<<transclusion>> |
 <<storyTiddler>> |
 <<currentTiddler>> |
 <<fab "relative">>

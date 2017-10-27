@@ -2,7 +2,7 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027212610313
+modified: 20171027212626829
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
@@ -21,9 +21,10 @@ type: text/vnd.tiddlywiki
 
 </span>
 \end
+<<transclusion>>
 <$list
   variable=""
   filter="[<transclusion>removeprefix[{]removeprefix<currentTiddler>removeprefix[|]removeprefix<currentTiddler>prefix[|||}]]"
-  emptyMessage="""<<transclusion>><<fab "relative">>""">
+  emptyMessage="""<<fab "relative">>""">
 <<fab "absolute">>
 </$list>

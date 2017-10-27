@@ -1,5 +1,5 @@
 /*\
-title: $:/core/modules/storyviews/replace.js
+title: $:/themes/ustuehler/material/storyviews/replace.js
 type: application/javascript
 module-type: storyview
 

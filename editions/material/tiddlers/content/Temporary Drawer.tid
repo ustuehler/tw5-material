@@ -1,11 +1,12 @@
 created: 20171027222633215
-modified: 20171027222802232
+modified: 20171027222910133
 tags: 
 title: Temporary Drawer
 type: text/vnd.tiddlywiki
 
+<div width="100%">
   <div class="mdc-typography demo-body">
-    <div class="mdc-toolbar mdc-toolbar--fixed">
+    <div class="mdc-toolbar mdc-toolbar--relative">
       <div class="mdc-toolbar__row">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
           <button class="demo-menu material-icons mdc-toolbar__menu-icon">menu</button>
@@ -58,3 +59,4 @@ type: text/vnd.tiddlywiki
       <p class="mdc-typography--body1">Click the menu icon above to open.</p>
     </main>
   </div>
+</div>

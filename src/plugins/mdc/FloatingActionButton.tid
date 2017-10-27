@@ -2,7 +2,7 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171027221405140
+modified: 20171027221957984
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 
 <$transclude field="mdc-fab-icon" mode="inline">
 
-<$transclude tiddler="$:/plugins/ustuehler/mdc-web/components/FloatingActionButton" field="mdc-fab-icon" mode="inline"/>
+<$transclude tiddler="$:/plugins/ustuehler/mdc/FloatingActionButton" field="mdc-fab-icon" mode="inline"/>
 
 </$transclude>
 
@@ -30,7 +30,7 @@ type: text/vnd.tiddlywiki
 
 <$list
   variable=""
-  filter=<<this-tiddler>>
+  filter="[[$:/plugins/ustuehler/mdc/FloatingActionButton]is[current]]"
   emptyMessage="""<<fab "relative">>""">
 <<this-transclusion>> |
 <<transclusion>> |

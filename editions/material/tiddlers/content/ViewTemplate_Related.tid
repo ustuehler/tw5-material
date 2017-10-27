@@ -1,10 +1,10 @@
 created: 20171027225100632
-modified: 20171027225724799
+modified: 20171027225900079
 tags: $:/tags/ViewTemplate
 title: ViewTemplate/Related
 type: text/vnd.tiddlywiki
 
-<$list filter="[tag<currentTiddler>first[]]">
+<$list filter="[tag<storyTiddler>first[]]">
 {{$:/plugins/ustuehler/mdc/ListItem/Divider}}
-<$list filter="[tag<currentTiddler>sort[]]"/>
+<$list filter="[tag<storyTiddler>sort[]]"/>
 </$list>

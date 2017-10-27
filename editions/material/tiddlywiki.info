@@ -2,6 +2,7 @@
     "description": "Material Design edition",
     "plugins": [
         "tiddlywiki/github-fork-ribbon",
+        "tiddlywiki/highlight",
         "ustuehler/mdc",
         "ustuehler/mdc-web",
         "ustuehler/mdc-web-cdn"

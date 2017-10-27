@@ -60,7 +60,7 @@ gulp.task("push", [], shell.task([
   "git push"
 ]));
 
-gulp.task('wip', function() {
+gulp.task('hack', function() {
 	nodemon({
 		watch: ["src", "editions/material"]
 	}).on('restart', ['build', 'commit', 'push']);

@@ -5,7 +5,6 @@ type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...HEAD]]
 !!! Added
-* Moved the storyview module from the ''mdc'' plugin into this theme.
 * Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.
 !! 0.1.3
 !!! Changed

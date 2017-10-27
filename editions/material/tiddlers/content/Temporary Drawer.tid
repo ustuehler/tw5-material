@@ -1,5 +1,5 @@
 created: 20171027222633215
-modified: 20171027223611283
+modified: 20171027223842765
 tags: Components
 title: Temporary Drawer
 type: text/vnd.tiddlywiki
@@ -54,7 +54,8 @@ type: text/vnd.tiddlywiki
         </nav>
       </nav>
     </aside>
-    <main class="demo-main mdc-toolbar-fixed-adjust" style="padding-left:16px;">
+    <!-- mdc-toolbar-fixed-adjust is not needed because of mdc-toolbar--relative -->
+    <main class="" style="padding-left:16px;">
       <h1 class="mdc-typography--display1">Temporary Drawer</h1>
       <p class="mdc-typography--body1">Click the menu icon above to open.</p>
     </main>

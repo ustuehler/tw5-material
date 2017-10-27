@@ -2,10 +2,11 @@ caption: Floating Action Button
 created: 20171025190817336
 mdc-class: mdc-fab
 mdc-fab-icon: favorite
-modified: 20171026002614955
+modified: 20171027173657198
 title: $:/plugins/ustuehler/mdc/FloatingActionButton
 type: text/vnd.tiddlywiki
 
+\define fab()
 <span class="mdc-fab material-icons tc-fab--absolute" aria-label="New">
 
 <$link to={{!!link-to}} class="mdc-fab__icon">
@@ -19,3 +20,5 @@ type: text/vnd.tiddlywiki
 </$link>
 
 </span>
+\end
+<<fab>>

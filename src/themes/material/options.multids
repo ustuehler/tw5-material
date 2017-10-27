@@ -4,6 +4,7 @@ title: $:/themes/ustuehler/material/options/
 type: text/vnd.tiddlywiki
 
 stickytitles: no
+captiontitles: yes
 sidebarlayout: fixed-fluid
 codewrapping: pre-wrap
 floatingactionbutton: no

@@ -1,9 +1,12 @@
 created: 20171025213955349
-modified: 20171026021431818
+modified: 20171027022813744
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...HEAD]]
+!!! Added
+* Moved the storyview module from the ''mdc'' plugin into this theme.
+* Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.
 !! 0.1.3
 !!! Changed
 * Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].

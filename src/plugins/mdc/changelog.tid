@@ -1,9 +1,11 @@
 created: 20171026021820182
-modified: 20171026025954810
+modified: 20171027020651270
 title: $:/plugins/ustuehler/mdc/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...HEAD]]
+!!! Changed
+* Moved the storyview module into the Material Design theme plugin.
 !! 0.1.2
 !!! Changed
 * Adjusted naming of plugin tiddlers and moved some List Item related things from the theme into this plugin.

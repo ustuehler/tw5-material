@@ -1,5 +1,8 @@
-title: $:/core/ui/ViewTemplate/title
+created: 20171027022935772
+modified: 20171027023546869
 tags: $:/tags/ViewTemplate
+title: $:/core/ui/ViewTemplate/title
+type: text/vnd.tiddlywiki
 
 \define title-styles()
 fill:$(foregroundColor)$;
@@ -26,9 +29,14 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 </$list>
 <$list filter="[all[current]!prefix[$:/]]">
 <h2 class="tc-title">
-<$transclude field="caption">
+<$reveal state="$:/themes/ustuehler/material/options/captiontitles" type="match" text="yes">
+<$view field="caption">
 <$view field="title"/>
-</$transclude>
+</$view>
+</$reveal>
+<$reveal state="$:/themes/ustuehler/material/options/captiontitles" type="nomatch" text="yes">
+<$view field="title"/>
+</$reveal>
 </h2>
 </$list>
 </$link>

@@ -1,6 +1,8 @@
-title: TiddlyWiki
-caption: ~TiddlyWiki
-tags: $:/tags/DrawerBottom
+created: 20171027023608057
 list-item-icon: &#x1f421;
+modified: 20171027023759146
+tags: $:/tags/DrawerBottom
+title: TiddlyWiki
+type: text/vnd.tiddlywiki
 
 {{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

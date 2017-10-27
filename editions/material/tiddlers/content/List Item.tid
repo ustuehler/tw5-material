@@ -1,25 +1,7 @@
-caption: List Item
 created: 20171027230014138
-link-to: 
-list-item-icon: list
-mdc-class: mdc-list-item
-modified: 20171027230027586
+modified: 20171027230100428
 tags: Components
 title: List Item
 type: text/vnd.tiddlywiki
 
-<$set name="link-to" value={{!!link-to}} emptyValue=<<currentTiddler>>>
-
-<$link to=<<link-to>> class={{$:/plugins/ustuehler/mdc/ListItem!!mdc-class}}>
-
-{{||$:/plugins/ustuehler/mdc/ListItem/StartDetail}}
-
-<$transclude field="caption" mode="inline">
-
-<$view field="title"/>
-
-</$transclude>
-
-</$link>
-
-</$set>
+{{$:/plugins/ustuehler/mdc/ListItem}}

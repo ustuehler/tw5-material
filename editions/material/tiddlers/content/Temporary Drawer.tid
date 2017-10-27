@@ -1,10 +1,10 @@
 created: 20171027222633215
-modified: 20171027223510630
+modified: 20171027223524794
 tags: Components
 title: Temporary Drawer
 type: text/vnd.tiddlywiki
 
-<div width="100%" style="padding:16px; border:1px solid black;">
+<div width="100%" style="margin:16px; border:1px solid black;">
   <div class="mdc-typography demo-body">
     <div class="mdc-toolbar mdc-toolbar--relative">
       <div class="mdc-toolbar__row">

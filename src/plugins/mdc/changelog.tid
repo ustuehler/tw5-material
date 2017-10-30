@@ -1,11 +1,13 @@
 created: 20171026021820182
-modified: 20171027222458753
+modified: 20171030143106614
 title: $:/plugins/ustuehler/mdc/changelog
 type: text/vnd.tiddlywiki
 
 \define fab() [[Floating Action Button|$:/plugins/ustuehler/mdc/FloatingActionButton]]
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...HEAD]]
+!!! Added
+* New `snackbar` and `action-showsnackbar` widgets.
 !!! Fixed
 * Use the `favorite` icon by default if the <<fab>> is transcluded in a tiddler without the `mdc-fab-icon` field.
 !!! Changed

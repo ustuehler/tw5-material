@@ -1,6 +1,6 @@
 created: 20171025225118792
-modified: 20171025225122825
-title: $:/themes/ustuehler/material/PageTemplate/drawer
+modified: 20171030144429024
+title: $:/themes/ustuehler/material/ui/DrawerTemplate
 type: text/vnd.tiddlywiki
 
 <$scrollable fallthrough="no" class="tc-sidebar-scrollable mdc-permanent-drawer">

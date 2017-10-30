@@ -1,4 +1,4 @@
-title: $:/core/ui/PageTemplate
+title: $:/themes/ustuehler/material/ui/PageTemplate
 
 \define containerClasses()
 tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$ mdc-typography
@@ -26,9 +26,9 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$ mdc-
 
 <$dropzone>
 
-<$transclude tiddler="$:/themes/ustuehler/material/PageTemplate/toolbar" mode="inline"/>
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar" mode="inline"/>
 
-<$transclude tiddler="$:/themes/ustuehler/material/PageTemplate/drawer" mode="inline"/>
+<$transclude tiddler="$:/themes/ustuehler/material/ui/DrawerTemplate" mode="inline"/>
 
 <main class="mdc-toolbar-fixed-adjust" style="width:100%;">
 
@@ -41,6 +41,8 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$ mdc-
 </main>
 
 </$dropzone>
+
+<$snackbar/>
 
 </$navigator>
 

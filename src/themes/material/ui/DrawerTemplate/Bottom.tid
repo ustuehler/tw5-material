@@ -1,7 +1,7 @@
 created: 20171025225148368
 modified: 20171026022422997
 tags: $:/tags/DrawerTemplate
-title: $:/plugins/ustuehler/material/DrawerTemplate/Bottom
+title: $:/themes/ustuehler/material/ui/DrawerTemplate/Bottom
 type: text/vnd.tiddlywiki
 
 <$transclude tiddler="$:/plugins/ustuehler/mdc/ListItem/Divider"/>

@@ -1,4 +1,4 @@
-title: $:/core/ui/PageTemplate/sidebar
+title: $:/themes/ustuehler/material/ui/PageTemplate/sidebar
 
 <$scrollable fallthrough="no" class="tc-sidebar-scrollable">
 

@@ -1,4 +1,4 @@
-title: $:/themes/ustuehler/material/PageTemplate/toolbar
+title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
 
 <$set name="siteTitle" value={{$:/SiteTitle}}>
 
@@ -10,11 +10,11 @@ title: $:/themes/ustuehler/material/PageTemplate/toolbar
 
 <span class="catalog-back">
 
-<$transclude tiddler="$:/themes/ustuehler/material/PageTemplate/toolbar-icon" mode="inline"/>
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar-icon" mode="inline"/>
 
 </span>
 
-<$transclude tiddler="$:/themes/ustuehler/material/PageTemplate/toolbar-title" mode="inline"/>
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar-title" mode="inline"/>
 
 </section>
 

@@ -1,3 +1,0 @@
-title: $:/themes/ustuehler/material/PageTemplate/toolbar-icon
-
-<button class="tc-toolbar-menu material-icons mdc-toolbar__menu-icon" style="outline: 0;">menu</button>

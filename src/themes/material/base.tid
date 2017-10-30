@@ -2537,3 +2537,11 @@ a.mdc-fab__icon {
     right: 1.5rem;
   }
 }
+
+/*
+ * Hide the snackbar when it is not active
+ */
+
+div[aria-hidden="true"].mdc-snackbar {
+  opacity: 0;
+}

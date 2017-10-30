@@ -1,18 +1,19 @@
 caption: button
 created: 20171030142506942
-modified: 20171030143000732
+modified: 20171030154932582
 tags: Widgets
 title: ButtonWidget
 type: text/vnd.tiddlywiki
 
 ! Introduction
 
-The ''{{!!caption}}'' widget can be used with MDC-Web components by adding the `mdc-button` and other classes.
+The core [[button widget|http://tiddlywiki.com/#ButtonWidget]] can be used with MDC-Web components by adding the `mdc-button` and other CSS classes.
 
 ! Content and Attributes
 
 |!Attribute |!Description |
 |class      |In addition to `mdc-button` you can use `mdc-button--raised`. |
+|//others// |Other attributes are interpreted as documented for the core [[button widget|http://tiddlywiki.com/#ButtonWidget]]. |
 
 ! Examples
 

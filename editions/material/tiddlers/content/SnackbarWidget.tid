@@ -1,0 +1,44 @@
+caption: snackbar
+created: 20171027234951413
+list: 
+mdc-tag: div
+modified: 20171030134816839
+tags: Widgets
+title: SnackbarWidget
+type: text/vnd.tiddlywiki
+
+! Introduction
+
+The ''snackbar'' widget displays a transient message and an optional action button. It is a page element which is normally hidden until shown with the <$link to="ActionShowSnackbarWidget">''action-showsnackbar''</$link> widget.
+
+! Content and Attributes
+
+The ''snackbar'' widget is normally invisible and accepts no attributes. Any content within it is ignored.
+
+! Examples
+
+The [[Material Design theme|$:/themes/ustuehler/material]] adds this snippet to $:/core/ui/PageTemplate:
+
+```
+<$snackbar/>
+```
+
+The <$link to="ActionShowSnackbarWidget">''action-showsnackbar''</$link> widget shows this snackbar.
+
+```
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!"/>
+Show Snackbar
+</$button>
+```
+
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!"/>
+Show Snackbar
+</$button>
+
+The following JavaScript code when executed in a browser console would also show the snackbar:
+
+$$$text/javascript
+document.getElementsByClassName("mdc-snackbar")[0].widget.show({message:"Hi there!"})
+$$$

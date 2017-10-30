@@ -1,0 +1,25 @@
+caption: button
+created: 20171030142506942
+modified: 20171030143000732
+tags: Widgets
+title: ButtonWidget
+type: text/vnd.tiddlywiki
+
+! Introduction
+
+The ''{{!!caption}}'' widget can be used with MDC-Web components by adding the `mdc-button` and other classes.
+
+! Content and Attributes
+
+|!Attribute |!Description |
+|class      |In addition to `mdc-button` you can use `mdc-button--raised`. |
+
+! Examples
+
+```
+<$button class="mdc-button">Flat</$button>
+<$button class="mdc-button mdc-button--raised">Raised</$button>
+```
+
+<$button class="mdc-button">Flat</$button>
+<$button class="mdc-button mdc-button--raised">Raised</$button>

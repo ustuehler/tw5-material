@@ -1,0 +1,13 @@
+created: 20171027225100632
+modified: 20171027230807101
+tags: $:/tags/ViewTemplate
+title: $:/ViewTemplate/Related
+type: text/vnd.tiddlywiki
+
+<$list variable="" filter="[tag<storyTiddler>first[]]">
+{{$:/plugins/ustuehler/mdc/ListItem/Divider}}
+
+<br>Related:
+
+<<list-links "[tag<storyTiddler>sort[]]">>
+</$list>

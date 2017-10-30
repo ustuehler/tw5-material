@@ -1,0 +1,23 @@
+created: 20171030143533959
+list-before: Icons
+list-item-icon: picture_in_picture
+modified: 20171030152048522
+tags: $:/tags/Drawer
+title: Templates
+type: text/vnd.tiddlywiki
+
+\define core(path) $:/core/ui/$path$
+\define theme(path) [[$path$|$:/themes/ustuehler/material/ui/$path$]]
+\define link(path) <<core "$path$">> &rarr; <<theme "$path$">>
+
+The hierarchy below represents the rendered template structure when the Material Design theme is active. The right arrow (&rarr;) indicates that a template has been replaced with a transclusion of another.
+
+* <<link "PageTemplate">>
+* <<link "PageTemplate/sidebar">>
+* <<theme "PageTemplate">>
+** <<theme "PageTemplate/toolbar">>
+*** <<theme "PageTemplate/toolbar-icon">>
+*** <<theme "PageTemplate/toolbar-title">>
+** <<theme "DrawerTemplate">>
+*** <<theme "DrawerTemplate/Top">>
+*** <<theme "DrawerTemplate/Bottom">>

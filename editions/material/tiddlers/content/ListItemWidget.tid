@@ -1,7 +1,8 @@
+caption: list-item
 created: 20171027230014138
-modified: 20171027230100428
-tags: Components
-title: List Item
+modified: 20171030140934484
+tags: Widgets
+title: ListItemWidget
 type: text/vnd.tiddlywiki
 
 {{$:/plugins/ustuehler/mdc/ListItem}}

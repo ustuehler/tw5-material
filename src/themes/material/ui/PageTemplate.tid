@@ -28,7 +28,7 @@ tc-page-container tc-page-view-$(themeTitle)$ tc-language-$(languageTitle)$ mdc-
 
 <$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar" mode="inline"/>
 
-<$transclude tiddler="$:/themes/ustuehler/material/ui/DrawerTemplate" mode="inline"/>
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/drawer" mode="inline"/>
 
 <main class="mdc-toolbar-fixed-adjust" style="width:100%;">
 

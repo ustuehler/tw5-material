@@ -1,7 +1,6 @@
 created: 20171030143533959
-list-before: Icons
 list-item-icon: picture_in_picture
-modified: 20171030152048522
+modified: 20171030234407219
 tags: $:/tags/Drawer
 title: Templates
 type: text/vnd.tiddlywiki
@@ -12,12 +11,15 @@ type: text/vnd.tiddlywiki
 
 The hierarchy below represents the rendered template structure when the Material Design theme is active. The right arrow (&rarr;) indicates that a template has been replaced with a transclusion of another.
 
+* <<link "EditTemplate">>
 * <<link "PageTemplate">>
 * <<link "PageTemplate/sidebar">>
+* <<link "ViewTemplate">>
+
 * <<theme "PageTemplate">>
 ** <<theme "PageTemplate/toolbar">>
 *** <<theme "PageTemplate/toolbar-icon">>
 *** <<theme "PageTemplate/toolbar-title">>
-** <<theme "DrawerTemplate">>
+** <<theme "PageTemplate/drawer">>
 *** <<theme "DrawerTemplate/Top">>
 *** <<theme "DrawerTemplate/Bottom">>

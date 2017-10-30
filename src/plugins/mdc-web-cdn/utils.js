@@ -14,14 +14,6 @@ Utility functions for MDC-Web usage in TiddlyWiki
 
 if (typeof document !== 'undefined') {
 
-exports.mdcAutoInit = mdcAutoInit;
-
-function toggleDrawer() {
-  var drawer = document.querySelector('.mdc-permanent-drawer');
-
-  drawer.style.display = drawer.style.display == 'none' ? '' : 'none';
-};
-
 function mdcAutoInit() {
   // Use global mdc object.
   var mdc = window.mdc;
@@ -34,22 +26,9 @@ function mdcAutoInit() {
     setTimeout(mdcAutoInit, 10);
     return;
   }
-
-  var menu = document.querySelector('.tc-toolbar-menu');
-
-  if (menu) {
-    console.log('Registering click event handler for toolbar menu');
-    menu.addEventListener('click', function() {
-      toggleDrawer();
-    });
-  } else {
-    console.log('Waiting for .tc-toolbar-menu');
-    setTimeout(mdcAutoInit, 10);
-    return;
-  }
-
-  console.log('Registered toolbar menu click event handler');
 };
+
+exports.mdcAutoInit = mdcAutoInit;
 
 }
 

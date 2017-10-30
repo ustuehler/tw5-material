@@ -1,6 +1,6 @@
 created: 20171030150411782
-modified: 20171030150412864
+modified: 20171030234058045
 title: $:/SiteSubtitle
 type: text/vnd.tiddlywiki
 
-v<<version>>
+<span style="font-weight: normal;">v<<version>></span>

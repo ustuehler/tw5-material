@@ -3,7 +3,7 @@ modified: 20171030144429024
 title: $:/themes/ustuehler/material/ui/DrawerTemplate
 type: text/vnd.tiddlywiki
 
-<$scrollable fallthrough="no" class="tc-sidebar-scrollable mdc-permanent-drawer">
+<$scrollable fallthrough="no" class="tc-sidebar-scrollable mdc-persistent-drawer">
 
 <nav class="tc-sidebar-header sidebar-wrapper">
 

@@ -1,0 +1,26 @@
+caption: drawer
+created: 20171027222633215
+creator: ustuehler
+modified: 20171030223909630
+modifier: ustuehler
+tags: Macros
+title: DrawerMacro
+type: text/vnd.tiddlywiki
+
+! Examples
+
+```
+<<drawer class:"mdc-persistent-drawer">>
+
+<$button class="mdc-button mdc-button--raised">
+<$action-toggledrawer type="persistent"/>
+Toggle Drawer
+</$button>
+```
+
+<<drawer class:"mdc-persistent-drawer">>
+
+<$button class="mdc-button mdc-button--raised">
+<$action-toggledrawer type="persistent"/>
+Toggle Drawer
+</$button>

@@ -1,7 +1,6 @@
 created: 20171025230427542
-list-before: Templates
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/component.svg]]
-modified: 20171030143935749
+modified: 20171030230136713
 tags: $:/tags/Drawer
 title: Widgets
 type: text/vnd.tiddlywiki

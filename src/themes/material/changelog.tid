@@ -1,5 +1,7 @@
 created: 20171025213955349
-modified: 20171030141221376
+creator: ustuehler
+modified: 20171030224446024
+modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
@@ -7,6 +9,8 @@ type: text/vnd.tiddlywiki
 !!! Added
 * Added a `snackbar` widget to $:/core/ui/PageTemplate.
 * Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.
+!!! Changed
+* Drawer in page template changed from permanent to temporary.
 !! 0.1.3
 !!! Changed
 * Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].

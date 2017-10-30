@@ -1,0 +1,3 @@
+title: $:/core/ui/ViewTemplate
+
+{{||$:/themes/ustuehler/material/ui/ViewTemplate}}

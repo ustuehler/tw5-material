@@ -1,0 +1,8 @@
+created: 20171025225118792
+modified: 20171030144429024
+title: $:/themes/ustuehler/material/ui/PageTemplate/drawer
+type: text/vnd.tiddlywiki
+
+<<drawer class:"mdc-temporary-drawer"
+         filter:"[tag[$:/tags/DrawerTemplate]]"
+         headerText:{{$:/status/UserName}}>>

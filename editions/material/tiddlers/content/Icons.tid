@@ -1,9 +1,21 @@
 created: 20171025230445315
 list-after: 
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
-modified: 20171030143643027
+modified: 20171030154313705
 tags: $:/tags/Drawer
 title: Icons
 type: text/vnd.tiddlywiki
 
 https://material.io/icons/
+
+! Examples
+
+```
+<div class="material-icons">add</div>
+<div class="material-icons">home</div>
+<div class="material-icons">favorite</div>
+```
+
+<div class="material-icons">add</div>
+<div class="material-icons">home</div>
+<div class="material-icons">favorite</div>

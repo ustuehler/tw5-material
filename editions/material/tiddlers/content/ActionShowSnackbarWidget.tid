@@ -1,6 +1,6 @@
 caption: action-showsnackbar
 created: 20171030113923725
-modified: 20171030140652275
+modified: 20171030171548905
 tags: ActionWidgets Widgets SnackbarWidget
 title: ActionShowSnackbarWidget
 type: text/vnd.tiddlywiki
@@ -20,31 +20,35 @@ The ''action-showsnackbar'' widget is invisible. Only other [[action widgets|Act
 
 ! Examples
 
-This example relies on a ''snackbar'' widget that gets added to $:/core/ui/PageTemplate by the [[Material Design theme|$:/themes/ustuehler/material]].
-
-```
-<$button class="mdc-button mdc-button--raised">
-<$action-showsnackbar message="Hi there!" actionText="Bye">
-<$action-showsnackbar message="Goodbye!"/>
-</$action-showsnackbar>
-Show Message and Action
-</$button>
-```
-
-<$button class="mdc-button mdc-button--raised">
-<$action-showsnackbar message="Hi there!" actionText="Bye"/>
-Show Message and Action
-</$button>
-
-For the remaining examples we will omit the ''button'' widget that triggers the action.
+The examples below rely on a ''snackbar'' widget that gets added to $:/core/ui/PageTemplate by the [[Material Design theme|$:/themes/ustuehler/material]].
 
 This example shows only a message without an action button:
 
 ```
+<$button class="mdc-button mdc-button--raised">
 <$action-showsnackbar message="Hi there!"/>
+Show Message Only
+</$button>
 ```
 
 <$button class="mdc-button mdc-button--raised">
 <$action-showsnackbar message="Hi there!"/>
 Show Message Only
+</$button>
+
+For the remaining examples we will omit the [[button|ButtonWidget]] widget that triggers the action.
+
+This example shows how to associate actions with the snackbar's action button.
+
+```
+<$action-showsnackbar message="Hi there!" actionText="Bye">
+<$action-showsnackbar message="Goodbye!"/>
+</$action-showsnackbar>
+```
+
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!" actionText="Bye">
+<$action-showsnackbar message="Goodbye!"/>
+</$action-showsnackbar>
+Show Message and Action
 </$button>

@@ -4,7 +4,8 @@ tags:
 title: $:/plugins/ustuehler/mdc-web-cdn/changelog
 type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc-web-cdn/v0.1.3...HEAD]]
+!! [[0.1.3|https://github.com/ustuehler/tw5-material/compare/mdc-web-cdn/v0.1.2...mdc-web-cdn/v0.1.3]]
 !!! Changed
 * Drop the `defer` attribute from our `<script>` tag to simplify the widget code, for now. //Incurs additional page load time!//
 !! 0.1.2

@@ -1,11 +1,12 @@
 created: 20171026021820182
-modified: 20171031003200193
+modified: 20171031003407599
 title: $:/plugins/ustuehler/mdc/changelog
 type: text/vnd.tiddlywiki
 
 \define fab() [[Floating Action Button|$:/plugins/ustuehler/mdc/FloatingActionButton]]
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.3...HEAD]]
+!! [[v0.1.3|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...mdc/v0.1.3]]
 !!! Added
 * New `snackbar` and `action-showsnackbar` widgets.
 * A `drawer` macro and `action-toggledrawer` widget.

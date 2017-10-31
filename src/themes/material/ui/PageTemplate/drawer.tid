@@ -4,5 +4,5 @@ title: $:/themes/ustuehler/material/ui/PageTemplate/drawer
 type: text/vnd.tiddlywiki
 
 <<drawer class:"mdc-temporary-drawer"
-         filter:"[tag[$:/tags/DrawerTemplate]]"
+         filter:"[all[shadows+tiddlers]tag[$:/tags/DrawerTemplate]]"
          headerText:{{$:/status/UserName}}>>

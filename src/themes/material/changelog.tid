@@ -1,11 +1,12 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171030235700444
+modified: 20171031003536854
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...HEAD]]
+!! [[v0.1.4|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...material/v0.1.4]]
 !!! Added
 * Added a `snackbar` widget to $:/core/ui/PageTemplate.
 * Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.

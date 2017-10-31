@@ -1,6 +1,6 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171030224446024
+modified: 20171030235700444
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
@@ -11,6 +11,7 @@ type: text/vnd.tiddlywiki
 * Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.
 !!! Changed
 * Drawer in page template changed from permanent to temporary.
+* The maximum tiddler width is now 960px by default and tiddlers are centered in the story view.
 !! 0.1.3
 !!! Changed
 * Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].

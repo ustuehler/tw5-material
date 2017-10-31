@@ -81,14 +81,10 @@ ActionToggleDrawerWidget.prototype.invokeAction = function(triggeringWidget,even
   var self = this;
   var el = this.document.querySelector(this.selector);
 
-console.log(this);
-console.log(el);
-
   if (el) {
     var constructor = global.mdc.drawer[this["class"]];
     var drawer = new constructor(el);
 
-console.log(drawer);
     drawer.open = !drawer.open;
   }
 

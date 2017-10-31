@@ -1,5 +1,5 @@
 created: 20171026021820182
-modified: 20171030143106614
+modified: 20171031003200193
 title: $:/plugins/ustuehler/mdc/changelog
 type: text/vnd.tiddlywiki
 
@@ -8,6 +8,7 @@ type: text/vnd.tiddlywiki
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...HEAD]]
 !!! Added
 * New `snackbar` and `action-showsnackbar` widgets.
+* A `drawer` macro and `action-toggledrawer` widget.
 !!! Fixed
 * Use the `favorite` icon by default if the <<fab>> is transcluded in a tiddler without the `mdc-fab-icon` field.
 !!! Changed

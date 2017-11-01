@@ -1,7 +1,7 @@
 created: 20171101155835624
-modified: 20171101161143027
+modified: 20171101161448071
 tags: Features
 title: Related Tiddlers View Template
 type: text/vnd.tiddlywiki
 
-Tiddlers tagged with the current one are automatically listed below the main tiddler view template, unless the current tiddler has the `view-related` field set to `no`.  The <$list filter="[all[shadows+tiddlers]field:view-related[no]first[]]"/> tiddler is an example of a tiddler that has `view-related` set to `no`. The <$list filter="[all[shadows+tiddlers]field:view-related[yes]first[]]"/> tiddler is an example of a tiddler that shows related tiddlers.
+Tiddlers tagged with the current one are automatically listed below the main tiddler view template, unless the current tiddler has the `view-related` field set to `no`.  The <$list filter="[all[shadows+tiddlers]field:view-related[no]first[]]"/> tiddler is an example of a tiddler that has `view-related` set to `no`. The <$list filter="[all[shadows+tiddlers]field:view-related[yes]first[]]"/> tiddler on the other hand should show related tiddlers.

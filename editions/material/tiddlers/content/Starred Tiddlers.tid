@@ -1,7 +1,7 @@
 created: 20171101170534699
-modified: 20171101170634468
+modified: 20171101170708803
 tags: Features
 title: Starred Tiddlers
 type: text/vnd.tiddlywiki
 
-Any tiddler can be "starred" by clicking the <<material-icon "star">> icon.
+Any tiddler can be pinned by clicking on the <<material-icon "star">> icon in the upper-right corner of the tiddler view.

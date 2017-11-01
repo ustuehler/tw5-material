@@ -1,11 +1,12 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171101033435782
+modified: 20171101033638315
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...HEAD]]
+!! [[0.1.5|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...material/v0.1.5]]
 !!! Added
 * The `star` button toggles the <<tag "$:/tags/Starred">> tag of the current tiddler.
 * The `view-style` field can be used to control the `style` attribute of the tiddler view `<div>` element.

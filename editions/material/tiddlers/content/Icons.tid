@@ -1,26 +1,15 @@
 created: 20171025230445315
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
-modified: 20171101195402501
+modified: 20171101195823877
 tags: Documentation
 title: Icons
 type: text/vnd.tiddlywiki
 
 https://material.io/icons/
 
-! Examples
-
-```
-<div class="material-icons">add</div>
-<div class="material-icons">home</div>
-<div class="material-icons">favorite</div>
-<$list filter="[prefix[$:/themes/ustuehler/material/icons/]]">
-<$transclude/>
+<table>
+<tr><th>Icon</th><th>Tiddler</th></tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/themes/ustuehler/material/icons/]]">
+<tr><th><$transclude/></th><td><$link><<currentTiddler>></$link></td></tr>
 </$list>
-```
-
-<div class="material-icons">add</div>
-<div class="material-icons">home</div>
-<div class="material-icons">favorite</div>
-<$list filter="[prefix[$:/themes/ustuehler/material/icons/]]">
-<$link><$transclude/></$link>
-</$list>
+</table>

@@ -1,13 +1,13 @@
 created: 20171101154613701
 list-item-icon: extension
-modified: 20171101163328687
+modified: 20171101163350460
 tags: $:/tags/Drawer $:/tags/Starred
 title: Features
 type: text/vnd.tiddlywiki
 view-related: no
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
-This edition of TiddlyWiki adds the following features over the empty edition.
+This edition of TiddlyWiki adds the following features over an empty edition with the Vanilla theme.
 
 <$list filter="[tag<currentTiddler>]">
 <h2><$link><<currentTiddler>></$link></h2>

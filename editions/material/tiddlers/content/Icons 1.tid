@@ -1,6 +1,6 @@
 created: 20171101171849669
-list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
-modified: 20171101171853690
+list-item-icon: add
+modified: 20171101171915462
 tags: $:/tags/Drawer
 title: Icons 1
 type: text/vnd.tiddlywiki

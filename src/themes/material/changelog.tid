@@ -1,11 +1,12 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171101041221488
+modified: 20171101041624099
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...HEAD]]
+!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...HEAD]]
+!! [[0.1.6|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...material/v0.1.6]]
 !!! Changed
 * Hide tag pills in the tiddler view for tags beginning with `$:/tags/`.
 !! [[0.1.5|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...material/v0.1.5]]

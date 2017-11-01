@@ -1,9 +1,15 @@
-created: 20171101195221001
-list-before: Features
-list-item-icon: extension
-modified: 20171101195242358
+created: 20171101195529415
+list-item-icon: info
+modified: 20171101195608900
 tags: $:/tags/Drawer
 title: Documentation
 type: text/vnd.tiddlywiki
+view-related: no
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
+This edition of TiddlyWiki consists of the following documented components.
+
+<$list filter="[tag<currentTiddler>]">
+<h2><$link><<currentTiddler>></$link></h2>
+<$transclude mode="block"/>
+</$list>

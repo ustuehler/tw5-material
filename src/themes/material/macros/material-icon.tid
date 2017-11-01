@@ -1,0 +1,9 @@
+created: 20171101020522523
+modified: 20171101020834779
+tags: $:/tags/Macro
+title: $:/themes/ustuehler/material/macros/material-icon
+type: text/vnd.tiddlywiki
+
+\define material-icon(entity)
+<i class="material-icons">$entity$</i>
+\end

@@ -1,10 +1,9 @@
 created: 20171101001027450
-modified: 20171101013034433
-tags: $:/tags/ViewToolbar/BottomLeft
+modified: 20171101021552848
 title: $:/themes/ustuehler/material/ui/Buttons/colour-picker
 type: text/vnd.tiddlywiki
 
 <!-- <<colour-picker>> -->
-<$button style="visibility: hidden;">
+<$button>
 <i class="material-icons">palette</i>
 </$button>

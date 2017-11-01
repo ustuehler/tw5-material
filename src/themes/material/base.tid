@@ -410,7 +410,7 @@ a.tc-tiddlylink-external:hover {
 */
 
 button svg, button img, label svg, label img {
-	vertical-align: baseline;
+	vertical-align: middle;
 }
 
 .tc-btn-invisible {
@@ -941,7 +941,7 @@ button.tc-untagged-label {
 
 .tc-titlebar h2 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 29px;
 	display: inline;
 }

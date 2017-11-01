@@ -1,9 +1,9 @@
 created: 20171101155234516
-modified: 20171101172704798
+modified: 20171101205907484
 tags: Features
 title: Elevation
 type: text/vnd.tiddlywiki
 
-Tiddler views are rendered with the class `mdc-elevation--z1`, by default. CSS transitions defined in [[$:/themes/ustuehler/material/base]] elevate tiddler views to `mdc-elevation--z10` when being hovered over.
+Tiddler views are rendered with the class `mdc-elevation--z1`, by default. CSS transitions defined in the [[base|$:/themes/ustuehler/material/base]] stylesheet elevate tiddler views to `mdc-elevation--z10` when being hovered over.
 
 There is a known issue with this feature: Any tiddlers opened after the page was first loaded will not trigger the CSS transition, but will instead apply the final state immediately. This can probably be [[worked around|https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element]] with some modification to the [[PageTemplate|$:/themes/ustuehler/material/ui/PageTemplate]].

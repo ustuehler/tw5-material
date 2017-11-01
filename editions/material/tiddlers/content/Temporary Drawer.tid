@@ -1,6 +1,7 @@
 created: 20171101192721385
-modified: 20171101192742027
+modified: 20171101194230365
 tags: Features
 title: Temporary Drawer
 type: text/vnd.tiddlywiki
 
+TiddlyWiki's sidebar has been replaced with a temporary drawer that is commom in Material Design applications.

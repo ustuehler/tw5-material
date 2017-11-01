@@ -1,7 +1,9 @@
 created: 20171101170534699
-modified: 20171101172237975
+modified: 20171101172429843
 tags: Features
 title: Starred Tiddlers
 type: text/vnd.tiddlywiki
 
-Any tiddler can be starred or unstarred by clicking on the <<material-icon "star">> icon in the upper-right corner of the tiddler view frame. Starred tiddlers will be opened by default when the page is loaded (in this edition of TiddlyWiki, only).
+In this edition of TiddlyWiki, any tiddler can be starred or unstarred by clicking on the <<material-icon "star">> icon in the upper-right corner of the tiddler view frame. Starred tiddlers will be opened by default when the page is loaded. To add this functionality to your own TiddlyWiki instance, set the `text` field of the $:/DefaultTiddlers tiddler to:
+
+<pre><code><$transclude tiddler="$:/DefaultTiddlers"/></code></pre>

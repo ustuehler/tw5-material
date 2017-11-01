@@ -1,7 +1,7 @@
 created: 20171101192744031
-modified: 20171101194600619
+modified: 20171101194613431
 tags: Features
 title: Permanent Toolbar
 type: text/vnd.tiddlywiki
 
-The permanent toolbar stays on the top of the page, even as you scroll through the page vertically. It displays a hamburger menu to toggle the drawer, and the $:/SiteTitle followed by the [[$:/SiteSubtitle]] tiddlers as a heading.
+The permanent toolbar stays on the top of the page, even as you scroll through the page vertically. It displays a hamburger menu to toggle the drawer, and the $:/SiteTitle tiddler followed by the [[$:/SiteSubtitle]] tiddler as a heading.

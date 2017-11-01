@@ -9,7 +9,7 @@ title: $:/themes/ustuehler/material/ui/EditTemplate
 <$action-sendmessage $message="tm-save-tiddler"/>
 \end
 \define frame-classes()
-tc-tiddler-frame tc-tiddler-edit-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ mdc-elevation--z4
+tc-tiddler-frame tc-tiddler-edit-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ mdc-elevation--z10
 \end
 <div class=<<frame-classes>>>
 <$fieldmangler>

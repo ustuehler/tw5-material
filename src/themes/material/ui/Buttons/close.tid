@@ -2,7 +2,7 @@ caption: <<material-icon "cancel">> {{$:/language/Buttons/Close/Caption}}
 created: 20171101012826063
 description: {{$:/language/Buttons/Close/Hint}}
 list-before: $:/themes/ustuehler/material/ui/Buttons/star
-modified: 20171101024045063
+modified: 20171101033314096
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/close
 type: text/vnd.tiddlywiki

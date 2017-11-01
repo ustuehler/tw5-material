@@ -2615,7 +2615,7 @@ button {
 }
 .tc-tiddler-frame:hover .tc-tiddler-controls-bar {
   visibility: visible;
-  opacity: 1;
+  transition: opacity 1s visibility 1s;
   transition: opacity 1s visibility 1s;
 }
 

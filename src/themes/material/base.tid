@@ -2520,19 +2520,16 @@ body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg
 
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls button {
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s visibility 1s;
+  transition: opacity 1s;
 }
 .tc-tiddler-frame:hover .tc-titlebar .tc-tiddler-controls button {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 1s visibility 1s;
+  transition: opacity 1s;
 }
 /* Always show the star button when the current tiddler is starred */
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 1s visibility 1s;
+  transition: opacity 1s;
 }
 
 /*

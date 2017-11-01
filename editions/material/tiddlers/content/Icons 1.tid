@@ -1,0 +1,26 @@
+created: 20171101171849669
+list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
+modified: 20171101171853690
+tags: $:/tags/Drawer
+title: Icons 1
+type: text/vnd.tiddlywiki
+
+https://material.io/icons/
+
+! Examples
+
+```
+<div class="material-icons">add</div>
+<div class="material-icons">home</div>
+<div class="material-icons">favorite</div>
+<$list filter="[prefix[$:/themes/ustuehler/material/icons/]]">
+<$transclude/>
+</$list>
+```
+
+<div class="material-icons">add</div>
+<div class="material-icons">home</div>
+<div class="material-icons">favorite</div>
+<$list filter="[prefix[$:/themes/ustuehler/material/icons/]]">
+<$link><$transclude/></$link>
+</$list>

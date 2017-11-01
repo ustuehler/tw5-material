@@ -6,6 +6,8 @@ title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...HEAD]]
+!!! Fixed
+* Also hide the title view toolbar elements until the current tiddler is hovered over.
 !! [[0.1.6|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...material/v0.1.6]]
 !!! Changed
 * Hide tag pills in the tiddler view for tags beginning with `$:/tags/`.

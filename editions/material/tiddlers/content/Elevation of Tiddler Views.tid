@@ -1,0 +1,7 @@
+created: 20171101155234516
+modified: 20171101155526262
+tags: Features
+title: Elevation of Tiddler Views
+type: text/vnd.tiddlywiki
+
+Tiddler views are rendered with the class `mdc-elevation--z1`, by default. CSS transitions defined in [[$:/themes/ustuehler/material/base]] elevate tiddler views when being hovered over to `mdc-elevation--z10`.

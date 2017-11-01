@@ -410,7 +410,7 @@ a.tc-tiddlylink-external:hover {
 */
 
 button svg, button img, label svg, label img {
-	vertical-align: middle;
+	vertical-align: baseline;
 }
 
 .tc-btn-invisible {
@@ -749,9 +749,10 @@ button.tc-untagged-label {
 }
 
 .tc-story-river {
+  padding-top: 16px;
 	position: relative;
   height: 100%;
-	background-color: <<colour tiddler-background>>;
+	background-color: <<colour page-background>>;
 }
 
 @media (max-width: {{$:/themes/ustuehler/material/metrics/sidebarbreakpoint}}) {
@@ -836,6 +837,7 @@ button.tc-untagged-label {
 */
 
 .tc-tiddler-frame {
+  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 	position: relative;
@@ -888,7 +890,11 @@ button.tc-untagged-label {
 
 @media (min-width: {{$:/themes/ustuehler/material/metrics/sidebarbreakpoint}}) {
 	.tc-tiddler-frame {
-		padding: 28px 42px 42px 42px;
+		/* padding: 28px 42px 42px 42px; */
+		padding-top: 8px;
+		padding-right: 12px;
+		padding-bottom: 4px;
+		padding-left: 12px;
 		width: {{$:/themes/ustuehler/material/metrics/tiddlerwidth}};
 		border-radius: 2px;
 	}
@@ -908,9 +914,11 @@ button.tc-untagged-label {
 
 .tc-site-title,
 .tc-titlebar {
+  /*
 	font-weight: 300;
 	font-size: 2.35em;
 	line-height: 1.2em;
+  */
 	color: <<colour tiddler-title-foreground>>;
 	margin: 0;
 }
@@ -920,7 +928,11 @@ button.tc-untagged-label {
 }
 
 .tc-tiddler-title-icon {
+  /*
 	vertical-align: middle;
+  */
+  height: 24px;
+  width: 24px;
 }
 
 .tc-system-title-prefix {
@@ -928,7 +940,9 @@ button.tc-untagged-label {
 }
 
 .tc-titlebar h2 {
-	font-size: 1em;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
 	display: inline;
 }
 
@@ -952,33 +966,41 @@ button.tc-untagged-label {
 }
 
 .tc-tiddler-controls .tc-drop-down {
+  /*
 	font-size: 0.6em;
+  */
 }
 
 .tc-tiddler-controls .tc-drop-down .tc-drop-down {
+  /*
 	font-size: 1em;
+  */
 }
 
 .tc-tiddler-controls > span > button,
 .tc-tiddler-controls > span > span > button,
 .tc-tiddler-controls > span > span > span > button {
 	vertical-align: baseline;
-	margin-left:5px;
+	margin-left: 5px;
+  width: 24px;
+  height: 24px;
 }
 
-.tc-tiddler-controls button svg, .tc-tiddler-controls button img,
+.tc-tiddler-controls button svg, .tc-tiddler-controls button img, .tc-tiddler-controls button i,
 .tc-search button svg, .tc-search a svg {
 	fill: <<colour tiddler-controls-foreground>>;
+	color: <<colour tiddler-controls-foreground>>;
 }
 
-.tc-tiddler-controls button svg, .tc-tiddler-controls button img {
-	height: 0.75em;
+.tc-tiddler-controls button svg, .tc-tiddler-controls button img, .tc-tiddler-controls button i {
+  height: 20px;
+  width: 20px;
 }
 
 .tc-search button svg, .tc-search a svg {
-    height: 1.2em;
-    width: 1.2em;
-    margin: 0 0.25em;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 0.25em;
 }
 
 .tc-tiddler-controls button.tc-selected svg,
@@ -2499,17 +2521,30 @@ body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg
 }
 
 /*
- * Show Tiddler controls when hovering over the title
+ * On screen sizes larger than tablets, show tiddler controls only when
+ * hovering over the tiddler, except for the "star" button
  */
 
 @media(min-width: 768px) {
-  .tc-titlebar .tc-tiddler-controls {
+  .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls button {
     display: none;
   }
-
-  .tc-titlebar:hover .tc-tiddler-controls {
-    display: block;
+  .tc-tiddler-frame:hover .tc-titlebar .tc-tiddler-controls button {
+    display: inline;
   }
+  /* Always show the star button when the current tiddler is starred */
+  .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button {
+    display: inline;
+  }
+}
+
+/*
+ * Show the "star" button's icon in a special colour when the current tiddler
+ * is starred
+ */
+
+.tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button i {
+  color: blue;
 }
 
 /*
@@ -2541,9 +2576,26 @@ a.mdc-fab__icon {
 }
 
 /*
- * Hide the snackbar when it is not active
+ * Hide the snackbar completely when it is not active
  */
 
 div[aria-hidden="true"].mdc-snackbar {
   opacity: 0;
+}
+
+/*
+ * Hide the outline that may be shown briefly around buttons when they're clicked
+ */
+
+button {
+  outline: 0;
+}
+
+/*
+ * Elevate the tiddler being hovered over
+ */
+
+.tc-tiddler-view-frame:hover {
+  /* XXX: copied from mdc-elevation--z3 */
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
 }

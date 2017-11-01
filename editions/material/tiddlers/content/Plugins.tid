@@ -1,9 +1,10 @@
 created: 20171025215759551
 list-item-icon: extension
-modified: 20171030230129843
-tags: $:/tags/Drawer
+modified: 20171101004808204
+tags: $:/tags/Drawer $:/tags/Starred
 title: Plugins
 type: text/vnd.tiddlywiki
+view-style: background-color: #feff9c;
 
 <a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 

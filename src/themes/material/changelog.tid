@@ -1,11 +1,15 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171031003536854
+modified: 20171101005824926
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...HEAD]]
+!!! Changed
+* Redesigned the tiddler view.
+* Now showing buttons tagged with $:/tags/ViewToolbar/Title, $:/tags/ViewToolbar/BottomLeft and $:/tags/ViewToolbar/BottomRight.
+* No longer showing buttons tagged with $:/tags/ViewToolbar.
 !! [[v0.1.4|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...material/v0.1.4]]
 !!! Added
 * Added a `snackbar` widget to $:/core/ui/PageTemplate.

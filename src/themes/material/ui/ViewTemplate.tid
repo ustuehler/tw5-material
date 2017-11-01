@@ -1,11 +1,18 @@
+created: 20171101004327074
+modified: 20171101004517483
 title: $:/themes/ustuehler/material/ui/ViewTemplate
+type: text/vnd.tiddlywiki
+view-style: color: red
 
 \define frame-classes()
 tc-tiddler-frame tc-tiddler-view-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ $(tiddlerTagClasses)$ mdc-elevation--z1
 \end
+\define frame-style()
+$(tiddlerStyle)$
+\end
 \define folded-state()
 $:/state/folded/$(currentTiddler)$
 \end
-<$set name="storyTiddler" value=<<currentTiddler>>><$set name="tiddlerInfoState" value=<<qualify "$:/state/popup/tiddler-info">>><$tiddler tiddler=<<currentTiddler>>><div class=<<frame-classes>>><$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewTemplate]!has[draft.of]]" variable="listItem"><$transclude tiddler=<<listItem>>/></$list>
+<$set name="storyTiddler" value=<<currentTiddler>>><$set name="tiddlerInfoState" value=<<qualify "$:/state/popup/tiddler-info">>><$set name="tiddlerStyle" value={{!!view-style}}><$tiddler tiddler=<<currentTiddler>>><div class=<<frame-classes>> style=<<frame-style>>><$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewTemplate]!has[draft.of]]" variable="listItem"><$transclude tiddler=<<listItem>>/></$list>
 </div>
-</$tiddler></$set></$set>
+</$tiddler></$set></$set></$set>

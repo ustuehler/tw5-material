@@ -1,9 +1,9 @@
 title: $:/themes/ustuehler/material/metrics/
 
-bodyfontsize: 20px
+bodyfontsize: inherit
 bodylineheight: inherit
-fontsize: 20px
-lineheight: inherit
+fontsize: 15px
+lineheight: 19px
 storyleft: inherit
 storytop: inherit
 storyright: inherit

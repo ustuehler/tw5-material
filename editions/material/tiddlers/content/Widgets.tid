@@ -1,9 +1,10 @@
 created: 20171025230427542
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/component.svg]]
-modified: 20171101161350253
+modified: 20171101161401676
 tags: $:/tags/Drawer
 title: Widgets
 type: text/vnd.tiddlywiki
+view-related: yes
 
 https://material.io/components/web/catalog/<br>
 http://material-components-web.appspot.com/

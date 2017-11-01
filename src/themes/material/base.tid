@@ -2590,14 +2590,14 @@ button {
 
 .tc-tiddler-view-frame {
   box-shadow: none;
-  transition: box-shadow 1s;
+  transition: all 1s linear;
 }
 
 .tc-tiddler-view-frame:hover {
   /* XXX: copied from mdc-elevation--z10 */
   -webkit-box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
   box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
-  transition: box-shadow 1s;
+  transition: all 1s linear;
 }
 
 /*

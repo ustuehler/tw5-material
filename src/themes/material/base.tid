@@ -2529,7 +2529,6 @@ body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg
 /* Always show the star button when the current tiddler is starred */
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button {
   opacity: 1;
-  transition: opacity 1s;
 }
 
 /*

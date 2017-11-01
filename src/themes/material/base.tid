@@ -2607,7 +2607,7 @@ button {
 .tc-tiddler-frame .tc-tiddler-controls-bar {
   opacity: 0;
   color: rgba(0,0,0, 0.5);
-  transition: opacity 1s color 1s;
+  transition: all 1s linear;
 }
 .tc-tiddler-frame:hover .tc-tiddler-controls-bar {
   opacity: 1;

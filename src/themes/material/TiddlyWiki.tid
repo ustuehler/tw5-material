@@ -1,8 +1,8 @@
 created: 20171027023608057
 list-item-icon: &#x1f421;
 list-item-start-detail: [img class="mdc-list-item__start-detail" [http://tiddlywiki.com/favicon.ico]]
-modified: 20171101032316683
-tags: $:/tags/DrawerBottom $:/tags/Starred
+modified: 20171101163006455
+tags: $:/tags/DrawerBottom
 title: TiddlyWiki
 type: text/vnd.tiddlywiki
 view-style: background: linear-gradient(135deg, #fdfdfd, #fdfdfd 20%, #feff9c);

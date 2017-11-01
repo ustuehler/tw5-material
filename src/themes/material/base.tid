@@ -2589,7 +2589,6 @@ button {
  */
 
 .tc-tiddler-view-frame:not(.hover) {
-  box-shadow: none;
   transition: all 1s linear;
 }
 

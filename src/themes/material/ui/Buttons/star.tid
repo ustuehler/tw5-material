@@ -1,0 +1,32 @@
+caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
+created: 20171031232012556
+description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
+modified: 20171101000423693
+tags: $:/tags/ViewToolbar/Title
+title: $:/themes/ustuehler/material/ui/Buttons/star
+type: text/vnd.tiddlywiki
+
+\define pinButtonTag()
+$:/tags/Starred
+\end
+\define pinButton()
+<$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
+<$fieldmangler>
+  <$list filter="[is[current]tag[$(pinButtonTag)$]]">
+    <$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/>
+  </$list>
+  <$list filter="[is[current]!tag[$(pinButtonTag)$]]">
+    <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/>
+  </$list>
+</$fieldmangler>
+<$list variable="" filter="[<tv-config-toolbar-icons>prefix[yes]]">
+  {{$:/themes/ustuehler/material/icons/star}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}/></span>
+</$list>
+</$button>
+\end
+<$list filter="[is[current]tag<pinButtonTag>]" emptyMessage=<<pinButton>>>
+  <span class="starred"><<pinButton>></span>
+</$list>

@@ -1,9 +1,15 @@
 created: 20171030223623150
 creator: ustuehler
 list-item-icon: code
-modified: 20171101195349388
+modified: 20171101200041012
 modifier: ustuehler
 tags: Documentation
 title: Macros
 type: text/vnd.tiddlywiki
 
+<table>
+<tr><th>Macro</th><th>Tiddler</th></tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/themes/ustuehler/material/macros/]]">
+<tr><th><$view field="caption"><$view field="title"/></$view></th><td><$link><<currentTiddler>></$link></td></tr>
+</$list>
+</table>

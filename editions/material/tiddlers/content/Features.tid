@@ -1,6 +1,6 @@
 created: 20171101154613701
 list-item-icon: extension
-modified: 20171101160152790
+modified: 20171101160209829
 tags: $:/tags/Drawer $:/tags/Starred
 title: Features
 type: text/vnd.tiddlywiki
@@ -8,6 +8,6 @@ view-related: no
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 <$list filter="[tag<currentTiddler>]">
-<h1><<currentTiddler>></h1>
+<h2><<currentTiddler>></h2>
 <$transclude/>
 </$list>

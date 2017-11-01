@@ -1,15 +1,15 @@
-caption: <<material-icon "close">> {{$:/language/Buttons/Close/Caption}}
+caption: <<material-icon "cancel">> {{$:/language/Buttons/Close/Caption}}
 created: 20171101012826063
 description: {{$:/language/Buttons/Close/Hint}}
 list-before: $:/themes/ustuehler/material/ui/Buttons/star
-modified: 20171101020822140
+modified: 20171101024045063
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/close
 type: text/vnd.tiddlywiki
 
 <$button message="tm-close-tiddler" tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=<<tv-config-toolbar-class>>>
 <$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
-<<material-icon "close">>
+<<material-icon "cancel">>
 </$list>
 <$list filter="[<tv-config-toolbar-text>prefix[yes]]">
 <span class="tc-btn-text"><$text text={{$:/language/Buttons/Close/Caption}}/></span>

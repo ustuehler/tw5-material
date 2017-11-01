@@ -1,7 +1,8 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171101000423693
+list-before: $:/themes/ustuehler/material/ui/Buttons/close
+modified: 20171101024242726
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
 type: text/vnd.tiddlywiki

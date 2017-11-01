@@ -2520,11 +2520,11 @@ body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg
 
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls button {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 .tc-tiddler-frame:hover .tc-titlebar .tc-tiddler-controls button {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 /* Always show the star button when the current tiddler is starred */
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button {
@@ -2589,14 +2589,14 @@ button {
  */
 
 .tc-tiddler-view-frame:not(.hover) {
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 .tc-tiddler-view-frame:hover {
   /* XXX: copied from mdc-elevation--z10 */
   -webkit-box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
   box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 /*
@@ -2606,11 +2606,11 @@ button {
 .tc-tiddler-frame .tc-tiddler-controls-bar {
   opacity: 0;
   color: rgba(0,0,0, 0.5);
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 .tc-tiddler-frame:hover .tc-tiddler-controls-bar {
   opacity: 1;
-  transition: all 1s linear;
+  transition: all 0.5s linear;
 }
 
 .tc-tiddler-frame .tc-view-toolbar--bottom-left button {

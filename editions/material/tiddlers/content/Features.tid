@@ -1,6 +1,6 @@
 created: 20171101154613701
 list-item-icon: info
-modified: 20171101163719362
+modified: 20171101164912396
 tags: $:/tags/Drawer $:/tags/Starred
 title: Features
 type: text/vnd.tiddlywiki
@@ -11,5 +11,5 @@ This edition of TiddlyWiki adds the following features over an empty edition wit
 
 <$list filter="[tag<currentTiddler>]">
 <h2><$link><<currentTiddler>></$link></h2>
-<$transclude/>
+<$transclude mode="block"/>
 </$list>

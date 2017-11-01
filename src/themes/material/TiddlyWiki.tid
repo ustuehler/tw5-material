@@ -1,7 +1,7 @@
 created: 20171027023608057
-list-item-icon: &#x1f421;
+list-before: 
 list-item-start-detail: [img class="mdc-list-item__start-detail" [http://tiddlywiki.com/favicon.ico]]
-modified: 20171101164111496
+modified: 20171101164146522
 tags: $:/tags/DrawerBottom $:/tags/Starred
 title: TiddlyWiki
 type: text/vnd.tiddlywiki

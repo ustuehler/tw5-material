@@ -1,5 +1,8 @@
+created: 20171101025909161
+modified: 20171101030038733
+tags: $:/tags/Stylesheet
 title: $:/themes/ustuehler/material/base
-tags: [[$:/tags/Stylesheet]]
+type: text/vnd.tiddlywiki
 
 \define custom-background-datauri()
 <$set name="background" value={{$:/themes/ustuehler/material/settings/backgroundimage}}>
@@ -2598,4 +2601,24 @@ button {
 .tc-tiddler-view-frame:hover {
   /* XXX: copied from mdc-elevation--z3 */
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+/*
+** Tiddler Controls Bar below the main tiddler view template
+*/
+
+.tc-tiddler-frame .tc-tiddler-controls-bar {
+  visibility: hidden;
+  color: rgba(0,0,0,0.5);
+}
+.tc-tiddler-frame:hover .tc-tiddler-controls-bar {
+  visibility: visible;
+}
+
+.tc-tiddler-frame .tc-view-toolbar--bottom-left button {
+  margin-right: 8px;
+}
+
+.tc-tiddler-frame .tc-view-toolbar--bottom-right button {
+  margin-left: 8px;
 }

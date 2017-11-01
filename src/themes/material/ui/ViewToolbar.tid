@@ -1,21 +1,14 @@
 created: 20171031193700249
-modified: 20171101001447225
+modified: 20171101030445553
 tags: $:/tags/ViewTemplate
 title: $:/themes/ustuehler/material/ui/ViewToolbar
 type: text/vnd.tiddlywiki
 
-<style>
-.tc-tiddler-frame .tc-tiddler-controls-bar {
-  visibility: hidden;
-  color: rgba(0,0,0,0.5);
-}
-.tc-tiddler-frame:hover .tc-tiddler-controls-bar {
-  visibility: visible;
-}
-</style>
 <div class="tc-tiddler-controls-bar">
+<span class="tc-view-toolbar--bottom-left">
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar/BottomLeft]!has[draft.of]]" variable="listItem"><$reveal type="nomatch" state=<<config-title>> text="hide"><$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set></$reveal></$list>
-<div style="float: right;">
+</span>
+<span class="tc-view-toolbar--bottom-right" style="float: right;">
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/ViewToolbar/BottomRight]!has[draft.of]]" variable="listItem"><$reveal type="nomatch" state=<<config-title>> text="hide"><$set name="tv-config-toolbar-class" filter="[<tv-config-toolbar-class>] [<listItem>encodeuricomponent[]addprefix[tc-btn-]]"><$transclude tiddler=<<listItem>>/></$set></$reveal></$list>
-</div>
+</span>
 </div>

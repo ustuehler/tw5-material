@@ -80,7 +80,7 @@ table-header-background: #f0f0f0
 tag-background: #ec6
 tag-foreground: #ffffff
 tiddler-background: #ffffff
-tiddler-border: <<colour background>>
+tiddler-border: transparent;
 tiddler-controls-foreground-hover: #888888
 tiddler-controls-foreground-selected: #444444
 tiddler-controls-foreground: rgba(0,0,0, 0.5)

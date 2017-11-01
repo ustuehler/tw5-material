@@ -2608,14 +2608,14 @@ button {
 */
 
 .tc-tiddler-frame .tc-tiddler-controls-bar {
-  visibility: hidden;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 1s visibility 1s;
   color: rgba(0,0,0,0.5);
 }
 .tc-tiddler-frame:hover .tc-tiddler-controls-bar {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
   transition: opacity 1s visibility 1s;
 }
 

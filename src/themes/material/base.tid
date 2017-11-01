@@ -2519,14 +2519,14 @@ body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg
  */
 
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls button {
-  display: none;
   opacity: 0;
-  transition: opacity 1s;
+  visibility: 0;
+  transition: opacity 1s visibility 1s;
 }
 .tc-tiddler-frame:hover .tc-titlebar .tc-tiddler-controls button {
-  display: inline;
   opacity: 1;
-  transition: opacity 1s;
+  visibility: 1;
+  transition: opacity 1s visibility 1s;
 }
 /* Always show the star button when the current tiddler is starred */
 .tc-tiddler-frame .tc-titlebar .tc-tiddler-controls .starred button {

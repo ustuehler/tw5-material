@@ -1,0 +1,7 @@
+created: 20171101155835624
+modified: 20171101160000694
+tags: Features
+title: View Template for Related Tiddlers
+type: text/vnd.tiddlywiki
+
+Tiddlers tagged with the current one are automatically listed below the main tiddler view template, unless the current tiddler has the `view-related` field set to `no`.

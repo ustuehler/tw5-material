@@ -1,11 +1,13 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171101033638315
+modified: 20171101041221488
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...HEAD]]
+!!! Changed
+* Hide tag pills in the tiddler view for tags beginning with `$:/tags/`.
 !! [[0.1.5|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...material/v0.1.5]]
 !!! Added
 * The `star` button toggles the <<tag "$:/tags/Starred">> tag of the current tiddler.

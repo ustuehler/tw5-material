@@ -1,11 +1,9 @@
 created: 20171101154613701
 list-item-icon: extension
-modified: 20171101155053617
+modified: 20171101155231119
 tags: $:/tags/Drawer $:/tags/Starred
-title: Theme
+title: Features
 type: text/vnd.tiddlywiki
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
-! Features
-
-* CSS transitions to elevate tiddler views when being hovered over. &rarr; [[Tiddler View Elevation]]
+<<list-links '[tag<currentTiddler>]'>>

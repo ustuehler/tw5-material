@@ -1,6 +1,7 @@
 created: 20171101192744031
-modified: 20171101192752175
+modified: 20171101194403407
 tags: Features
 title: Permanent Toolbar
 type: text/vnd.tiddlywiki
 
+The permanent toolbar stays on the top of the page, even as you scroll through the page vertically.

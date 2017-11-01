@@ -2593,6 +2593,7 @@ button {
  */
 
 .tc-tiddler-view-frame {
+  box-shadow: none;
   transition: box-shadow 1s;
 }
 

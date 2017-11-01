@@ -2588,7 +2588,7 @@ button {
  * Elevate the tiddler being hovered over
  */
 
-.tc-tiddler-view-frame {
+.tc-tiddler-view-frame:not(.hover) {
   box-shadow: none;
   transition: all 1s linear;
 }

@@ -1,10 +1,9 @@
 created: 20171101015029957
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/button.svg]]
-modified: 20171101161223871
+modified: 20171101161329942
 tags: $:/tags/Drawer
 title: Buttons
 type: text/vnd.tiddlywiki
-view-related: yes
 
 <table>
 <tr><th>Button</th><th>Tiddler</th></tr>

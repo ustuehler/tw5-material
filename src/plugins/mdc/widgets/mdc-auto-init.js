@@ -28,7 +28,7 @@ MDCAutoInitWidget.prototype = new Widget();
 Render this widget into the DOM
 */
 MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
-	var self = this;
+	//var self = this;
 
 	// Compute attributes and execute state
 	this.computeAttributes();
@@ -42,7 +42,7 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   this.domNodes.push(domNode);
 
   // For each child widget run mdc.autoInit()
-  self.window.mdc.autoInit(domNode);
+  this.window.mdc.autoInit(domNode);
 };
 
 /*

@@ -4,7 +4,7 @@ type: application/javascript
 module-type: widget
 caption: snackbar
 
-Snackbar widget using MDC-Web components
+mdc-auto-init widget to initialize MDC-Web components from HTML elements
 
 \*/
 (function (global) {

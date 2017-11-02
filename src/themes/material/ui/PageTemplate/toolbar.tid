@@ -1,4 +1,7 @@
+created: 20171102053758393
+modified: 20171102053834070
 title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
+type: text/vnd.tiddlywiki
 
 <$set name="siteTitle" value={{$:/SiteTitle}}>
 
@@ -17,6 +20,11 @@ title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
 <$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar-title" mode="inline"/>
 
 </section>
+
+<label for="css-only-textfield-box">Search:</label>
+<div class="mdc-textfield mdc-textfield--box">
+  <input type="text" class="mdc-textfield__input" id="css-only-textfield-box" placeholder="Title or Text">
+</div>
 
 </div>
 

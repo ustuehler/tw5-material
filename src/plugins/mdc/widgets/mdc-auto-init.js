@@ -54,7 +54,11 @@ MDCAutoInitWidget.prototype.execute = function() {
 Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
 */
 MDCAutoInitWidget.prototype.refresh = function(changedTiddlers) {
-  return this.refreshChildren(changedTiddlers);
+  if (this.refreshChildren(changedTiddlers)) {
+    this.refreshSelf();
+    return true;
+  }
+  return false;
 };
 
 exports["mdc-auto-init"] = MDCAutoInitWidget;

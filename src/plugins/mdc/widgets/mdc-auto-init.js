@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/ustuehler/mdc/widgets/snackbar.js
+title: $:/plugins/ustuehler/mdc/widgets/mdc-auto-init.js
 type: application/javascript
 module-type: widget
 caption: snackbar
@@ -114,6 +114,6 @@ SnackbarWidget.prototype.refresh = function(changedTiddlers) {
   return this.refreshChildren(changedTiddlers);
 };
 
-exports["snackbar"] = SnackbarWidget;
+exports["mdc-auto-init"] = SnackbarWidget;
 
 })(this);

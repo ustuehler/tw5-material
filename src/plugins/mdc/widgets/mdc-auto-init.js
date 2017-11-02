@@ -34,9 +34,10 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
 	this.computeAttributes();
 	this.execute();
 
-	// Insert element
+	// Render child widgets
 	this.renderChildren(parent,nextSibling);
 
+  // For each child widget, run mdc.autoInit()
   this.domNodes.forEach(function(domNode) {
     this.window.mdc.autoInit(domNode);
   });

@@ -42,7 +42,9 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   this.domNodes.push(domNode);
 
   // For each child widget run mdc.autoInit()
-  this.window.mdc.autoInit(domNode);
+  if (this.window.mdc) {
+    this.window.mdc.autoInit(domNode);
+  }
 };
 
 /*

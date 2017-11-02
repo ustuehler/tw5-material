@@ -47,6 +47,7 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
 Compute the internal state of the widget
 */
 MDCAutoInitWidget.prototype.execute = function() {
+  this.makeChildWidgets();
 };
 
 /*

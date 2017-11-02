@@ -1,9 +1,9 @@
 created: 20171102042256835
-modified: 20171102042425106
-title: $:/plugins/ustuehler/mdc/ui/ReleaseTemplate
+modified: 20171102043317738
+title: ReleaseTemplate
 type: text/vnd.tiddlywiki
 
-<h2><$link to=<<currentTab>>><$view tiddler=<<currentTab>> field="title"/></$link></h2>
+<h2><$link to=<<currentTab>>><$view tiddler=<<currentTab>> field="caption"/></$link></h2>
 
 ^^Released <$view tiddler=<<currentTab>> field="released" format="date" template="DDth MMM YYYY at 0hh:0mm">TBA</$view>^^
 

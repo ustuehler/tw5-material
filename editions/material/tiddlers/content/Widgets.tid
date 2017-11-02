@@ -1,10 +1,17 @@
 created: 20171025230427542
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/component.svg]]
-modified: 20171101205448903
+modified: 20171102000242905
 tags: Documentation
 title: Widgets
 type: text/vnd.tiddlywiki
-view-related: yes
+view-related: no
 
 https://material.io/components/web/catalog/<br>
 http://material-components-web.appspot.com/
+
+<table>
+<tr><th>Widget</th><th>Tiddler</th></tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/plugins/ustuehler/mdc/widgets/]]">
+<tr><th>{{!!caption}}</th><td><$link><<currentTiddler>></$link></td></tr>
+</$list>
+</table>

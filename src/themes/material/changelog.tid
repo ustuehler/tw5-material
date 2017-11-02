@@ -1,11 +1,13 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171101041624099
+modified: 20171102022643657
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...HEAD]]
+!!! Added
+* Elevation effect added to currently hovered-over tiddler.
 !!! Fixed
 * Also hide the title view toolbar elements until the current tiddler is hovered over.
 !! [[0.1.6|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...material/v0.1.6]]

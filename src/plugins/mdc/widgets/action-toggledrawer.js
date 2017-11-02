@@ -2,6 +2,7 @@
 title: $:/plugins/ustuehler/mdc/widgets/action-toggledrawer.js
 type: application/javascript
 module-type: widget
+caption: action-toggledrawer
 
 Action widget that toggles the visibility of the first drawer found in the document
 

@@ -1,3 +1,10 @@
+caption: action-showsnackbar
+created: 20171102000547219
+modified: 20171102000548449
+module-type: widget
+title: $:/plugins/ustuehler/mdc/widgets/action-showsnackbar.js
+type: application/javascript
+
 /*\
 title: $:/plugins/ustuehler/mdc/widgets/action-showsnackbar.js
 type: application/javascript

@@ -1,6 +1,7 @@
 created: 20171102051238700
-modified: 20171102051247919
+modified: 20171102051450554
 tags: Features
 title: Support for mdc-auto-init
 type: text/vnd.tiddlywiki
 
+For prototyping or simple use cases you can use the `data-mdc-auto-init` attribute of HTML elements to initialize MDC-Web components.

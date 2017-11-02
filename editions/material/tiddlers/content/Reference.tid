@@ -1,8 +1,9 @@
 created: 20171101195529415
 list-item-icon: format_align_left
-modified: 20171102192420482
-tags: $:/tags/Drawer
+modified: 20171102222148501
+tags: $:/tags/Drawer $:/tags/Starred
 title: Reference
 type: text/vnd.tiddlywiki
+view-class: span-3
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 

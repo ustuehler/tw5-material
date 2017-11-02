@@ -2588,11 +2588,11 @@ button {
  * Elevate the tiddler being hovered over
  */
 
-.tc-tiddler-view-frame:not(.hover) {
+.tc-tiddler-frame:not(.hover) {
   transition: all 0.5s linear;
 }
 
-.tc-tiddler-view-frame:hover {
+.tc-tiddler-frame:hover {
   /* XXX: copied from mdc-elevation--z10 */
   -webkit-box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
   box-shadow: 0 6px 6px -3px rgba(0,0,0,.2), 0 10px 14px 1px rgba(0,0,0,.14), 0 4px 18px 3px rgba(0,0,0,.12);
@@ -2656,27 +2656,21 @@ button {
 ** Tiddler view styles
 */
 
-.grid-item.span-12 {
-  width: calc(100% - 16px);
-  min-width: calc(72px * 12);
-}
+.grid-item,
+.grid-item.span-12 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-8 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-6 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-4 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-3 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-2 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-1 { width: calc(100% - 16px); min-width: calc(72px * 12); }
 
-.grid-item.span-6 {
-  width: calc(50% - 16px);
-  min-width: calc(72px * 6);
-}
-
-.grid-item.span-4 {
-  width: calc(33% - 16px);
-  min-width: calc(72px * 4);
-}
-
-.grid-item.span-3 {
-  width: calc(25% - 16px);
-  min-width: calc(72px * 3);
-}
-
-.grid-item.span-2 {
-  width: calc(16.5% - 16px);
-  min-width: calc(72px * 2);
+/* Screens wide enough to accomodate a sidebar */
+@media (min-width: {{$:/themes/ustuehler/material/metrics/sidebarbreakpoint}}) {
+  .grid-item.span-12 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+  .grid-item.span-8 { width: calc(66% - 16px); min-width: calc(72px * 8); }
+  .grid-item.span-6 { width: calc(50% - 16px); min-width: calc(72px * 6); }
+  .grid-item.span-4 { width: calc(33% - 16px); min-width: calc(72px * 4); }
+  .grid-item.span-3 { width: calc(25% - 16px); min-width: calc(72px * 3); }
+  .grid-item.span-2 { width: calc(16.5% - 16px); min-width: calc(72px * 2); }
 }

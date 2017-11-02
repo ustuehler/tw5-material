@@ -38,6 +38,11 @@ exports.run = function(defaultClass) {
     output += " " + viewClass;
   }
 
+  var viewSpan = tiddler.fields['span'];
+  if (viewSpan) {
+    output += " span-" + viewSpan;
+  }
+
   return output;
 };
 /* with mdc layout grid:
@@ -57,11 +62,6 @@ exports.run = function() {
   gridCell.split(" ").forEach(function(cls) {
     output += " mdc-layout-grid__cell--" + cls;
   });
-
-  var viewSpan = tiddler.fields['view-span'];
-  if (viewSpan) {
-    output += " mdc-layout-grid__cell--span-" + viewSpan;
-  }
 
   var viewClass = tiddler.fields['view-class'];
   if (viewClass) {

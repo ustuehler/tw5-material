@@ -1,0 +1,18 @@
+caption: <<material-icon "zoom_out">> Enlarge current tiddler
+created: 20171102231554634
+description: Enlarge the current tiddler
+list-before: $:/themes/ustuehler/material/ui/Buttons/close
+modified: 20171102231631721
+tags: $:/tags/ViewToolbar/Title
+title: $:/themes/ustuehler/material/ui/Buttons/zoom-out
+type: text/vnd.tiddlywiki
+
+<$button tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=<<tv-config-toolbar-class>>>
+<$action-adjustspan adjust="-1"/>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+<<material-icon "zoom_out">>
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/Close/Caption}}/></span>
+</$list>
+</$button>

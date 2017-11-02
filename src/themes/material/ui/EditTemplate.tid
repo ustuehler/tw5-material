@@ -11,7 +11,7 @@ title: $:/themes/ustuehler/material/ui/EditTemplate
 \define frame-classes()
 tc-tiddler-frame tc-tiddler-edit-frame mdc-elevation--z10 $(grid-item-class)$ $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ mdc-elevation--z10
 \end
-<div class="grid-item">
+<div class=<<grid-item-class "grid-item">>>
 <div class=<<frame-classes>>>
 <$fieldmangler>
 <$set name="storyTiddler" value=<<currentTiddler>>>

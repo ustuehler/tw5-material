@@ -1,11 +1,11 @@
 created: 20171027023608057
 list-before: 
 list-item-start-detail: [img class="mdc-list-item__start-detail" [http://tiddlywiki.com/favicon.ico]]
-modified: 20171102213620995
+modified: 20171102232125982
+span: 6
 tags: $:/tags/DrawerBottom $:/tags/Starred
 title: TiddlyWiki
 type: text/vnd.tiddlywiki
-view-class: span-12
 view-style: background: linear-gradient(135deg, #fdfdfd, #fdfdfd 20%, #feff9c);
 
 {{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

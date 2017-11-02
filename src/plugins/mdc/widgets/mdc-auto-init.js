@@ -2,7 +2,7 @@
 title: $:/plugins/ustuehler/mdc/widgets/mdc-auto-init.js
 type: application/javascript
 module-type: widget
-caption: snackbar
+caption: mdc-auto-init
 
 mdc-auto-init widget to initialize MDC-Web components from HTML elements
 

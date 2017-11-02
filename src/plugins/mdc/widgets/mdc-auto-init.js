@@ -58,6 +58,7 @@ MDCAutoInitWidget.prototype.refresh = function(changedTiddlers) {
     this.refreshSelf();
     return true;
   }
+
   return false;
 };
 

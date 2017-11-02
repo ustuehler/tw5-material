@@ -1,7 +1,7 @@
 created: 20171102042256835
-modified: 20171102043423859
+modified: 20171102043746311
 tags: $:/tags/Starred
-title: $:/plugins/ustuehler/mdc/ui/ReleaseTemplate
+title: ReleaseTemplate
 type: text/vnd.tiddlywiki
 
 <h2><$link to=<<currentTab>>><$view tiddler=<<currentTab>> field="caption"/></$link></h2>

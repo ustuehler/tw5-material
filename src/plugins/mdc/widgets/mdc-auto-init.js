@@ -45,7 +45,7 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   if (this.window) {
     this.window.mdc.autoInit(domNode);
   } else {
-    console.log("warning: this.window should not be null in MDCAutoInitWidget.render()?");
+    console.log("warning: this.window should be set in MDCAutoInitWidget.render()?");
   }
 };
 

@@ -1,5 +1,5 @@
 created: 20171102053758393
-modified: 20171102054101083
+modified: 20171102054153937
 tags: $:/tags/Starred
 title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
 type: text/vnd.tiddlywiki
@@ -22,10 +22,14 @@ type: text/vnd.tiddlywiki
 
 </section>
 
+<!-- TODO: add a search field. editing the search field should load the matching tiddlers after a delay, if the list is short enough.
+
 <div class="mdc-textfield">
   <input type="text" id="textfield-no-js" class="mdc-textfield__input" placeholder="Search by Title or Text">
   <div class="mdc-textfield__bottom-line"></div>
 </div>
+
+-->
 
 </div>
 

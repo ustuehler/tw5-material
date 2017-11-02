@@ -1,6 +1,6 @@
 created: 20171101195529415
 list-item-icon: format_align_left
-modified: 20171101205524495
+modified: 20171102000338550
 tags: $:/tags/Drawer
 title: Documentation
 type: text/vnd.tiddlywiki
@@ -9,7 +9,7 @@ view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 This edition of TiddlyWiki is composed of the following, individually documented components.
 
-<$list filter="[tag<currentTiddler>]">
+<$list filter="[tag<currentTiddler>!has[draft.of]]">
 <h2><$link><<currentTiddler>></$link></h2>
 <$transclude mode="block"/>
 </$list>

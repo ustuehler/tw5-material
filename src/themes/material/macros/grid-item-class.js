@@ -19,14 +19,15 @@ Information about this macro
 exports.name = "grid-item-class";
 
 exports.params = [
+  { name: "default", default: "grid-item-content" }
 ];
 
 /*
 Run the macro
 */
-exports.run = function() {
+exports.run = function(defaultClass) {
   var tiddler = this.wiki.getTiddler(this.getVariable("currentTiddler"));
-  var output = "grid-item-content";
+  var output = defaultClass;
 
   if (!tiddler) {
     return output;

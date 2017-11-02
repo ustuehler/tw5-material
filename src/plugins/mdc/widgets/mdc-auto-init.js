@@ -44,6 +44,8 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   // For each child widget run mdc.autoInit()
   if (this.window.mdc) {
     this.window.mdc.autoInit(domNode);
+  } else {
+    throw Error("this.window.mdc should be set");
   }
 };
 

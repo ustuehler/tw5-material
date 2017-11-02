@@ -1,5 +1,5 @@
 created: 20171102051238700
-modified: 20171102051655804
+modified: 20171102052043784
 tags: Features
 title: Support for mdc-auto-init
 type: text/vnd.tiddlywiki
@@ -7,6 +7,11 @@ type: text/vnd.tiddlywiki
 For prototyping or simple use cases you can use the `data-mdc-auto-init` attribute of HTML elements to initialize MDC-Web components.
 
 <$mdc-auto-init>
+<label for="textfield-no-js">Textfield with no JS: </label>
+<div class="mdc-textfield">
+  <input type="text" id="textfield-no-js" class="mdc-textfield__input" placeholder="Hint text">
+  <div class="mdc-textfield__bottom-line"></div>
+</div>
 <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
   <input class="mdc-textfield__input" type="text" id="input">
   <label for="input" class="mdc-textfield__label">Input Label</label>

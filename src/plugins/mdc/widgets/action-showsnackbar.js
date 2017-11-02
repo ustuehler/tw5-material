@@ -1,14 +1,8 @@
-caption: action-showsnackbar
-created: 20171102000547219
-modified: 20171102000548449
-module-type: widget
-title: $:/plugins/ustuehler/mdc/widgets/action-showsnackbar.js
-type: application/javascript
-
 /*\
 title: $:/plugins/ustuehler/mdc/widgets/action-showsnackbar.js
 type: application/javascript
 module-type: widget
+caption: action-showsnackbar
 
 Action widget that shows the first snackbar found in the document with a message and optional action button
 

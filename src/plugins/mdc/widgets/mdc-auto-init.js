@@ -42,10 +42,10 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   this.domNodes.push(domNode);
 
   // For each child widget run mdc.autoInit()
-  if (this.window.mdc) {
+  if (this.window) {
     this.window.mdc.autoInit(domNode);
   } else {
-    throw Error("this.window.mdc should be set");
+    console.log("warning: this.window should not be null in MDCAutoInitWidget.render?");
   }
 };
 

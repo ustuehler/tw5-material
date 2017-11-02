@@ -1,11 +1,12 @@
 created: 20171101154613701
 list-item-icon: info
-modified: 20171101205918688
+modified: 20171102201600193
 tags: $:/tags/Drawer $:/tags/Starred
 title: Features
 type: text/vnd.tiddlywiki
 view-related: no
-view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
+view-span: 6
+view-style: max-width: 960px; background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 This edition of TiddlyWiki adds the following features over an empty edition with the Vanilla theme.
 

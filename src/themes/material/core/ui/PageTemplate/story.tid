@@ -1,0 +1,4 @@
+title: $:/core/ui/PageTemplate/story
+tags: $:/tags/PageTemplate
+
+{{||$:/themes/ustuehler/material/ui/PageTemplate/story}}

@@ -9,8 +9,9 @@ title: $:/themes/ustuehler/material/ui/EditTemplate
 <$action-sendmessage $message="tm-save-tiddler"/>
 \end
 \define frame-classes()
-tc-tiddler-frame tc-tiddler-edit-frame $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ mdc-elevation--z10
+tc-tiddler-frame tc-tiddler-edit-frame mdc-elevation--z10 $(grid-item-class)$ $(missingTiddlerClass)$ $(shadowTiddlerClass)$ $(systemTiddlerClass)$ mdc-elevation--z10
 \end
+<div class="grid-item">
 <div class=<<frame-classes>>>
 <$fieldmangler>
 <$set name="storyTiddler" value=<<currentTiddler>>>
@@ -25,4 +26,5 @@ tc-tiddler-frame tc-tiddler-edit-frame $(missingTiddlerClass)$ $(shadowTiddlerCl
 </$keyboard>
 </$set>
 </$fieldmangler>
+</div>
 </div>

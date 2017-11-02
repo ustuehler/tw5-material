@@ -34,13 +34,15 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
 	this.computeAttributes();
 	this.execute();
 
+  // Insert DOM node
+  var domNode = this.document.createElement("div");
+	parent.insertBefore(domNode,nextSibling);
+
 	// Render child widgets
-	this.renderChildren(parent,nextSibling);
+	this.renderChildren(domNode,null);
 
   // For each child widget run mdc.autoInit()
-  this.domNodes.forEach(function(domNode) {
-    self.window.mdc.autoInit(domNode);
-  });
+  self.window.mdc.autoInit(domNode);
 };
 
 /*

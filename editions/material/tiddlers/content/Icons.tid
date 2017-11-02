@@ -1,7 +1,8 @@
 created: 20171025230445315
+list: 
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
-modified: 20171101195823877
-tags: Documentation
+modified: 20171102054432092
+tags: Reference
 title: Icons
 type: text/vnd.tiddlywiki
 

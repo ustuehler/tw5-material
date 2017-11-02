@@ -1,8 +1,10 @@
 created: 20171102042256835
-modified: 20171102044450157
+modified: 20171102044915844
 tags: $:/tags/Starred
 title: ReleaseTemplate
 type: text/vnd.tiddlywiki
+
+\define githubTagURL() https://github.com/ustuehler/tw5-material/tree/$(currentTab)$
 
 <h2><$link to=<<currentTab>>><$view tiddler=<<currentTab>> field="caption"/></$link></h2>
 

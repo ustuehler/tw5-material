@@ -2658,12 +2658,25 @@ button {
 
 .grid-item.span-12 {
   width: calc(100% - 16px);
+  min-width: calc(72px * 12);
 }
 
 .grid-item.span-6 {
   width: calc(50% - 16px);
+  min-width: calc(72px * 6);
+}
+
+.grid-item.span-4 {
+  width: calc(33% - 16px);
+  min-width: calc(72px * 4);
 }
 
 .grid-item.span-3 {
   width: calc(25% - 16px);
+  min-width: calc(72px * 3);
+}
+
+.grid-item.span-2 {
+  width: calc(16.5% - 16px);
+  min-width: calc(72px * 2);
 }

@@ -2,6 +2,7 @@
 title: $:/plugins/ustuehler/mdc/widgets/snackbar.js
 type: application/javascript
 module-type: widget
+caption: snackbar
 
 Snackbar widget using MDC-Web components
 

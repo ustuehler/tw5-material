@@ -36,6 +36,7 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
 
   // Insert DOM node
   var domNode = this.document.createElement("div");
+  domNode.setAttribute("class","mdc-auto-init");
 	parent.insertBefore(domNode,nextSibling);
 
 	// Render child widgets

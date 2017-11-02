@@ -40,9 +40,6 @@ MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
   this.domNodes.forEach(function(domNode) {
     this.window.mdc.autoInit(domNode);
   });
-
-  // Allow access to this widget via the DOM node (for $action-showsnackbar)
-  domNode.widget = this;
 };
 
 /*

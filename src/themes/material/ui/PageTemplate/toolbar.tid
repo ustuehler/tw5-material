@@ -1,5 +1,5 @@
 created: 20171102053758393
-modified: 20171102053834070
+modified: 20171102054044377
 title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
 type: text/vnd.tiddlywiki
 
@@ -21,9 +21,9 @@ type: text/vnd.tiddlywiki
 
 </section>
 
-<label for="css-only-textfield-box">Search:</label>
-<div class="mdc-textfield mdc-textfield--box">
-  <input type="text" class="mdc-textfield__input" id="css-only-textfield-box" placeholder="Title or Text">
+<div class="mdc-textfield">
+  <input type="text" id="textfield-no-js" class="mdc-textfield__input" placeholder="Search by Title or Text">
+  <div class="mdc-textfield__bottom-line"></div>
 </div>
 
 </div>

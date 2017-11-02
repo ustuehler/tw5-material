@@ -1,12 +1,12 @@
 created: 20171102042256835
-modified: 20171102044915844
+modified: 20171102044934038
 tags: $:/tags/Starred
 title: ReleaseTemplate
 type: text/vnd.tiddlywiki
 
 \define githubTagURL() https://github.com/ustuehler/tw5-material/tree/$(currentTab)$
 
-<h2><$link to=<<currentTab>>><$view tiddler=<<currentTab>> field="caption"/></$link></h2>
+<h2><$link to=<<githubTagURL>>><$view tiddler=<<currentTab>> field="caption"/></$link></h2>
 
 ^^Released <$view tiddler=<<currentTab>> field="released" format="date" template="DDth MMM YYYY at 0hh:0mm">TBA</$view>^^
 

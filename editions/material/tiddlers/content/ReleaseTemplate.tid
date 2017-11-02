@@ -1,5 +1,5 @@
 created: 20171102042256835
-modified: 20171102043746311
+modified: 20171102044100743
 tags: $:/tags/Starred
 title: ReleaseTemplate
 type: text/vnd.tiddlywiki
@@ -8,4 +8,4 @@ type: text/vnd.tiddlywiki
 
 ^^Released <$view tiddler=<<currentTab>> field="released" format="date" template="DDth MMM YYYY at 0hh:0mm">TBA</$view>^^
 
-<$transclude tiddler=<<currentTab>> />
+<$transclude tiddler=<<currentTab>> mode="block"/>

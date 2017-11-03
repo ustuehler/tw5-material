@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -o errexit
+
+cd "$(dirname "$0")/.."
+
+#cat >editions/material/tiddlers/content/material_
+#ssss log --stat --pretty=oneline material/v0.1.9.. -- src/themes/material >
+
+make_buildinfo() {
+  local dir="$1"
+  local vprefix="$2"
+  local name=$(dirname $vprefix)
+  local out="editions/material/tiddlers/content/$name-current.tid"
+  local ver=$(jq -r .version "$dir"/plugin.info)
+
+  git diff --stat --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" >>"$out"
+}
+
+make_buildinfo "src/themes/material" "material/v"
+
+for plugin in mdc mdc-web mdc-web-cdn muuri; do
+  make_buildinfo "src/plugins/$plugin" "$plugin/v"
+done

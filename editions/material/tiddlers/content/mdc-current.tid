@@ -1,0 +1,7 @@
+ src/plugins/mdc/changelog.tid                  | 26 ++-------
+ src/plugins/mdc/macros/drawer.tid              |  3 +-
+ src/plugins/mdc/widgets/action-showsnackbar.js |  1 +
+ src/plugins/mdc/widgets/action-toggledrawer.js |  1 +
+ src/plugins/mdc/widgets/mdc-auto-init.js       | 73 ++++++++++++++++++++++++++
+ src/plugins/mdc/widgets/snackbar.js            |  1 +
+ 6 files changed, 83 insertions(+), 22 deletions(-)

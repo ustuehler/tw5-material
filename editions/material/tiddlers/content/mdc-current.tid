@@ -3,6 +3,7 @@ caption: 0.1.3-current
 
 Changed files between v0.1.3 and HEAD:
 
+```
  src/plugins/mdc/changelog.tid                  | 26 ++-------
  src/plugins/mdc/macros/drawer.tid              |  3 +-
  src/plugins/mdc/widgets/action-showsnackbar.js |  1 +
@@ -10,3 +11,4 @@ Changed files between v0.1.3 and HEAD:
  src/plugins/mdc/widgets/mdc-auto-init.js       | 73 ++++++++++++++++++++++++++
  src/plugins/mdc/widgets/snackbar.js            |  1 +
  6 files changed, 83 insertions(+), 22 deletions(-)
+```

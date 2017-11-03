@@ -2,7 +2,7 @@
   "title": "package.json",
   "text": "{{!!version}}",
   "name": "tw5-material",
-  "version": "0.1.1.build.1",
+  "version": "0.1.1",
   "description": "Material Design edition of TiddlyWiki",
   "main": "tiddlywiki.js",
   "dependencies": {

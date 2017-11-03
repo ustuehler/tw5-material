@@ -1,7 +1,7 @@
 created: 20171103061857716
-modified: 20171103062141986
+modified: 20171103215200810
 tags: Features
 title: Resizable Tiddlers
 type: text/vnd.tiddlywiki
 
-Tiddlers cam be resized with the <<material-icon "zoom_in">> and <<material-icon "zoom_out">> buttons. The `span` field contains a the grid column width for the tiddler between 1 and 12.
+The width of each tiddler cam be changed with the <<material-icon "zoom_in">> and <<material-icon "zoom_out">> buttons. The `span` field contains a the grid column width each tiddler. The valid range is from 1 to 12. Tiddlers without a `span` field are rendered at one third of the available column width.

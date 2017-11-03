@@ -1,7 +1,7 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103213320597
+modified: 20171103213403470
 span: 6
 tags: $:/tags/Drawer
 title: Installation
@@ -10,7 +10,7 @@ view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 <a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 
-This Material theme in this edition requires the following plugins
+This Material theme demonstrated with this edition requires the following plugins
 
 * $:/plugins/ustuehler/muuri
 * $:/plugins/ustuehler/mdc-web (or [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]])

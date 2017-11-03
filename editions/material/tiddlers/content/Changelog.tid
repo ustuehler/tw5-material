@@ -1,7 +1,7 @@
 created: 20171103052709053
 icon: Changelog.png
-list-item-icon: [img[Changelog.png]]
-modified: 20171103055107545
+list-item-start-detail: [img[Changelog.png]]
+modified: 20171103055128911
 span: 4
 tags: $:/tags/Drawer $:/tags/Starred
 title: Changelog

@@ -1,8 +1,8 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103072835886
-span: 3
+modified: 20171103074054605
+span: 8
 tags: $:/tags/Drawer $:/tags/Starred
 title: Plugins
 type: text/vnd.tiddlywiki
@@ -14,4 +14,4 @@ This is a demonstration of TiddlyWiki incorporating the plugins listed below.
 
 <$list
   filter="[all[system+tiddlers]has[plugin-type]author[Uwe Stuehler]]"
-  template="$:/core/ui/Components/plugin-info"/>
+  template="$:/core/ui/ListItemTemplate"/>

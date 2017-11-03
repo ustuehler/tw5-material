@@ -1,0 +1,7 @@
+created: 20171103061857716
+modified: 20171103061942278
+tags: Features
+title: Resizable Tiddlers
+type: text/vnd.tiddlywiki
+
+Tiddlers cam be resized with the <<material-icons "zoom_in">> and <<material-icons "zoom_out">> buttons.

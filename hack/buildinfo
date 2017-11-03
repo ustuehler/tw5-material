@@ -37,7 +37,6 @@ EOS
   cat >>"$out" <<EOS
 \`\`\`
 EOS
-cat "$out"
 }
 
 make_buildinfo "src/themes/material" "material/v"

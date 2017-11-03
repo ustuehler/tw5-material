@@ -3,6 +3,6 @@ modified: 20171102045829585
 title: $:/plugins/ustuehler/muuri/changelog
 type: text/vnd.tiddlywiki
 
-<$list filter="[prefix[mdc/v]!sort[released]limit[1]]">
-  <$macrocall $name="tabs" tabsList="[prefix[mdc/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+<$list filter="[prefix[muuri/v]!sort[released]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[prefix[muuri/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
 </$list>

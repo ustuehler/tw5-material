@@ -1,14 +1,14 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103100335081
+modified: 20171103100837054
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
 type: text/vnd.tiddlywiki
 
 \define pinButtonTag()
-$:/tags/Starred
+$:/Starred
 \end
 \define pinButton()
 <$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
@@ -30,6 +30,6 @@ $:/tags/Starred
 </$list>
 </$button>
 \end
-<$list filter="[all[current]listed<pinButtonTag>]" emptyMessage=<<pinButton>>>
+<$list filter="[list<pinButtonTag>is[current]]" emptyMessage=<<pinButton>>>
   <span class="starred"><<pinButton>></span>
 </$list>

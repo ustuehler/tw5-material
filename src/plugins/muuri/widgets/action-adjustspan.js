@@ -1,10 +1,10 @@
 /*\
-title: $:/themes/ustuehler/material/widgets/action-adjustspan.js
+title: $:/plugins/ustuehler/muuri/widgets/action-adjustspan.js
 type: application/javascript
 module-type: widget
-caption: action-showsnackbar
+caption: action-adjustspan
 
-Action widget that shows the first snackbar found in the document with a message and optional action button
+Action widget that adjusts the value of the "span" field
 
 \*/
 (function () {

@@ -1,7 +1,7 @@
 created: 20171101195529415
-icon: <<material-icon "format_align_left">>
+icon: format_align_left.ico
 list-item-icon: format_align_left
-modified: 20171103062533769
+modified: 20171103062618255
 span: 3
 tags: $:/tags/Drawer $:/tags/Starred
 title: Documentation

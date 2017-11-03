@@ -119,7 +119,7 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
       console.log("MuriWidget adding elements " + item);
       grid.add(item, { instant: true, index: -1 });
 
-      // XXX: grid.remove() missing
+      // FIXME: leak: grid.remove() missing
     }
   }
 };

@@ -1,27 +1,36 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103185552787
+modified: 20171103190240260
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
 type: text/vnd.tiddlywiki
 
-\define pinButtonTag()
-$:/Starred
+\define oldPinButtonTag()
+$:/tags/Starred
+\end
+\define removeOldPin()
+  <!-- migration support from tags on tiddlers to "list" field -->
+  <$fieldmangler><$action-sendmessage $message="tm-remove-tag" $param=<<oldPinButtonTag>>/></$fieldmangler>
+\end
+\define starredTiddlers()
+$:/StarredTiddlers
+\end
+\define isStarred()
+[list<starredTiddlers>field:title<currentTiddler>]
 \end
 \define addPin()
   <$action-listops $tiddler=<<pinButtonTag>> $subfilter="[<currentTiddler>]"/>
-  <!-- <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/> -->
+  <<removeOldPin>>
 \end
 \define removePin()
   <$action-listops $tiddler=<<pinButtonTag>> $subfilter="-[<currentTiddler>]"/>
-  <!-- migration support from tags on tiddlers to "list" field -->
-  <$fieldmangler><$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/></$fieldmangler>
+  <<removeOldPin>>
 \end
 \define pinButton()
 <$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
-<$list variable="x" filter="[list<pinButtonTag>field:title<currentTiddler>]" emptyMessage=<<addPin>>>
+<$list variable="x" filter=<<isStarred>> emptyMessage=<<addPin>>>
   <<removePin>>
 </$list>
 <$list variable="" filter="[<tv-config-toolbar-icons>prefix[yes]]">
@@ -32,6 +41,6 @@ $:/Starred
 </$list>
 </$button>
 \end
-<$list variable="x" filter="[list<pinButtonTag>field:title<currentTiddler>]" emptyMessage=<<pinButton>>>
+<$list variable="x" filter=<<isStarred>> emptyMessage=<<pinButton>>>
   <span class="starred"><<pinButton>></span>
 </$list>

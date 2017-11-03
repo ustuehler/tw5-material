@@ -50,7 +50,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
     showDuration: 0,
     hideDuration: 0,
     layoutDuration: 0,
-    rounding: true,
+    rounding: false,
 		layout: {
 			fillGaps: true,
 			horizontal: false,

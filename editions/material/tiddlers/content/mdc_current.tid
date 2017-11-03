@@ -1,17 +1,174 @@
 title: mdc/v0.1.3-current
 caption: 0.1.3-current
 tags: $:/tags/ReleaseNotes
-created: 20171103093146
-modified: 20171103093146
+created: 20171103093413
+modified: 20171103093413
 
 Changed files between version 0.1.3 and HEAD:
 
 ```
- src/plugins/mdc/changelog.tid                  | 26 ++-------
- src/plugins/mdc/macros/drawer.tid              |  3 +-
- src/plugins/mdc/widgets/action-showsnackbar.js |  1 +
- src/plugins/mdc/widgets/action-toggledrawer.js |  1 +
- src/plugins/mdc/widgets/mdc-auto-init.js       | 73 ++++++++++++++++++++++++++
- src/plugins/mdc/widgets/snackbar.js            |  1 +
- 6 files changed, 83 insertions(+), 22 deletions(-)
+diff --git a/src/plugins/mdc/changelog.tid b/src/plugins/mdc/changelog.tid
+index 4a71bc3..0f27fdc 100644
+--- a/src/plugins/mdc/changelog.tid
++++ b/src/plugins/mdc/changelog.tid
+@@ -1,25 +1,9 @@
++caption: MDC Plugin
+ created: 20171026021820182
+-modified: 20171031003407599
++modified: 20171103053815569
+ title: $:/plugins/ustuehler/mdc/changelog
+ type: text/vnd.tiddlywiki
+ 
+-\define fab() [[Floating Action Button|$:/plugins/ustuehler/mdc/FloatingActionButton]]
+-
+-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.3...HEAD]]
+-!! [[v0.1.3|https://github.com/ustuehler/tw5-material/compare/mdc/v0.1.2...mdc/v0.1.3]]
+-!!! Added
+-* New `snackbar` and `action-showsnackbar` widgets.
+-* A `drawer` macro and `action-toggledrawer` widget.
+-!!! Fixed
+-* Use the `favorite` icon by default if the <<fab>> is transcluded in a tiddler without the `mdc-fab-icon` field.
+-!!! Changed
+-* Set position to `relative` when the <<fab>> is transcluded as the current tiddler.
+-!! 0.1.2
+-!!! Changed
+-* Adjusted naming of plugin tiddlers and moved some List Item related things from the theme into this plugin.
+-* Renamed the `icon` field to `list-item-icon` for [[$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon]].
+-!!! Added
+-* Now recognizing the `list-item-start-detail` field. If present, it will be transcluded instead of [[$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon]].
+-!! 0.1.1
+-!!! Changed
+-* Reworded the plugin description.
+\ No newline at end of file
++<$list filter="[prefix[mdc/v]!sort[released]limit[1]]">
++  <$macrocall $name="tabs" tabsList="[prefix[mdc/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
++</$list>
+\ No newline at end of file
+diff --git a/src/plugins/mdc/macros/drawer.tid b/src/plugins/mdc/macros/drawer.tid
+index 6168649..68dc2f7 100644
+--- a/src/plugins/mdc/macros/drawer.tid
++++ b/src/plugins/mdc/macros/drawer.tid
+@@ -1,5 +1,6 @@
++caption: drawer
+ created: 20171025225118792
+-modified: 20171031001505819
++modified: 20171101205007857
+ tags: $:/tags/Macro
+ title: $:/plugins/ustuehler/mdc/macros/drawer
+ type: text/vnd.tiddlywiki
+diff --git a/src/plugins/mdc/widgets/action-showsnackbar.js b/src/plugins/mdc/widgets/action-showsnackbar.js
+index 9f0b805..d7c4638 100644
+--- a/src/plugins/mdc/widgets/action-showsnackbar.js
++++ b/src/plugins/mdc/widgets/action-showsnackbar.js
+@@ -2,6 +2,7 @@
+ title: $:/plugins/ustuehler/mdc/widgets/action-showsnackbar.js
+ type: application/javascript
+ module-type: widget
++caption: action-showsnackbar
+ 
+ Action widget that shows the first snackbar found in the document with a message and optional action button
+ 
+diff --git a/src/plugins/mdc/widgets/action-toggledrawer.js b/src/plugins/mdc/widgets/action-toggledrawer.js
+index 7460cb6..e33cfbe 100644
+--- a/src/plugins/mdc/widgets/action-toggledrawer.js
++++ b/src/plugins/mdc/widgets/action-toggledrawer.js
+@@ -2,6 +2,7 @@
+ title: $:/plugins/ustuehler/mdc/widgets/action-toggledrawer.js
+ type: application/javascript
+ module-type: widget
++caption: action-toggledrawer
+ 
+ Action widget that toggles the visibility of the first drawer found in the document
+ 
+diff --git a/src/plugins/mdc/widgets/mdc-auto-init.js b/src/plugins/mdc/widgets/mdc-auto-init.js
+new file mode 100644
+index 0000000..cdffba8
+--- /dev/null
++++ b/src/plugins/mdc/widgets/mdc-auto-init.js
+@@ -0,0 +1,73 @@
++/*\
++title: $:/plugins/ustuehler/mdc/widgets/mdc-auto-init.js
++type: application/javascript
++module-type: widget
++caption: mdc-auto-init
++
++mdc-auto-init widget to initialize MDC-Web components from HTML elements
++
++\*/
++(function (global) {
++
++"use strict";
++/*jslint node: true, browser: true */
++/*global $tw: false */
++
++var Widget = require("$:/core/modules/widgets/widget.js").widget;
++
++var MDCAutoInitWidget = function(parseTreeNode,options) {
++	this.initialise(parseTreeNode,options);
++};
++
++/*
++Inherit from the base widget class
++*/
++MDCAutoInitWidget.prototype = new Widget();
++
++/*
++Render this widget into the DOM
++*/
++MDCAutoInitWidget.prototype.render = function(parent,nextSibling) {
++	//var self = this;
++
++	// Compute attributes and execute state
++	this.computeAttributes();
++	this.execute();
++
++  // Insert DOM node
++  var domNode = this.document.createElement("div");
++  domNode.setAttribute("class","mdc-auto-init");
++	parent.insertBefore(domNode,nextSibling);
++	this.renderChildren(domNode,null);
++  this.domNodes.push(domNode);
++
++  // For each child widget run mdc.autoInit()
++  if (this.window) {
++    this.window.mdc.autoInit(domNode);
++  } else {
++    console.log("warning: this.window should be set in MDCAutoInitWidget.render()?");
++  }
++};
++
++/*
++Compute the internal state of the widget
++*/
++MDCAutoInitWidget.prototype.execute = function() {
++  this.makeChildWidgets();
++};
++
++/*
++Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
++*/
++MDCAutoInitWidget.prototype.refresh = function(changedTiddlers) {
++  if (this.refreshChildren(changedTiddlers)) {
++    this.refreshSelf();
++    return true;
++  }
++
++  return false;
++};
++
++exports["mdc-auto-init"] = MDCAutoInitWidget;
++
++})(this);
+diff --git a/src/plugins/mdc/widgets/snackbar.js b/src/plugins/mdc/widgets/snackbar.js
+index 2642f8a..161d9d7 100644
+--- a/src/plugins/mdc/widgets/snackbar.js
++++ b/src/plugins/mdc/widgets/snackbar.js
+@@ -2,6 +2,7 @@
+ title: $:/plugins/ustuehler/mdc/widgets/snackbar.js
+ type: application/javascript
+ module-type: widget
++caption: snackbar
+ 
+ Snackbar widget using MDC-Web components
+ 
 ```

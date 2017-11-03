@@ -46,6 +46,7 @@
       "editions/material/plugins/*",
       "editions/material/themes/*",
       "editions/material/tiddlers/content/-*.tid",
+      "editions/material/tiddlers/content/*_current.tid",
       "editions/material/tiddlers/content/$*.tid",
       "editions/material/tiddlers/content/Draft of *.tid"
     ],

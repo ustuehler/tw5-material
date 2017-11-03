@@ -1,12 +1,35 @@
 title: mdc-web-cdn/v0.1.3-current
 caption: 0.1.3-current
 tags: $:/tags/ReleaseNotes
-created: 20171103093146
-modified: 20171103093146
+created: 20171103093413
+modified: 20171103093413
 
 Changed files between version 0.1.3 and HEAD:
 
 ```
- src/plugins/mdc-web-cdn/changelog.tid | 13 +++++--------
- 1 file changed, 5 insertions(+), 8 deletions(-)
+diff --git a/src/plugins/mdc-web-cdn/changelog.tid b/src/plugins/mdc-web-cdn/changelog.tid
+index 0abeef5..573a2da 100644
+--- a/src/plugins/mdc-web-cdn/changelog.tid
++++ b/src/plugins/mdc-web-cdn/changelog.tid
+@@ -1,13 +1,10 @@
++caption: MDC-Web CDN Plugin
+ created: 20171025214813867
+-modified: 20171025214914044
++modified: 20171103054326241
+ tags: 
+ title: $:/plugins/ustuehler/mdc-web-cdn/changelog
+ type: text/vnd.tiddlywiki
+ 
+-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/mdc-web-cdn/v0.1.3...HEAD]]
+-!! [[0.1.3|https://github.com/ustuehler/tw5-material/compare/mdc-web-cdn/v0.1.2...mdc-web-cdn/v0.1.3]]
+-!!! Changed
+-* Drop the `defer` attribute from our `<script>` tag to simplify the widget code, for now. //Incurs additional page load time!//
+-!! 0.1.2
+-!!! Changed
+-* Reworded the plugin description.
+\ No newline at end of file
++<$list filter="[prefix[mdc-web-cdn/v]!sort[released]limit[1]]">
++  <$macrocall $name="tabs" tabsList="[prefix[mdc-web-cdn/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
++</$list>
+\ No newline at end of file
 ```

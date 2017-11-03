@@ -1,12 +1,22 @@
 title: material/v0.1.9-current
 caption: 0.1.9-current
 tags: $:/tags/ReleaseNotes
-created: 20171103093146
-modified: 20171103093146
+created: 20171103093413
+modified: 20171103093413
 
 Changed files between version 0.1.9 and HEAD:
 
 ```
- src/themes/material/metrics.multids | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+diff --git a/src/themes/material/metrics.multids b/src/themes/material/metrics.multids
+index 3dc7cc7..c0c3bf3 100644
+--- a/src/themes/material/metrics.multids
++++ b/src/themes/material/metrics.multids
+@@ -1,6 +1,6 @@
+ title: $:/themes/ustuehler/material/metrics/
+ 
+-bodyfontsize: 18px
++bodyfontsize: 16px
+ bodylineheight: 24px
+ fontsize: 16px
+ lineheight: 19px
 ```

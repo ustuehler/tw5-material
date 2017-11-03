@@ -67,7 +67,6 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
   // add() and remove() should be invoked on the grid container by the
   // storyview when tiddlers get inserted or removed
   domNode.add = function(elements, options) {
-    console.log("MuriWidget adding elements " + elements);
     muuri.add(elements, options);
   };
   domNode.remove = function(elements, options) {
@@ -115,6 +114,9 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
 
       console.log("MuuriWidget registering for resize events from " + item.getAttribute('class'));
       $tw.utils.addResizeListener(item, item.resizeHandler);
+
+      console.log("MuriWidget adding elements " + item);
+      grid.add(item, { index: -1 });
     }
   }
 };

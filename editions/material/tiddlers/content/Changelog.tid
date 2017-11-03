@@ -1,7 +1,8 @@
 created: 20171103052709053
-modified: 20171103055003683
+icon: Changelog.png
+modified: 20171103055023475
 span: 4
-tags: $:/tags/Starred
+tags: $:/tags/Drawer $:/tags/Starred
 title: Changelog
 type: text/vnd.tiddlywiki
 

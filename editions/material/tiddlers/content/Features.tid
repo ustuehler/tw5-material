@@ -6,7 +6,7 @@ tags: $:/tags/Drawer $:/tags/Starred
 title: Features
 type: text/vnd.tiddlywiki
 view-related: no
-view-style: max-width: 960px; background: linear-gradient(135deg, orange, orange 20%, #feff9c);
+view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 This edition of TiddlyWiki adds the following features over an empty edition with the Vanilla theme.
 

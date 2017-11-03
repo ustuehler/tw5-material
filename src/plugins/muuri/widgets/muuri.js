@@ -117,6 +117,8 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
 
       console.log("MuriWidget adding elements " + item);
       grid.add(item, { index: -1 });
+
+      // XXX: grid.remove() missing
     }
   }
 };

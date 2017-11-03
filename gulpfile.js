@@ -50,7 +50,7 @@ gulp.task("javascript", function (cb) {
 })
 
 gulp.task("build", [], function (cb) {
-  runSequence('clean', ['tiddlers', 'javascript', 'package.json'], cb)
+  runSequence('clean', ['buildinfo', 'tiddlers', 'javascript', 'package.json'], cb)
 });
 
 gulp.task("package.json", [], function (cb) {
@@ -75,6 +75,10 @@ gulp.task("commit", [], shell.task([
 
 gulp.task("push", [], shell.task([
   "git push"
+]));
+
+gulp.task("buildinfo", [], shell.task([
+  "hack/buildinfo"
 ]));
 
 gulp.task('hack', function() {

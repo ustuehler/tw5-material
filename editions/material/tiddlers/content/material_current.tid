@@ -1,11 +1,12 @@
 title: material/v0.1.9-current
 caption: 0.1.9-current
 tags: $:/tags/ReleaseNotes
-created: 20171103092210
-modified: 20171103092210
+created: 20171103092453
+modified: 20171103092453
 
-Changed files between v0.1.9 and HEAD:
+Changed files between version 0.1.9 and HEAD:
 
 ```
-No changes.
+ src/themes/material/metrics.multids | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 ```

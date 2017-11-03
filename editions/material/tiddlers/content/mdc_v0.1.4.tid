@@ -1,9 +1,10 @@
 caption: 0.1.4
-created: 20171102042439523
-modified: 20171103082729818
+created: 20171103210723000
+modified: 20171103201419580
+released: 20171103210723
 tags: $:/tags/ReleaseNotes
 title: mdc/v0.1.4
 type: text/vnd.tiddlywiki
 
 !!! Added
-* Support for [[mdc-auto-init|https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init]] with the `mdc-auto-init` widget.
+* New `mdc-auto-init` widget. Not working entirely as expected yet. See [[mdc-auto-init|https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init]] for documentation and examples.

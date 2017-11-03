@@ -6,7 +6,8 @@
 	"tiddlywiki/filesystem",
         "ustuehler/mdc",
         "ustuehler/mdc-web",
-        "ustuehler/mdc-web-cdn"
+        "ustuehler/mdc-web-cdn",
+        "ustuehler/muuri"
     ],
     "themes": [
 	"tiddlywiki/vanilla",

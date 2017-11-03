@@ -1,7 +1,8 @@
 /*\
-title: $:/themes/ustuehler/material/modules/macros/grid-item-class.js
+title: $:/plugins/ustuehler/muuri/macros/grid-item-class.js
 type: application/javascript
 module-type: macro
+tags: $:/tags/Macro
 
 Macro to generate a list of CSS classes for the curren tiddler view
 

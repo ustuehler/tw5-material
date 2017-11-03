@@ -48,6 +48,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
   var muuri = new Muuri(domNode, {
     items: '.grid-item',
     showDuration: 0,
+    hideDuration: 0,
 		layout: {
 			fillGaps: true,
 			horizontal: false,

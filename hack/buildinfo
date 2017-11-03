@@ -13,6 +13,14 @@ make_buildinfo() {
   local out="editions/material/tiddlers/content/$name-current.tid"
   local ver=$(jq -r .version "$dir"/plugin.info)
 
+  cat >"$out" <<EOS
+title: $name-current
+caption: $ver-current
+
+Changed files between v$ver and HEAD:
+
+EOS
+
   git diff --stat --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" >>"$out"
 }
 

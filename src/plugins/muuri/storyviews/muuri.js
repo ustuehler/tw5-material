@@ -103,6 +103,7 @@ MuuriStoryView.prototype.remove = function(widget) {
 };
 
 MuuriStoryView.prototype.grid = function(targetElement) {
+/*
   var grid = targetElement.parentNode;
 
   if (!(grid instanceof Element)) {
@@ -110,6 +111,7 @@ MuuriStoryView.prototype.grid = function(targetElement) {
   }
 
   return grid;
+  */
 }
 
 MuuriStoryView.prototype.addGridItem = function(targetElement, options) {

@@ -1,7 +1,7 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103184529185
+modified: 20171103185552787
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
@@ -10,18 +10,20 @@ type: text/vnd.tiddlywiki
 \define pinButtonTag()
 $:/Starred
 \end
+\define addPin()
+  <$action-listops $tiddler=<<pinButtonTag>> $subfilter="[<currentTiddler>]"/>
+  <!-- <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/> -->
+\end
+\define removePin()
+  <$action-listops $tiddler=<<pinButtonTag>> $subfilter="-[<currentTiddler>]"/>
+  <!-- migration support from tags on tiddlers to "list" field -->
+  <$fieldmangler><$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/></$fieldmangler>
+\end
 \define pinButton()
 <$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
-<$fieldmangler>
-  <$list variable="x" filter="[list<pinButtonTag>field:title<currentTiddler>]">
-    <$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/>
-    <$action-listops $tiddler=<<pinButtonTag>> $subfilter="-[<currentTiddler>]"/>
-  </$list>
-  <$list variable="x" filter="[list<pinButtonTag>!field:title<currentTiddler>]">
-    <!-- <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/> -->
-    <$action-listops $tiddler=<<pinButtonTag>> $subfilter="[<currentTiddler>]"/>
-  </$list>
-</$fieldmangler>
+<$list variable="x" filter="[list<pinButtonTag>field:title<currentTiddler>]" emptyMessage=<<addPin>>>
+  <<removePin>>
+</$list>
 <$list variable="" filter="[<tv-config-toolbar-icons>prefix[yes]]">
   {{$:/themes/ustuehler/material/icons/star}}
 </$list>

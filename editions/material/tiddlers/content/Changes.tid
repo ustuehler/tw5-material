@@ -1,0 +1,9 @@
+created: 20171103052709053
+modified: 20171103053219919
+tags: 
+title: Changes
+type: text/vnd.tiddlywiki
+
+<$list filter="[suffix[changelog]!sort[title]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[suffix[changelog]!sort[title]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+</$list>

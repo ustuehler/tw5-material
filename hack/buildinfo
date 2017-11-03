@@ -16,6 +16,7 @@ make_buildinfo() {
   cat >"$out" <<EOS
 title: $name/current
 caption: $ver-current
+tags: $:/tags/ReleaseNotes
 
 Changed files between v$ver and HEAD:
 

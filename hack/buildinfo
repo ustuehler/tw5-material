@@ -21,7 +21,7 @@ tags: $:/tags/ReleaseNotes
 created: $now
 modified: $now
 
-Changed files between v$ver and HEAD:
+Changed files between version $ver and HEAD:
 
 \`\`\`
 EOS

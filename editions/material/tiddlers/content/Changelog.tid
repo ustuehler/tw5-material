@@ -1,8 +1,8 @@
 created: 20171103052709053
-modified: 20171103054900505
+modified: 20171103055003683
 span: 4
 tags: $:/tags/Starred
-title: Changes
+title: Changelog
 type: text/vnd.tiddlywiki
 
 <$list filter="[all[shadows+tiddlers]suffix[/changelog]!sort[title]limit[1]]">

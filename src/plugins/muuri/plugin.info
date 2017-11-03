@@ -4,5 +4,5 @@
 	"core-version": ">=5.1.14",
 	"author": "Uwe Stuehler",
 	"description": "Muuri is a dynamic layout engine",
-	"list": "readme license"
+	"list": "readme changelog license"
 }

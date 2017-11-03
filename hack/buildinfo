@@ -10,11 +10,11 @@ make_buildinfo() {
   local dir="$1"
   local vprefix="$2"
   local name=$(dirname $vprefix)
-  local out="editions/material/tiddlers/content/$name-current.tid"
+  local out="editions/material/tiddlers/content/${name}_current.tid"
   local ver=$(jq -r .version "$dir"/plugin.info)
 
   cat >"$out" <<EOS
-title: $name-current
+title: $name/current
 caption: $ver-current
 
 Changed files between v$ver and HEAD:

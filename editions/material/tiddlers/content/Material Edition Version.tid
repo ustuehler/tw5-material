@@ -1,0 +1,7 @@
+created: 20171103042958828
+modified: 20171103043218087
+tags: 
+title: Material Edition Version
+type: text/vnd.tiddlywiki
+
+{{package.json##version}}

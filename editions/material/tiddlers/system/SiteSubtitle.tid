@@ -1,6 +1,6 @@
 created: 20171030150411782
-modified: 20171030234058045
+modified: 20171103043248363
 title: $:/SiteSubtitle
 type: text/vnd.tiddlywiki
 
-<span style="font-weight: normal;">v<<version>></span>
+<span style="font-weight: normal;">v{{Material Edition Version}}</span>

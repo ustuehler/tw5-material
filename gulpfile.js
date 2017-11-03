@@ -11,11 +11,20 @@ var pump = require('pump'),
 	nodemon = require('gulp-nodemon'),
 	shell = require('gulp-shell'),
   runSequence = require('run-sequence').use(gulp),
+  rename = require("gulp-rename"),
 	dest = "editions/material/";
 
 /********************************************************************
 * Tasks
 *******************************************************************/
+
+gulp.task("clean", function (cb) {
+  pump([
+	  gulp.src([dest + "/themes", dest + "/plugins"], {read: false}),
+    clean()
+	  // no target
+  ], cb);
+});
 
 gulp.task("clean", function (cb) {
   pump([
@@ -41,7 +50,15 @@ gulp.task("javascript", function (cb) {
 })
 
 gulp.task("build", [], function (cb) {
-  runSequence('clean', ['tiddlers', 'javascript'], cb)
+  runSequence('clean', ['tiddlers', 'javascript', 'package.json'], cb)
+});
+
+gulp.task("package.json", [], function (cb) {
+  gulp.src('package*.json')
+    .pipe(rename({
+      extname: ''
+    }))
+    .pipe(gulp.dest('./editions/material/tiddlers/files/'));
 });
 
 // ref: https://stackoverflow.com/questions/28048029/running-a-command-with-gulp-to-start-node-js-server

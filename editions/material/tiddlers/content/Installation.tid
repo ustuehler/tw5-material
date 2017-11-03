@@ -1,7 +1,7 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103205704259
+modified: 20171103210347213
 span: 6
 tags: $:/tags/Drawer
 title: Installation
@@ -10,11 +10,11 @@ view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 <a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 
-To get the Material theme you will have to install at least the following plugins
+The Material theme requires the following collection of plugins
 
-# $:/plugins/ustuehler/muuri
-# $:/plugins/ustuehler/mdc-web (or $:/plugins/ustuehler/mdc-web-cdn)
-# $:/plugins/ustuehler/mdc
-# $:/themes/ustuehler/material
+* $:/plugins/ustuehler/muuri
+* $:/plugins/ustuehler/mdc-web (or [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]])
+* $:/plugins/ustuehler/mdc
+* $:/themes/ustuehler/material
 
-Drag the links above into other TiddlyWiki instances to install the plugins. The CDN plugin variant enables the browser to cache Material Design assets, but will not work offline.
+Drag each of the links above into another TiddlyWiki instance to install the required plugins. The CDN plugin variant enables the browser to cache Material Design assets, but makes TiddlyWiki no longer self-contained.

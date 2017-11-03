@@ -2656,13 +2656,13 @@ button {
 ** Tiddler view styles
 */
 
-.grid-item.span-12 { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-11 { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-10 { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-9  { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-8  { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-7  { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
-.grid-item.span-6  { width: calc(100% /  1 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-12 { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-11 { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-10 { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-9  { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-8  { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-7  { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
+.grid-item.span-6  { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
 .grid-item.span-5  { width: calc(100% /  1 - 16px); min-width: calc(72px *  5); }
 .grid-item,
 .grid-item.span-4  { width: calc(100% /  1 - 16px); min-width: calc(72px *  4); }

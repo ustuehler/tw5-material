@@ -1,6 +1,6 @@
 created: 20171101154613701
 list-item-icon: info
-modified: 20171103213803568
+modified: 20171103235032763
 span: 3
 tags: $:/tags/Drawer
 title: Features
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 view-related: no
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
-Bellow is a rundown of the features of this TiddlyWiki edition. Some are only configuration tweaks while others are provided by the plugins in this edition.
+Below is a rundown of the features of this TiddlyWiki edition. Some are only configuration tweaks while others are provided by the plugins in this edition.
 
 <$list filter="[tag<currentTiddler>!has[draft.of]]">
 <$link><<currentTiddler>></$link><br>

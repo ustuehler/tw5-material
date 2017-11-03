@@ -15,7 +15,7 @@ make_buildinfo() {
   local now="$(date +'%Y%m%d%H%M%S')"
 
   cat >"$out" <<EOS
-title: $name/current
+title: $vprefix$ver-current
 caption: $ver-current
 tags: $:/tags/ReleaseNotes
 created: $now
@@ -25,7 +25,13 @@ Changed files between v$ver and HEAD:
 
 \`\`\`
 EOS
-  git diff --stat --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" >>"$out"
+
+  git diff --stat --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" >"$out.tmp" 2>&1
+  if [[ ! -s $out.tmp ]]; then
+    echo 'No changes.' >"$out.tmp"
+  fi
+  mv "$out.tmp" "$out"
+
   cat >>"$out" <<EOS
 \`\`\`
 EOS

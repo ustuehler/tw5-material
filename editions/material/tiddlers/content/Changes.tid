@@ -1,10 +1,10 @@
 created: 20171103052709053
-modified: 20171103054349038
+modified: 20171103054600669
 span: 7
 tags: $:/tags/Starred
 title: Changes
 type: text/vnd.tiddlywiki
 
-<$list filter="[suffix[changelog]!sort[title]limit[1]]">
-  <$macrocall $name="tabs" tabsList="[suffix[changelog]!sort[title]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+<$list filter="[suffix[/changelog]!sort[title]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[suffix[/changelog]!sort[title]]" default={{!!title}} class="tc-horizontal" template="ReleaseTemplate" />
 </$list>

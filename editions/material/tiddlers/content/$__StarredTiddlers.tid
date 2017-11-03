@@ -1,6 +1,8 @@
 created: 20171103190430634
-list: $:/AdvancedSearch
-modified: 20171103190431700
+list: $:/AdvancedSearch $:/DefaultTiddlers $:/Starred $:/StarredTiddlers TiddlyWiki
+modified: 20171103190745610
 title: $:/StarredTiddlers
 type: text/vnd.tiddlywiki
 
+<<list-links '[tag[$:/tags/Starred]]'>>
+<<list-links '[all[current]list[]]'>>

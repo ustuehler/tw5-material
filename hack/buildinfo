@@ -17,6 +17,7 @@ make_buildinfo() {
 title: $name/current
 caption: $ver-current
 tags: $:/tags/ReleaseNotes
+created: `date %T%m%d%H%M%S`
 
 Changed files between v$ver and HEAD:
 
@@ -26,6 +27,7 @@ EOS
   cat >>"$out" <<EOS
 \`\`\`
 EOS
+cat "$out"
 }
 
 make_buildinfo "src/themes/material" "material/v"

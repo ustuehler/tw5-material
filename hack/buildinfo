@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-set -o errexit
-echo 'foo' >&2
-exit 1
 
 cd "$(dirname "$0")/.."
 

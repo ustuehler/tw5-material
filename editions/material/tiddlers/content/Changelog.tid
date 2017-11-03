@@ -1,12 +1,12 @@
 created: 20171103052709053
 icon: Changelog.png
 list-item-start-detail: [img class="mdc-list-item__start-detail" [Changelog.png]]
-modified: 20171103055604111
+modified: 20171103055630004
 span: 4
 tags: $:/tags/Drawer $:/tags/Starred
 title: Changelog
 type: text/vnd.tiddlywiki
-view-style: background: <<datauri "minions.jpg">>;
+view-style: background: url(<<datauri "minions.jpg">>);
 
 <$list filter="[all[shadows+tiddlers]suffix[/changelog]!sort[title]limit[1]]">
   <$macrocall $name="tabs" tabsList="[all[shadows+tiddlers]suffix[/changelog]!sort[title]]" default={{!!title}} class="tc-horizontal" template="ReleaseTemplate" />

@@ -1,0 +1,13 @@
+created: 20171103210743489
+list-item-icon: bug_report
+modified: 20171103211343188
+span: 6
+tags: $:/tags/Drawer
+title: Known Issues
+type: text/vnd.tiddlywiki
+view-related: no
+view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
+
+<$list filter="[tag<currentTiddler>!has[draft.of]]">
+<$link><<currentTiddler>></$link><br>
+</$list>

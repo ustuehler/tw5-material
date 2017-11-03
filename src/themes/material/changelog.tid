@@ -5,6 +5,10 @@ modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
 
+<$list filter="[prefix[material/v]!sort[released]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[prefix[material/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+</$list>
+
 !! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...HEAD]]
 !! [[0.1.7|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...material/v0.1.7]]
 !!! Added

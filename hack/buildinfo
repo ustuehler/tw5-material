@@ -17,7 +17,7 @@ make_buildinfo() {
 title: $name/current
 caption: $ver-current
 tags: $:/tags/ReleaseNotes
-created: `date %T%m%d%H%M%S`
+created: $(date +%T%m%d%H%M%S)
 
 Changed files between v$ver and HEAD:
 

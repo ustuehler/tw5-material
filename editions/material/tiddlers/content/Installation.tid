@@ -1,7 +1,7 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103210347213
+modified: 20171103211527219
 span: 6
 tags: $:/tags/Drawer
 title: Installation
@@ -17,4 +17,4 @@ The Material theme requires the following collection of plugins
 * $:/plugins/ustuehler/mdc
 * $:/themes/ustuehler/material
 
-Drag each of the links above into another TiddlyWiki instance to install the required plugins. The CDN plugin variant enables the browser to cache Material Design assets, but makes TiddlyWiki no longer self-contained.
+Drag each of the links above into another TiddlyWiki instance to install the required plugins. The CDN plugin variant enables the browser to cache MDC-Web assets, but makes TiddlyWiki no longer self-contained.

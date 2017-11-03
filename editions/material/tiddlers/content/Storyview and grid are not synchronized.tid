@@ -1,0 +1,7 @@
+created: 20171103211641249
+modified: 20171103212301675
+tags: [[Known Issues]]
+title: Storyview and grid are not synchronized
+type: text/vnd.tiddlywiki
+
+The order of tiddlers in the storyview is not synchronized with the order of tiddlers shown in the grid view.

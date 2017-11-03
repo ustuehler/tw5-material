@@ -15,7 +15,7 @@
 /editions/material/tiddlers/content/Draft of *.tid
 
 # Generated for gh-pages branch
-/index.html
+#/index.html
 
 # Generated for in-browser testing
 /editions/test/output/test.html

@@ -1,6 +1,6 @@
 created: 20171025213955349
 creator: ustuehler
-modified: 20171102022643657
+modified: 20171103053029867
 modifier: ustuehler
 title: $:/themes/ustuehler/material/changelog
 type: text/vnd.tiddlywiki
@@ -8,35 +8,3 @@ type: text/vnd.tiddlywiki
 <$list filter="[prefix[material/v]!sort[released]limit[1]]">
   <$macrocall $name="tabs" tabsList="[prefix[material/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
 </$list>
-
-!! [[Unreleased|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...HEAD]]
-!! [[0.1.7|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...material/v0.1.7]]
-!!! Added
-* Elevation effect added to currently hovered-over tiddler.
-!!! Fixed
-* Also hide the title view toolbar elements until the current tiddler is hovered over.
-!! [[0.1.6|https://github.com/ustuehler/tw5-material/compare/material/v0.1.5...material/v0.1.6]]
-!!! Changed
-* Hide tag pills in the tiddler view for tags beginning with `$:/tags/`.
-!! [[0.1.5|https://github.com/ustuehler/tw5-material/compare/material/v0.1.4...material/v0.1.5]]
-!!! Added
-* The `star` button toggles the <<tag "$:/tags/Starred">> tag of the current tiddler.
-* The `view-style` field can be used to control the `style` attribute of the tiddler view `<div>` element.
-!!! Changed
-* Redesigned the tiddler view.
-* Now showing buttons tagged with $:/tags/ViewToolbar/Title, $:/tags/ViewToolbar/BottomLeft and $:/tags/ViewToolbar/BottomRight.
-* No longer showing buttons tagged with $:/tags/ViewToolbar.
-!! [[v0.1.4|https://github.com/ustuehler/tw5-material/compare/material/v0.1.3...material/v0.1.4]]
-!!! Added
-* Added a `snackbar` widget to $:/core/ui/PageTemplate.
-* Added the `captiontitles` theme option (defaults to `yes`). This will show the caption instead of the tiddler title, if the caption field exists.
-!!! Changed
-* Drawer in page template changed from permanent to temporary.
-* The maximum tiddler width is now 960px by default and tiddlers are centered in the story view.
-!! 0.1.3
-!!! Changed
-* Floating Action Button is now hidden by default, but can be enabled under [[Theme Tweaks|$:/themes/ustuehler/material/themetweaks]].
-* Removed e-mail related items from the drawer and split the drawer into `$:/tags/Drawer` and `$:/tags/DrawerBottom` sections.
-!! 0.1.2
-!!! Changed
-* Floating Action Button now creates a new tiddler that is tagged with the current one. In order to have access to the `currentTiddler` variable it had to be moved into the ViewTemplate.

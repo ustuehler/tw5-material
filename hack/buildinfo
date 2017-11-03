@@ -5,12 +5,29 @@ cd "$(dirname "$0")/.."
 #cat >editions/material/tiddlers/content/material_
 #ssss log --stat --pretty=oneline material/v0.1.9.. -- src/themes/material >
 
-make_buildinfo() {
+buildinfo_tid_body() {
   local dir="$1"
   local vprefix="$2"
-  local name=$(dirname $vprefix)
-  local out="editions/material/tiddlers/content/${name}_current.tid"
-  local ver=$(jq -r .version "$dir"/plugin.info)
+  local ver="$3"
+  local changes=$(git diff --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" 2>&1)
+
+  if [[ -n $changes ]]; then
+    echo "Changes between version $ver and HEAD:"
+    echo ''
+    echo '```'
+    echo "$changes" |
+      grep -E -v '^[+-](created|modified):' |
+      grep -E -v '^(diff|index) '
+    echo '```'
+  else
+    echo "No changes between version $ver and HEAD."
+  fi
+}
+
+buildinfo_tid() {
+  local dir="$1"
+  local vprefix="$2"
+  local ver="$3"
   local now="$(date +'%Y%m%d%H%M%S')"
 
   cat >"$out" <<EOS
@@ -21,23 +38,18 @@ created: $now
 modified: $now
 released: $now
 
-Changes between version $ver and HEAD:
-
-\`\`\`
+$(buildinfo_tid_body "$dir" "$vprefix" "$ver")
 EOS
+}
 
-  git diff --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" >"$out.tmp" 2>&1
-  if [[ ! -s $out.tmp ]]; then
-    echo 'No changes.' >"$out.tmp"
-  fi
+make_buildinfo() {
+  local dir="$1"
+  local vprefix="$2"
+  local name=$(dirname $vprefix)
+  local out="editions/material/tiddlers/content/${name}_current.tid"
+  local ver=$(jq -r .version "$dir"/plugin.info)
 
-  grep -E -v '^[+-](created|modified):' "$out.tmp" |
-    grep -E -v '^(diff|index) ' >>"$out"
-  rm "$out.tmp"
-
-  cat >>"$out" <<EOS
-\`\`\`
-EOS
+  buildinfo_tid "$dir" "$vprefix" "$ver" >"$out"
 }
 
 make_buildinfo "src/themes/material" "material/v"

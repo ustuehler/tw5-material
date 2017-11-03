@@ -1,6 +1,13 @@
-created: 20171103072226803
-modified: 20171103072227923
-title: $:/themes/ustuehler/material/metrics/fontsize
-type: text/vnd.tiddlywiki
+title: $:/themes/ustuehler/material/metrics/
 
-16px
+bodyfontsize: inherit
+bodylineheight: inherit
+fontsize: 15px
+lineheight: 19px
+storyleft: inherit
+storytop: inherit
+storyright: inherit
+storywidth: inherit
+tiddlerwidth: inherit
+sidebarbreakpoint: 960px
+sidebarwidth: 350px

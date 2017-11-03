@@ -92,7 +92,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
 };
 
 /*
-Register 
+Ensure that resize listeners are registered for all child widgets
 */
 MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
   for (var i = 0; i < domNode.children.length; i++) {

@@ -1,6 +1,6 @@
 caption: 0.1.9
 created: 20171103031010892
-modified: 20171103031032205
+modified: 20171103031146725
 released: 201711030310
 span: 3
 tags: $:/tags/ReleaseNotes
@@ -8,4 +8,4 @@ title: material/v0.1.9
 type: text/vnd.tiddlywiki
 
 !!! Fixed
-* Attempted fix of the grid layout registration of initial tiddlers as opposed to ones added to the storyview later.
+* Reduced the min-width by 72px to only 5 * 72px. This fixes oversized items on small screens.

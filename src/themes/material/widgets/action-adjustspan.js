@@ -1,5 +1,5 @@
 /*\
-title: $:/themes/ustuehler/material/widgets/action-showsnackbar.js
+title: $:/themes/ustuehler/material/widgets/action-adjustspan.js
 type: application/javascript
 module-type: widget
 caption: action-showsnackbar

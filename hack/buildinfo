@@ -20,6 +20,7 @@ caption: $ver-current
 tags: $:/tags/ReleaseNotes
 created: $now
 modified: $now
+released: $now
 
 Changes between version $ver and HEAD:
 
@@ -37,7 +38,6 @@ EOS
   cat >>"$out" <<EOS
 \`\`\`
 EOS
-  cat "$out"
 }
 
 make_buildinfo "src/themes/material" "material/v"

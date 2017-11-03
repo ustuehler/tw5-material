@@ -1,6 +1,6 @@
 created: 20171026021820182
 modified: 20171102045829585
-title: $:/plugins/ustuehler/mdc/changelog
+title: $:/plugins/ustuehler/muuri/changelog
 type: text/vnd.tiddlywiki
 
 <$list filter="[prefix[mdc/v]!sort[released]limit[1]]">

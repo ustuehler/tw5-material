@@ -1,9 +1,9 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103074142000
+modified: 20171103190809457
 span: 3
-tags: $:/tags/Drawer $:/tags/Starred
+tags: $:/tags/Drawer
 title: Plugins
 type: text/vnd.tiddlywiki
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);

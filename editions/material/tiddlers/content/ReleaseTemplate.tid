@@ -1,8 +1,8 @@
 created: 20171102042256835
-modified: 20171103072127523
+modified: 20171103202522074
 title: ReleaseTemplate
 type: text/vnd.tiddlywiki
 
-<$link to=<<currentTab>>>^^Released <$view tiddler=<<currentTab>> field="released" format="date" template="DDth MMM YYYY at 0hh:0mm">TBA</$view>^^</$link>
+<$link to=<<currentTab>>>^^<$view tiddler=<<currentTab>> field="released" format="date" template="DDth MMM YYYY at 0hh:0mm">No release date</$view>^^</$link>
 
 <$transclude tiddler=<<currentTab>> mode="block"/>

@@ -1,7 +1,7 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103095742146
+modified: 20171103100335081
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
@@ -13,11 +13,11 @@ $:/tags/Starred
 \define pinButton()
 <$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
 <$fieldmangler>
-  <$list filter="[is[current]tag[$(pinButtonTag)$]]">
+  <$list filter="[all[current]listed[$(pinButtonTag)$]]">
     <$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/>
     <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]addprefix[-]]"/>
   </$list>
-  <$list filter="[is[current]!tag[$(pinButtonTag)$]]">
+  <$list filter="[all[current]listed[$(pinButtonTag)$]]">
     <!-- <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/> -->
     <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]]"/>
   </$list>
@@ -30,6 +30,6 @@ $:/tags/Starred
 </$list>
 </$button>
 \end
-<$list filter="[is[current]tag<pinButtonTag>]" emptyMessage=<<pinButton>>>
+<$list filter="[all[current]listed<pinButtonTag>]" emptyMessage=<<pinButton>>>
   <span class="starred"><<pinButton>></span>
 </$list>

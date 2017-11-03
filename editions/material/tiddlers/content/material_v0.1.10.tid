@@ -1,0 +1,11 @@
+caption: 0.1.10
+created: 20171103200956000
+modified: 20171103191843152
+released: 20171103200956
+tags: $:/tags/ReleaseNotes
+title: material/v0.1.10
+type: text/vnd.tiddlywiki
+
+!!! Changed
+* Using `list` field on `$:/StarredTiddlers` instead of the `tags` field on each tiddler to mark tiddlers as starred. This makes it possible to "star" a tiddler without modifying it. The button action will automatically remove the old tag when the starred state is changed on a tiddler to support migration.
+* Font size decreased again from 18px to 16px.

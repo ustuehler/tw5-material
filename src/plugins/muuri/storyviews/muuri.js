@@ -103,7 +103,6 @@ MuuriStoryView.prototype.remove = function(widget) {
 };
 
 MuuriStoryView.prototype.grid = function(targetElement) {
-/*
   var grid = targetElement.parentNode;
 
   if (!(grid instanceof Element)) {
@@ -111,23 +110,18 @@ MuuriStoryView.prototype.grid = function(targetElement) {
   }
 
   return grid;
-  */
 }
 
 MuuriStoryView.prototype.addGridItem = function(targetElement, options) {
-/*
   var grid = this.grid(targetElement);
 
   grid.add(targetElement, options);
-  */
 };
 
 MuuriStoryView.prototype.removeGridItem = function(targetElement, options) {
-/*
   var grid = this.grid(targetElement);
 
   grid.remove(targetElement, options);
-  */
 };
 
 exports.muuri = MuuriStoryView;

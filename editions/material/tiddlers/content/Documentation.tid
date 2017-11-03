@@ -1,10 +1,10 @@
 created: 20171101195529415
 list-item-icon: format_align_left
-modified: 20171103192749568
+modified: 20171103200145550
 span: 3
 tags: $:/tags/Drawer
-title: Docs
+title: Documentation
 type: text/vnd.tiddlywiki
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
-There is limited documentation at the moment. See tiddlers tagged with this one for starters.
+Documentation is spars at the moment. See tiddlers tagged with this one for starters.

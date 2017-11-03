@@ -1,7 +1,11 @@
 created: 20171103062544940
-modified: 20171103062602925
+modified: 20171103062817088
 tags: 
 title: format_align_left.ico
 type: text/vnd.tiddlywiki
 
+<div class="mdc-list-item__start-detail">
+
 <<material-icon "format_align_left">>
+
+</div>

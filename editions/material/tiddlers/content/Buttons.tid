@@ -1,7 +1,8 @@
 created: 20171101015029957
 list: 
 list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/button.svg]]
-modified: 20171102054432094
+modified: 20171102235017642
+span: 10
 tags: Reference
 title: Buttons
 type: text/vnd.tiddlywiki

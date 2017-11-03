@@ -104,18 +104,24 @@ MuuriStoryView.prototype.remove = function(widget) {
 
 MuuriStoryView.prototype.grid = function(targetElement) {
   var grid = targetElement.parentNode;
+
   if (!(grid instanceof Element)) {
-    $tw.utils.error("MuuriStoryView couldn't find grid for " + targetElement.outerHTML);
+    $tw.utils.error("MuuriStoryView couldn't find grid for " + targetElement.getAttribute('class'));
   }
+
   return grid;
 }
 
 MuuriStoryView.prototype.addGridItem = function(targetElement, options) {
-  this.grid(targetElement).add(targetElement, options);
+  var grid = this.grid(targetElement);
+
+  grid.add(targetElement, options);
 };
 
 MuuriStoryView.prototype.removeGridItem = function(targetElement, options) {
-  this.grid(targetElement).remove(targetElement, options);
+  var grid = this.grid(targetElement);
+
+  grid.remove(targetElement, options);
 };
 
 exports.muuri = MuuriStoryView;

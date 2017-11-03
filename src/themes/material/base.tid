@@ -2657,20 +2657,31 @@ button {
 */
 
 .grid-item,
-.grid-item.span-12 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-8 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-6 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-4 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-3 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-2 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-.grid-item.span-1 { width: calc(100% - 16px); min-width: calc(72px * 12); }
+.grid-item.span-12 { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-11 { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-10 { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-9  { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-8  { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-7  { width: calc(100% /  1 - 16px); min-width: calc(72px * 12); }
+.grid-item.span-6  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-5  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-4  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-3  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-2  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
+.grid-item.span-1  { width: calc(100% /  2 - 16px); min-width: calc(72px *  6); }
 
 /* Screens wide enough to accomodate a sidebar */
 @media (min-width: {{$:/themes/ustuehler/material/metrics/sidebarbreakpoint}}) {
-  .grid-item.span-12 { width: calc(100% - 16px); min-width: calc(72px * 12); }
-  .grid-item.span-8 { width: calc(66% - 16px); min-width: calc(72px * 8); }
-  .grid-item.span-6 { width: calc(50% - 16px); min-width: calc(72px * 6); }
-  .grid-item.span-4 { width: calc(33% - 16px); min-width: calc(72px * 4); }
-  .grid-item.span-3 { width: calc(25% - 16px); min-width: calc(72px * 3); }
-  .grid-item.span-2 { width: calc(16.5% - 16px); min-width: calc(72px * 2); }
+  .grid-item.span-12 { width: calc(100% * 12 / 12 - 16px); min-width: calc(72px * 12); }
+  .grid-item.span-11 { width: calc(100% * 11 / 12 - 16px); min-width: calc(72px * 11); }
+  .grid-item.span-10 { width: calc(100% * 10 / 12 - 16px); min-width: calc(72px * 10); }
+  .grid-item.span-9  { width: calc(100% *  9 / 12 - 16px); min-width: calc(72px *  9); }
+  .grid-item.span-8  { width: calc(100% *  8 / 12 - 16px); min-width: calc(72px *  8); }
+  .grid-item.span-7  { width: calc(100% *  7 / 12 - 16px); min-width: calc(72px *  7); }
+  .grid-item.span-6  { width: calc(100% *  6 / 12 - 16px); min-width: calc(72px *  6); }
+  .grid-item.span-5  { width: calc(100% *  5 / 12 - 16px); min-width: calc(72px *  5); }
+  .grid-item.span-4  { width: calc(100% *  4 / 12 - 16px); min-width: calc(72px *  4); }
+  .grid-item.span-3  { width: calc(100% *  3 / 12 - 16px); min-width: calc(72px *  3); }
+  .grid-item.span-2  { width: calc(100% *  2 / 12 - 16px); min-width: calc(72px *  2); }
+  .grid-item.span-1  { width: calc(100% *  1 / 12 - 16px); min-width: calc(72px *  1); }
 }

@@ -32,7 +32,7 @@ MuuriWidget.prototype = new Widget();
 Render this widget into the DOM
 */
 MuuriWidget.prototype.render = function(parent,nextSibling) {
-	//var self = this;
+	var self = this;
 
 	// Compute attributes and execute state
 	this.computeAttributes();
@@ -75,17 +75,48 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
     muuri.remove(elements, options);
   };
 
+  // Register resize event handlers for all children
+  self.registerMissingResizeListeners(domNode, muuri);
+
   // Register a handler to fire when child DOM elements are added or removed.
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type == 'childList') {
-        // Trigger the grid layout engine
-        console.log("MuriWidget observed a change in childList");
-        ///muuri.layout();
+        console.log("MuuriWidget observed a change in childList");
+        // Register resize event handlers for new children
+        self.registerMissingResizeListeners(domNode, muuri);
       }
     });    
   });
   observer.observe(domNode, { childList: true });
+};
+
+/*
+Register 
+*/
+MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
+  for (var i = 0; i < domNode.children.length; i++) {
+    var item = domNode.children[i];
+
+    console.log(item);
+
+    if (typeof item.resizeHandler === 'undefined') {
+      item.resizeHandler = (function(item) {
+        return function() {
+          console.log("MuuriWidget got a resize event from " + item.getAttribute('class'));
+          grid.hide(item, {
+            instant: true,
+            onFinish: function() {
+              grid.show(item);
+            }
+          });
+        };
+      })(item);
+
+      console.log("MuuriWidget registering for resize events from " + item.getAttribute('class'));
+      $tw.utils.addResizeListener(item, item.resizeHandler);
+    }
+  }
 };
 
 /*
@@ -99,13 +130,7 @@ MuuriWidget.prototype.execute = function() {
 Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
 */
 MuuriWidget.prototype.refresh = function(changedTiddlers) {
-  if (this.refreshChildren(changedTiddlers)) {
-    if (this.grid) {
-      this.grid.layout();
-    }
-    return true;
-  }
-  return false;
+  return this.refreshChildren(changedTiddlers);
 };
 
 exports["muuri"] = MuuriWidget;

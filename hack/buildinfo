@@ -30,7 +30,9 @@ EOS
   if [[ ! -s $out.tmp ]]; then
     echo 'No changes.' >"$out.tmp"
   fi
-  mv "$out.tmp" "$out"
+
+  cat "$out.tmp" >>"$out"
+  rm "$out.tmp"
 
   cat >>"$out" <<EOS
 \`\`\`

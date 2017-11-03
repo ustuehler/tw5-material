@@ -1,3 +1,12 @@
+title: mdc/v0.1.3-current
+caption: 0.1.3-current
+tags: $:/tags/ReleaseNotes
+created: 20171103092154
+modified: 20171103092154
+
+Changed files between v0.1.3 and HEAD:
+
+```
  src/plugins/mdc/changelog.tid                  | 26 ++-------
  src/plugins/mdc/macros/drawer.tid              |  3 +-
  src/plugins/mdc/widgets/action-showsnackbar.js |  1 +

@@ -1,6 +1,6 @@
 created: 20171030234129139
-modified: 20171101014317101
+modified: 20171103095549038
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[all[shadows+tiddlers]tag[$:/tags/Starred]]
+[list[$:/Starred]]

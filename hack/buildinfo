@@ -28,7 +28,7 @@ buildinfo_tid() {
   local dir="$1"
   local vprefix="$2"
   local ver="$3"
-  local now="$(date +'%Y%m%d%H%M%S')"
+  local now="$(TZ=UTC date +'%Y%m%d%H%M%S')"
 
   cat >"$out" <<EOS
 title: $vprefix$ver-current

@@ -71,7 +71,7 @@ MuuriStoryView.prototype.insert = function(widget) {
 	]);
   */
 
-  this.addGridItem(targetElement, { instant: true, index: -1 });
+  this.addGridItem(targetElement, { instant: true });
 };
 
 MuuriStoryView.prototype.remove = function(widget) {

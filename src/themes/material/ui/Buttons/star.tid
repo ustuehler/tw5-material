@@ -1,7 +1,7 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103190240260
+modified: 20171103190428605
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
@@ -21,11 +21,11 @@ $:/StarredTiddlers
 [list<starredTiddlers>field:title<currentTiddler>]
 \end
 \define addPin()
-  <$action-listops $tiddler=<<pinButtonTag>> $subfilter="[<currentTiddler>]"/>
+  <$action-listops $tiddler=<<starredTiddlers>> $subfilter="[<currentTiddler>]"/>
   <<removeOldPin>>
 \end
 \define removePin()
-  <$action-listops $tiddler=<<pinButtonTag>> $subfilter="-[<currentTiddler>]"/>
+  <$action-listops $tiddler=<<starredTiddlers>> $subfilter="-[<currentTiddler>]"/>
   <<removeOldPin>>
 \end
 \define pinButton()

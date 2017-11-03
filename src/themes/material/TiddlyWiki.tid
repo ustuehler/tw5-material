@@ -1,7 +1,7 @@
 created: 20171027023608057
 list-before: 
-list-item-start-detail: [img class="mdc-list-item__start-detail" [favicon.ico]]
-modified: 20171103044448922
+list-item-start-detail: [img class="mdc-list-item__start-detail" [favicon.png]]
+modified: 20171103044727299
 span: 4
 tags: $:/tags/DrawerBottom $:/tags/Starred
 title: TiddlyWiki

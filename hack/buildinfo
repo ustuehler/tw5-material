@@ -12,12 +12,14 @@ make_buildinfo() {
   local name=$(dirname $vprefix)
   local out="editions/material/tiddlers/content/${name}_current.tid"
   local ver=$(jq -r .version "$dir"/plugin.info)
+  local now="$(date +'%Y%m%d%H%M%S')"
 
   cat >"$out" <<EOS
 title: $name/current
 caption: $ver-current
 tags: $:/tags/ReleaseNotes
-created: $(date +'%Y%m%d%H%M%S')
+created: $now
+modified: $now
 
 Changed files between v$ver and HEAD:
 

@@ -1,13 +1,12 @@
 caption: 0.1.7
 created: 20171103052831438
-modified: 20171103052939456
+modified: 20171103064437081
 released: 20171101
 span: 3
 tags: $:/tags/ReleaseNotes
 title: material/v0.1.7
 type: text/vnd.tiddlywiki
 
-!! [[0.1.7|https://github.com/ustuehler/tw5-material/compare/material/v0.1.6...material/v0.1.7]]
 !!! Added
 * Elevation effect added to currently hovered-over tiddler.
 !!! Fixed

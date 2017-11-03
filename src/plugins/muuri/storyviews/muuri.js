@@ -113,15 +113,19 @@ MuuriStoryView.prototype.grid = function(targetElement) {
 }
 
 MuuriStoryView.prototype.addGridItem = function(targetElement, options) {
+/*
   var grid = this.grid(targetElement);
 
   grid.add(targetElement, options);
+  */
 };
 
 MuuriStoryView.prototype.removeGridItem = function(targetElement, options) {
+/*
   var grid = this.grid(targetElement);
 
   grid.remove(targetElement, options);
+  */
 };
 
 exports.muuri = MuuriStoryView;

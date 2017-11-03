@@ -2692,7 +2692,8 @@ button {
   .grid-item.span-12 { width: calc(100% * 12 / 12 - 16px); min-width: calc(72px * 12); }
   .grid-item.span-11 { width: calc(100% * 11 / 12 - 16px); min-width: calc(72px * 11); }
   .grid-item.span-10 { width: calc(100% * 10 / 12 - 16px); min-width: calc(72px * 10); }
-  .grid-item.span-9  { width: calc(100% *  9 / 12 - 17px); min-width: calc(72px *  9); } /* XXX: off by one pixel because it was too large in some cases */
+   /* XXX: off by one pixel bcause it sometimes did not fit exactly into its space */
+  .grid-item.span-9  { width: calc(100% *  9 / 12 - 17px); min-width: calc(72px *  9); }
   .grid-item.span-8  { width: calc(100% *  8 / 12 - 16px); min-width: calc(72px *  8); }
   .grid-item.span-7  { width: calc(100% *  7 / 12 - 16px); min-width: calc(72px *  7); }
   .grid-item.span-6  { width: calc(100% *  6 / 12 - 16px); min-width: calc(72px *  6); }

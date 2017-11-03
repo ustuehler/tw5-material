@@ -1,10 +1,10 @@
 title: mdc/v0.1.3-current
 caption: 0.1.3-current
 tags: $:/tags/ReleaseNotes
-created: 20171103093736
-modified: 20171103093736
+created: 20171103093943
+modified: 20171103093943
 
-Changed files between version 0.1.3 and HEAD:
+Changes between version 0.1.3 and HEAD:
 
 ```
 diff --git a/src/plugins/mdc/changelog.tid b/src/plugins/mdc/changelog.tid
@@ -14,8 +14,6 @@ index 4a71bc3..0f27fdc 100644
 @@ -1,25 +1,9 @@
 +caption: MDC Plugin
  created: 20171026021820182
--modified: 20171031003407599
-+modified: 20171103053815569
  title: $:/plugins/ustuehler/mdc/changelog
  type: text/vnd.tiddlywiki
  
@@ -51,8 +49,6 @@ index 6168649..68dc2f7 100644
 @@ -1,5 +1,6 @@
 +caption: drawer
  created: 20171025225118792
--modified: 20171031001505819
-+modified: 20171101205007857
  tags: $:/tags/Macro
  title: $:/plugins/ustuehler/mdc/macros/drawer
  type: text/vnd.tiddlywiki

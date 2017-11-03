@@ -1,7 +1,7 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103095427574
+modified: 20171103095742146
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
@@ -18,7 +18,7 @@ $:/tags/Starred
     <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]addprefix[-]]"/>
   </$list>
   <$list filter="[is[current]!tag[$(pinButtonTag)$]]">
-    <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/>
+    <!-- <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/> -->
     <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]]"/>
   </$list>
 </$fieldmangler>

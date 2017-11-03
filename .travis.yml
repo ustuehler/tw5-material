@@ -3,6 +3,7 @@ node_js:
   - "8"
 
 script:
+  - git pull --tags
   - npm run build
   - npm run test
   - grep -v ^/index.html .gitignore >.gitignore.tmp

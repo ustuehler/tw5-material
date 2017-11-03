@@ -1,7 +1,7 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171103104138168
+modified: 20171103104209144
 span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
@@ -30,6 +30,6 @@ $:/Starred
 </$list>
 </$button>
 \end
-<$list filter="[list<pinButtonTag>field:title<currentTiddler>]" emptyMessage=<<pinButton>>>
+<$list variable="" filter="[list<pinButtonTag>field:title<currentTiddler>]" emptyMessage=<<pinButton>>>
   <span class="starred"><<pinButton>></span>
 </$list>

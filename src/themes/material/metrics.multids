@@ -8,6 +8,6 @@ storyleft: inherit
 storytop: inherit
 storyright: inherit
 storywidth: inherit
-tiddlerwidth: 100%
+tiddlerwidth: 1960px
 sidebarbreakpoint: 960px
 sidebarwidth: 350px

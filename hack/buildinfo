@@ -15,7 +15,7 @@ make_buildinfo() {
 
   cat >"$out" <<EOS
 title: $vprefix$ver-current
-caption: current
+caption: Unreleased
 tags: $:/tags/ReleaseNotes
 created: $now
 modified: $now

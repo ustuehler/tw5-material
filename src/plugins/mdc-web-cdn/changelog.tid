@@ -1,9 +1,9 @@
 created: 20171025214813867
-modified: 20171103053729262
+modified: 20171103053946345
 tags: 
 title: $:/plugins/ustuehler/mdc-web-cdn/changelog
 type: text/vnd.tiddlywiki
 
-<$list filter="[prefix[mdc/v]!sort[released]limit[1]]">
-  <$macrocall $name="tabs" tabsList="[prefix[mdc/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+<$list filter="[prefix[mdc-web-cdn/v]!sort[released]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[prefix[mdc-web-cdn/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
 </$list>

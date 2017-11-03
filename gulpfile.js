@@ -79,7 +79,7 @@ gulp.task("push", [], shell.task([
 
 gulp.task("buildinfo", [], shell.task([
   "hack/buildinfo"
-]));
+], { verbose: true }));
 
 gulp.task('hack', function() {
 	nodemon({

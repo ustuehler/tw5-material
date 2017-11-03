@@ -32,7 +32,8 @@ EOS
     echo 'No changes.' >"$out.tmp"
   fi
 
-  egrep -v '^[+-](created|modified):' "$out.tmp" >>"$out"
+  grep -E -v '^[+-](created|modified):' "$out.tmp" |
+    grep -E -v '^(diff|index) ' >>"$out"
   rm "$out.tmp"
 
   cat >>"$out" <<EOS

@@ -1,7 +1,8 @@
 caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
 created: 20171031232012556
 description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
-modified: 20171101033256132
+modified: 20171103095427574
+span: 12
 tags: $:/tags/ViewToolbar/Title
 title: $:/themes/ustuehler/material/ui/Buttons/star
 type: text/vnd.tiddlywiki
@@ -14,9 +15,11 @@ $:/tags/Starred
 <$fieldmangler>
   <$list filter="[is[current]tag[$(pinButtonTag)$]]">
     <$action-sendmessage $message="tm-remove-tag" $param=<<pinButtonTag>>/>
+    <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]addprefix[-]]"/>
   </$list>
   <$list filter="[is[current]!tag[$(pinButtonTag)$]]">
     <$action-sendmessage $message="tm-add-tag" $param=<<pinButtonTag>>/>
+    <$action-listops $tiddler=<<pinButtonTag>> $field="list" $subfilter="[all[current]]"/>
   </$list>
 </$fieldmangler>
 <$list variable="" filter="[<tv-config-toolbar-icons>prefix[yes]]">

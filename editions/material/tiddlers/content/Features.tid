@@ -1,6 +1,6 @@
 created: 20171101154613701
 list-item-icon: info
-modified: 20171103192423252
+modified: 20171103193648211
 span: 3
 tags: $:/tags/Drawer
 title: Features
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 view-related: no
 view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
-This edition of TiddlyWiki adds the following features over an empty edition with the Vanilla theme:
+These are the main features of this edition. Some features are simply core configuration settings while others are provided by the plugins in this edition.
 
 <$list filter="[tag<currentTiddler>!has[draft.of]]">
 <$link><<currentTiddler>></$link><br>

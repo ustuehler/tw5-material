@@ -1,7 +1,7 @@
 created: 20171025215759551
 list-before: Features
 list-item-icon: extension
-modified: 20171103192428960
+modified: 20171103193556312
 span: 6
 tags: $:/tags/Drawer
 title: Plugins
@@ -10,7 +10,7 @@ view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
 
 <a href="https://travis-ci.org/ustuehler/tw5-material">[img[https://travis-ci.org/ustuehler/tw5-material.svg?branch=master]]</a>
 
-This is a demonstration of TiddlyWiki incorporating the plugins listed below.
+This is a demonstration of TiddlyWiki incorporating the plugins listed below. Drag the links below into other browser windows with TiddlyWiki opened to install them.
 
 <$list
   filter="[all[system+tiddlers]has[plugin-type]author[Uwe Stuehler]]"

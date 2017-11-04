@@ -120,7 +120,7 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
       $tw.utils.addResizeListener(item, item.resizeHandler);
 
       console.log("MuriWidget adding elements " + item);
-      grid.add(item, { instant: true, index: -1 });
+      grid.add(item, { instant: true, index: 0 });
 
       // FIXME: leak: grid.remove() missing
     }

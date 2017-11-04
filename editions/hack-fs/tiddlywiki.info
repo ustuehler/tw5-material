@@ -3,6 +3,7 @@
     "plugins": [
         "tiddlywiki/github-fork-ribbon",
 	"tiddlywiki/filesystem",
+        "ustuehler/caption",
         "ustuehler/mdc",
         "ustuehler/mdc-web",
         "ustuehler/mdc-web-cdn",

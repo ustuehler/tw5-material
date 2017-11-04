@@ -4,6 +4,7 @@
         "tiddlywiki/github-fork-ribbon",
 	"tiddlywiki/tiddlyweb",
 	"tiddlywiki/filesystem",
+        "ustuehler/caption",
         "ustuehler/mdc",
         "ustuehler/mdc-web",
         "ustuehler/mdc-web-cdn",

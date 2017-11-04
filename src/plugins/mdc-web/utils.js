@@ -1,7 +1,7 @@
 /*\
 title: $:/plugins/ustuehler/mdc-web/utils.js
 type: application/javascript
-module-type: utils
+module-type: library
 
 Initializes MDC-Web
 

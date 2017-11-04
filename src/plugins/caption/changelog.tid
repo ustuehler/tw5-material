@@ -4,8 +4,7 @@ modified: 20171103053815569
 title: $:/plugins/ustuehler/caption/changelog
 type: text/vnd.tiddlywiki
 
-This plugin is optional. It is not required for the Material theme.  Drage this
-icon to install it: <<material-icon "extension">>
+<$link to="$:/plugins/ustuehler/caption"><<material-icon "extension">></$link>
 
 <$list filter="[prefix[caption/v]!sort[released]limit[1]]">
   <$macrocall $name="tabs" tabsList="[prefix[caption/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />

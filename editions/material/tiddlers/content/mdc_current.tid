@@ -1,9 +1,9 @@
 title: mdc/v0.1.4-current
 caption: >0.1.4
 tags: $:/tags/ReleaseNotes
-created: 20171104154306
-modified: 20171104154306
-released: 20171104154306
+created: 20171104154314
+modified: 20171104154314
+released: 20171104154314
 
 Changes between version 0.1.4 and HEAD:
 
@@ -24,7 +24,7 @@ new file mode 100644
 +'use strict';
 +
 +exports.showSnackbar = function(message, timeout) {
-+  $tw.rootWidget.querySelector('.mdc-snackbar').widget.show({
++  $tw.rootWidget.findFirstDomNode().querySelector('.mdc-snackbar').widget.show({
 +    message: message,
 +    timeout: timeout || 2750
 +  })

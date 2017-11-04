@@ -13,7 +13,7 @@ exports.showSnackbar = function(message, timeout) {
   $tw.rootWidget.findFirstDomNode().querySelector('.mdc-snackbar').widget.show({
     message: message,
     timeout: timeout || 2750
-  })
+  });
 };
 
 }());

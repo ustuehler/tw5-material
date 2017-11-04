@@ -3,6 +3,6 @@
 	"version": "0.1.0",
 	"core-version": ">=5.1.14",
 	"author": "Uwe Stuehler",
-	"description": "Use the caption field as text in WikiLinks",
+	"description": "Use caption as link text in WikiLinks",
 	"list": "readme usage license"
 }

@@ -1,24 +1,15 @@
 title: mdc-web/v0.1.1-current
 caption: >0.1.1
 tags: $:/tags/ReleaseNotes
-created: 20171104153344
-modified: 20171104153344
-released: 20171104153344
+created: 20171104153448
+modified: 20171104153448
+released: 20171104153448
 
 Changes between version 0.1.1 and HEAD:
 
 ```
 --- a/src/plugins/mdc-web/utils.js
 +++ b/src/plugins/mdc-web/utils.js
-@@ -1,7 +1,7 @@
- /*\
- title: $:/plugins/ustuehler/mdc-web/utils.js
- type: application/javascript
--module-type: library
-+module-type: utils
- 
- Initializes MDC-Web
- 
 @@ -20,6 +20,13 @@ function mdcAutoInit() {
  
  exports.mdcAutoInit = mdcAutoInit;

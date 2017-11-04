@@ -14,7 +14,7 @@
 	"ustuehler/material"
     ],
     "includeWikis": {
-	"path": "../dev"
+	"path": "../material"
     },
     "build": {
         "index": [

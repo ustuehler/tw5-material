@@ -1,8 +1,8 @@
 created: 20171103190430634
-list: TiddlyWiki Installation Documentation Features Changelog
-modified: 20171104054106658
+list: TiddlyWiki Changelog Installation Documentation Features
+modified: 20171104054302672
 tags: 
 title: $:/StarredTiddlers
 type: text/vnd.tiddlywiki
 
-<<list-links '[all[current]list[]]'>>
+<<list-links '[list[]]'>>

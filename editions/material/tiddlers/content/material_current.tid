@@ -1,9 +1,9 @@
 title: material/v0.1.10-current
 caption: >0.1.10
 tags: $:/tags/ReleaseNotes
-created: 20171104154550
-modified: 20171104154550
-released: 20171104154550
+created: 20171104154711
+modified: 20171104154711
+released: 20171104154711
 
 Changes between version 0.1.10 and HEAD:
 
@@ -16,7 +16,7 @@ Changes between version 0.1.10 and HEAD:
  
 +/* Display the snackbar at notification level */
 +div.mdc-snackbar {
-+	z-index: 1300;
++	z-index: 10000;
 +}
 +
  /*

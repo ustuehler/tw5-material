@@ -8829,9 +8829,9 @@ Error message and password prompt
             &quot;type&quot;: &quot;application/javascript&quot;,
             &quot;module-type&quot;: &quot;storyview&quot;
         },
-        &quot;$:/plugins/ustuehler/mdc-web/utils.js&quot;: {
-            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/ustuehler/mdc-web/utils.js\ntype: application/javascript\nmodule-type: utils\n\nInitializes MDC-Web\n\n\\*/\n(function(){\&quot;use strict\&quot;;var t=require(\&quot;$:/plugins/ustuehler/mdc-web/material-components-web.min.js\&quot;);function e(){console.log(\&quot;Calling mdc.autoInit()\&quot;);t.autoInit()}exports.mdcAutoInit=e;exports.showSnackbar=function(t,e){$tw.rootWidget.querySelector(\&quot;.mdc-snackbar\&quot;).widget.show({message:t,timeout:e||2750})}})();&quot;,
-            &quot;title&quot;: &quot;$:/plugins/ustuehler/mdc-web/utils.js&quot;,
+        &quot;$:/plugins/ustuehler/mdc/utils.js&quot;: {
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/ustuehler/mdc/utils.js\ntype: application/javascript\nmodule-type: utils\n\nUtility methods like showSnackbar()\n\n\\*/\n(function(){\&quot;use strict\&quot;;exports.showSnackbar=function(t,e){$tw.rootWidget.querySelector(\&quot;.mdc-snackbar\&quot;).widget.show({message:t,timeout:e||2750})}})();&quot;,
+            &quot;title&quot;: &quot;$:/plugins/ustuehler/mdc/utils.js&quot;,
             &quot;type&quot;: &quot;application/javascript&quot;,
             &quot;module-type&quot;: &quot;utils&quot;
         },
@@ -9777,7 +9777,7 @@ The core [[button widget|http://tiddlywiki.com/#ButtonWidget]] can be used with 
 &lt;$button class=&quot;mdc-button&quot;&gt;Flat&lt;/$button&gt;
 &lt;$button class=&quot;mdc-button mdc-button--raised&quot;&gt;Raised&lt;/$button&gt;</pre>
 </div>
-<div caption="&gt;0.1.0" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="caption/v0.1.0-current">
+<div caption="&gt;0.1.0" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="caption/v0.1.0-current">
 <pre>Changes between version 0.1.0 and HEAD:
 
 ```
@@ -9926,7 +9926,7 @@ Drag each of the links above into another TiddlyWiki instance to install the plu
 * Using `list` field on `$:/StarredTiddlers` instead of the `tags` field on each tiddler to mark tiddlers as starred. This makes it possible to &quot;star&quot; a tiddler without modifying it. The button action will automatically remove the old tag when the starred state is changed on a tiddler to support migration.
 * Font size decreased again from 18px to 16px.</pre>
 </div>
-<div caption="&gt;0.1.10" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
+<div caption="&gt;0.1.10" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
 <pre>Changes between version 0.1.10 and HEAD:
 
 ```
@@ -9999,7 +9999,7 @@ new file mode 100644
 !!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.3" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
+<div caption="&gt;0.1.3" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
 <pre>No changes between version 0.1.3 and HEAD.
 </pre>
 </div>
@@ -10007,7 +10007,7 @@ new file mode 100644
 <pre>!!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.1" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
+<div caption="&gt;0.1.1" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
 <pre>Changes between version 0.1.1 and HEAD:
 
 ```
@@ -10069,8 +10069,43 @@ new file mode 100644
 <pre>!!! Added
 * New `mdc-auto-init` widget. Not working entirely as expected yet. See [[mdc-auto-init|https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init]] for documentation and examples.</pre>
 </div>
-<div caption="&gt;0.1.4" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
-<pre>No changes between version 0.1.4 and HEAD.
+<div caption="&gt;0.1.4" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
+<pre>Changes between version 0.1.4 and HEAD:
+
+```
+new file mode 100644
+--- /dev/null
++++ b/src/plugins/mdc/utils.js
+@@ -0,0 +1,28 @@
++/*\
++title: $:/plugins/ustuehler/mdc-web/utils.js
++type: application/javascript
++module-type: utils
++
++Initializes MDC-Web
++
++\*/
++(function() {
++'use strict';
++
++var mdc = require(&quot;$:/plugins/ustuehler/mdc-web/material-components-web.min.js&quot;);
++
++function mdcAutoInit() {
++  console.log(&quot;Calling mdc.autoInit()&quot;);
++  mdc.autoInit();
++}
++
++exports.mdcAutoInit = mdcAutoInit;
++
++exports.showSnackbar = function(message, timeout) {
++  $tw.rootWidget.querySelector('.mdc-snackbar').widget.show({
++    message: message,
++    timeout: timeout || 2750
++  })
++};
++
++}());
+```
 </pre>
 </div>
 <div created="20171103055524930" modified="20171103055530031" title="minions.jpg" type="image/jpeg">
@@ -10084,7 +10119,7 @@ new file mode 100644
 <pre>!!! Changed
 * All grid layout animations are permanently disabled. Layout changes are instant.</pre>
 </div>
-<div caption="&gt;0.1.2" created="20171104154122000" modified="20171104154122000" released="20171104154122" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
+<div caption="&gt;0.1.2" created="20171104154152000" modified="20171104154152000" released="20171104154152" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
 <pre>No changes between version 0.1.2 and HEAD.
 </pre>
 </div>

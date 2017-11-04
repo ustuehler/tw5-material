@@ -1,8 +1,43 @@
 title: mdc/v0.1.4-current
 caption: >0.1.4
 tags: $:/tags/ReleaseNotes
-created: 20171104154122
-modified: 20171104154122
-released: 20171104154122
+created: 20171104154152
+modified: 20171104154152
+released: 20171104154152
 
-No changes between version 0.1.4 and HEAD.
+Changes between version 0.1.4 and HEAD:
+
+```
+new file mode 100644
+--- /dev/null
++++ b/src/plugins/mdc/utils.js
+@@ -0,0 +1,28 @@
++/*\
++title: $:/plugins/ustuehler/mdc-web/utils.js
++type: application/javascript
++module-type: utils
++
++Initializes MDC-Web
++
++\*/
++(function() {
++'use strict';
++
++var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
++
++function mdcAutoInit() {
++  console.log("Calling mdc.autoInit()");
++  mdc.autoInit();
++}
++
++exports.mdcAutoInit = mdcAutoInit;
++
++exports.showSnackbar = function(message, timeout) {
++  $tw.rootWidget.querySelector('.mdc-snackbar').widget.show({
++    message: message,
++    timeout: timeout || 2750
++  })
++};
++
++}());
+```

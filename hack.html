@@ -9865,7 +9865,7 @@ Drag each of the links above into another TiddlyWiki instance to install the plu
 * Using `list` field on `$:/StarredTiddlers` instead of the `tags` field on each tiddler to mark tiddlers as starred. This makes it possible to &quot;star&quot; a tiddler without modifying it. The button action will automatically remove the old tag when the starred state is changed on a tiddler to support migration.
 * Font size decreased again from 18px to 16px.</pre>
 </div>
-<div caption="&gt;0.1.10" created="20171104063204000" modified="20171104063204000" released="20171104063204" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
+<div caption="&gt;0.1.10" created="20171104063215000" modified="20171104063215000" released="20171104063215" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
 <pre>Changes between version 0.1.10 and HEAD:
 
 ```
@@ -9878,91 +9878,6 @@ new file mode 100644
 +
 +yes
 \ No newline at end of file
-new file mode 100644
---- /dev/null
-+++ b/src/themes/material/scripts/wikilink.js
-@@ -0,0 +1,81 @@
-+/*\
-+title: $:/core/modules/parsers/wikiparser/rules/wikilink.js
-+type: application/javascript
-+module-type: wikirule
-+
-+Wiki text inline rule for wiki links. For example:
-+
-+```
-+AWikiLink
-+AnotherLink
-+~SuppressedLink
-+```
-+
-+Precede a camel case word with `~` to prevent it from being recognised as a link.
-+
-+\*/
-+(function(){
-+
-+/*jslint node: true, browser: true */
-+/*global $tw: false */
-+&quot;use strict&quot;;
-+
-+exports.name = &quot;wikilink&quot;;
-+exports.types = {inline: true};
-+
-+exports.init = function(parser) {
-+	this.parser = parser;
-+	// Regexp to match
-+	this.matchRegExp = new RegExp($tw.config.textPrimitives.unWikiLink + &quot;?&quot; + $tw.config.textPrimitives.wikiLink,&quot;mg&quot;);
-+};
-+
-+/*
-+Parse the most recent match
-+*/
-+exports.parse = function() {
-+	// Get the details of the match
-+	var linkText = this.match[0];
-+  // Try to resolve the tiddler reference and read the caption or title field, in that order
-+  var linkCaption = resolveCaption(linkText);
-+	// Move past the macro call
-+	this.parser.pos = this.matchRegExp.lastIndex;
-+	// If the link starts with the unwikilink character then just output it as plain text
-+	if(linkText.substr(0,1) === $tw.config.textPrimitives.unWikiLink) {
-+		return [{type: &quot;text&quot;, text: linkText.substr(1)}];
-+	}
-+	// If the link has been preceded with a blocked letter then don't treat it as a link
-+	if(this.match.index &gt; 0) {
-+		var preRegExp = new RegExp($tw.config.textPrimitives.blockPrefixLetters,&quot;mg&quot;);
-+		preRegExp.lastIndex = this.match.index-1;
-+		var preMatch = preRegExp.exec(this.parser.source);
-+		if(preMatch &amp;&amp; preMatch.index === this.match.index-1) {
-+			return [{type: &quot;text&quot;, text: linkText}];
-+		}
-+	}
-+	return [{
-+		type: &quot;link&quot;,
-+		attributes: {
-+			to: {type: &quot;string&quot;, value: linkText}
-+		},
-+		children: [{
-+			type: &quot;text&quot;,
-+			text: linkCaption
-+		}]
-+	}];
-+};
-+
-+/*
-+ * Resolve the caption field of the given existing tiddler; otherwise, return
-+ * the title.
-+ */
-+function resolveCaption(tiddlerTitle) {
-+  var tiddler = $tw.wiki.getTiddler(tiddlerTitle);
-+
-+  if (tiddler &amp;&amp; tiddler.fields &amp;&amp; tiddler.fields.caption) {
-+    return tiddler.fields.caption;
-+  }
-+
-+  return tiddlerTitle;
-+}
-+
-+})();
 ```
 </pre>
 </div>
@@ -10023,7 +9938,7 @@ new file mode 100644
 !!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.3" created="20171104063204000" modified="20171104063204000" released="20171104063204" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
+<div caption="&gt;0.1.3" created="20171104063216000" modified="20171104063216000" released="20171104063216" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
 <pre>No changes between version 0.1.3 and HEAD.
 </pre>
 </div>
@@ -10031,7 +9946,7 @@ new file mode 100644
 <pre>!!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.1" created="20171104063204000" modified="20171104063204000" released="20171104063204" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
+<div caption="&gt;0.1.1" created="20171104063216000" modified="20171104063216000" released="20171104063216" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
 <pre>No changes between version 0.1.1 and HEAD.
 </pre>
 </div>
@@ -10057,7 +9972,7 @@ new file mode 100644
 <pre>!!! Added
 * New `mdc-auto-init` widget. Not working entirely as expected yet. See [[mdc-auto-init|https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init]] for documentation and examples.</pre>
 </div>
-<div caption="&gt;0.1.4" created="20171104063204000" modified="20171104063204000" released="20171104063204" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
+<div caption="&gt;0.1.4" created="20171104063216000" modified="20171104063216000" released="20171104063216" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
 <pre>No changes between version 0.1.4 and HEAD.
 </pre>
 </div>
@@ -10072,7 +9987,7 @@ new file mode 100644
 <pre>!!! Changed
 * All grid layout animations are permanently disabled. Layout changes are instant.</pre>
 </div>
-<div caption="&gt;0.1.2" created="20171104063204000" modified="20171104063204000" released="20171104063204" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
+<div caption="&gt;0.1.2" created="20171104063216000" modified="20171104063216000" released="20171104063216" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
 <pre>No changes between version 0.1.2 and HEAD.
 </pre>
 </div>

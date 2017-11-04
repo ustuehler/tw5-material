@@ -1,9 +1,9 @@
 title: mdc-web/v0.1.1-current
 caption: >0.1.1
 tags: $:/tags/ReleaseNotes
-created: 20171104153948
-modified: 20171104153948
-released: 20171104153948
+created: 20171104154034
+modified: 20171104154034
+released: 20171104154034
 
 Changes between version 0.1.1 and HEAD:
 
@@ -19,18 +19,26 @@ Changes between version 0.1.1 and HEAD:
  
  Initializes MDC-Web
  
-@@ -20,6 +20,13 @@ function mdcAutoInit() {
+@@ -9,8 +9,6 @@ Initializes MDC-Web
+ 'use string';
+ (function() {
+ 
+-if (typeof document !== 'undefined') {
+-
+ var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
+ 
+ function mdcAutoInit() {
+@@ -20,6 +18,11 @@ function mdcAutoInit() {
  
  exports.mdcAutoInit = mdcAutoInit;
  
+-}
 +exports.showSnackbar = function(message, timeout) {
-+  document.querySelector('.mdc-snackbar').widget.show({
++  $tw.rootWidget.querySelector('.mdc-snackbar').widget.show({
 +    message: message,
 +    timeout: timeout || 2750
 +  })
 +};
-+
- }
  
  }());
 ```

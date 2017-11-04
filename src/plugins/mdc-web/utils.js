@@ -6,8 +6,8 @@ module-type: utils
 Initializes MDC-Web
 
 \*/
-'use string';
 (function() {
+'use strict';
 
 var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
 

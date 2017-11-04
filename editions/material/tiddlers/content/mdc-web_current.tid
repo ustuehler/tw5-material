@@ -1,16 +1,16 @@
 title: mdc-web/v0.1.1-current
 caption: >0.1.1
 tags: $:/tags/ReleaseNotes
-created: 20171104154034
-modified: 20171104154034
-released: 20171104154034
+created: 20171104154122
+modified: 20171104154122
+released: 20171104154122
 
 Changes between version 0.1.1 and HEAD:
 
 ```
 --- a/src/plugins/mdc-web/utils.js
 +++ b/src/plugins/mdc-web/utils.js
-@@ -1,7 +1,7 @@
+@@ -1,15 +1,13 @@
  /*\
  title: $:/plugins/ustuehler/mdc-web/utils.js
  type: application/javascript
@@ -19,15 +19,15 @@ Changes between version 0.1.1 and HEAD:
  
  Initializes MDC-Web
  
-@@ -9,8 +9,6 @@ Initializes MDC-Web
- 'use string';
+ \*/
+-'use string';
  (function() {
- 
--if (typeof document !== 'undefined') {
 -
+-if (typeof document !== 'undefined') {
++'use strict';
+ 
  var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
  
- function mdcAutoInit() {
 @@ -20,6 +18,11 @@ function mdcAutoInit() {
  
  exports.mdcAutoInit = mdcAutoInit;

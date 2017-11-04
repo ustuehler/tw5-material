@@ -65,12 +65,6 @@ ActionShowSnackbarWidget.prototype.invokeAction = function(triggeringWidget,even
   var self = this;
   var snackbar = this.document.getElementsByClassName("mdc-snackbar")[0];
 
-  console.log(triggeringWidget);
-  console.log(event);
-  console.log(this.actionText);
-  console.log(this.children);
-  console.log(this);
-
   if (snackbar !== undefined) {
     var data = {
       message: this.message,

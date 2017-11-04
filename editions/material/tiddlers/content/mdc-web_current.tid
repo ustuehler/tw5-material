@@ -1,8 +1,27 @@
 title: mdc-web/v0.1.1-current
 caption: >0.1.1
 tags: $:/tags/ReleaseNotes
-created: 20171104153119
-modified: 20171104153119
-released: 20171104153119
+created: 20171104153127
+modified: 20171104153127
+released: 20171104153127
 
-No changes between version 0.1.1 and HEAD.
+Changes between version 0.1.1 and HEAD:
+
+```
+--- a/src/plugins/mdc-web/utils.js
++++ b/src/plugins/mdc-web/utils.js
+@@ -20,6 +20,13 @@ function mdcAutoInit() {
+ 
+ exports.mdcAutoInit = mdcAutoInit;
+ 
++exports.showSnackbar = function(message, timeout) {
++  document.querySelector('.mdc-snackbar').widget.show({
++    message: message,
++    timeout: timeout || 2750
++  })
++};
++
+ }
+ 
+ }());
+```

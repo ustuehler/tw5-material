@@ -1,0 +1,15 @@
+created: 20171103052709053
+draft.of: Changelog
+draft.title: Changelog
+icon: Changelog.png
+list-item-start-detail: [img class="mdc-list-item__start-detail" [Changelog.png]]
+modified: 20171104063300769
+span: 6
+tags: $:/tags/Drawer
+title: Draft of 'Changelog'
+type: text/vnd.tiddlywiki
+view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
+
+<$list filter="[all[shadows+tiddlers]suffix[/changelog]!sort[title]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[all[shadows+tiddlers]suffix[/changelog]!sort[title]]" default={{!!title}} class="tc-horizontal" template="ChangelogTemplate" />
+</$list>

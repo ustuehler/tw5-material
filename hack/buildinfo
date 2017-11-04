@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 #ssss log --stat --pretty=oneline material/v0.1.9.. -- src/themes/material >
 
 tiddler_text() {
-  awk '/^$/ { body = 1; } body { print; }'
+  awk '!body && /^$/ { body = 1; next; } body { print; }'
 }
 
 buildinfo_tid_body() {

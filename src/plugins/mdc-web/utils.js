@@ -20,6 +20,13 @@ function mdcAutoInit() {
 
 exports.mdcAutoInit = mdcAutoInit;
 
+exports.showSnackbar = function(message, timeout) {
+  document.querySelector('.mdc-snackbar').widget.show({
+    message: message,
+    timeout: timeout || 2750
+  })
+};
+
 }
 
 }());

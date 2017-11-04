@@ -8915,7 +8915,7 @@ Error message and password prompt
             &quot;text&quot;: &quot;```\n&lt;!-- Flat Button --&gt;\n&lt;button class=\&quot;mdc-button&gt;Click Me&lt;/button&gt;\n\n&lt;!-- Raised Button --&gt;\n&lt;button class=\&quot;mdc-button mdc-button--raised\&quot;&gt;Click Me&lt;/button&gt;\n```\n\n&lt;button class=\&quot;mdc-button\&quot;&gt;Click Me&lt;/button&gt;\n\n&lt;button class=\&quot;mdc-button mdc-button--raised\&quot;&gt;Click Me&lt;/button&gt;\n\nSee http://material-components-web.appspot.com for more examples.\n&quot;
         },
         &quot;$:/plugins/ustuehler/mdc-web/utils.js&quot;: {
-            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/ustuehler/mdc-web/utils.js\ntype: application/javascript\nmodule-type: library\n\nInitializes MDC-Web\n\n\\*/\n\&quot;use string\&quot;;(function(){if(typeof document!==\&quot;undefined\&quot;){var n=require(\&quot;$:/plugins/ustuehler/mdc-web/material-components-web.min.js\&quot;);function e(){console.log(\&quot;Calling mdc.autoInit()\&quot;);n.autoInit()}exports.mdcAutoInit=e}})();&quot;,
+            &quot;text&quot;: &quot;/*\\\ntitle: $:/plugins/ustuehler/mdc-web/utils.js\ntype: application/javascript\nmodule-type: library\n\nInitializes MDC-Web\n\n\\*/\n\&quot;use string\&quot;;(function(){if(typeof document!==\&quot;undefined\&quot;){var e=require(\&quot;$:/plugins/ustuehler/mdc-web/material-components-web.min.js\&quot;);function n(){console.log(\&quot;Calling mdc.autoInit()\&quot;);e.autoInit()}exports.mdcAutoInit=n;exports.showSnackbar=function(e,n){document.querySelector(\&quot;.mdc-snackbar\&quot;).widget.show({message:e,timeout:n||2750})}}})();&quot;,
             &quot;title&quot;: &quot;$:/plugins/ustuehler/mdc-web/utils.js&quot;,
             &quot;type&quot;: &quot;application/javascript&quot;,
             &quot;module-type&quot;: &quot;library&quot;
@@ -9771,7 +9771,7 @@ The core [[button widget|http://tiddlywiki.com/#ButtonWidget]] can be used with 
 &lt;$button class=&quot;mdc-button&quot;&gt;Flat&lt;/$button&gt;
 &lt;$button class=&quot;mdc-button mdc-button--raised&quot;&gt;Raised&lt;/$button&gt;</pre>
 </div>
-<div caption="&gt;0.1.0" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="caption/v0.1.0-current">
+<div caption="&gt;0.1.0" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="caption/v0.1.0-current">
 <pre>Changes between version 0.1.0 and HEAD:
 
 ```
@@ -9920,7 +9920,7 @@ Drag each of the links above into another TiddlyWiki instance to install the plu
 * Using `list` field on `$:/StarredTiddlers` instead of the `tags` field on each tiddler to mark tiddlers as starred. This makes it possible to &quot;star&quot; a tiddler without modifying it. The button action will automatically remove the old tag when the starred state is changed on a tiddler to support migration.
 * Font size decreased again from 18px to 16px.</pre>
 </div>
-<div caption="&gt;0.1.10" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
+<div caption="&gt;0.1.10" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="material/v0.1.10-current">
 <pre>Changes between version 0.1.10 and HEAD:
 
 ```
@@ -9993,7 +9993,7 @@ new file mode 100644
 !!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.3" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
+<div caption="&gt;0.1.3" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="mdc-web-cdn/v0.1.3-current">
 <pre>No changes between version 0.1.3 and HEAD.
 </pre>
 </div>
@@ -10001,7 +10001,7 @@ new file mode 100644
 <pre>!!! Changed
 * Reworded the plugin description.</pre>
 </div>
-<div caption="&gt;0.1.1" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
+<div caption="&gt;0.1.1" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="mdc-web/v0.1.1-current">
 <pre>No changes between version 0.1.1 and HEAD.
 </pre>
 </div>
@@ -10027,119 +10027,8 @@ new file mode 100644
 <pre>!!! Added
 * New `mdc-auto-init` widget. Not working entirely as expected yet. See [[mdc-auto-init|https://github.com/material-components/material-components-web/tree/master/packages/mdc-auto-init]] for documentation and examples.</pre>
 </div>
-<div caption="&gt;0.1.4" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
-<pre>Changes between version 0.1.4 and HEAD:
-
-```
-deleted file mode 100644
---- a/src/plugins/mdc/widgets/action-toggledrawer.js
-+++ /dev/null
-@@ -1,104 +0,0 @@
--/*\
--title: $:/plugins/ustuehler/mdc/widgets/action-toggledrawer.js
--type: application/javascript
--module-type: widget
--caption: action-toggledrawer
--
--Action widget that toggles the visibility of the first drawer found in the document
--
--\*/
--(function (global) {
--
--&quot;use strict&quot;;
--/*jslint node: true, browser: true */
--/*global $tw: false */
--
--var drawerTypes = {
--  permanent: {
--    class: &quot;MDCPermanentDrawer&quot;,
--    selector: &quot;.mdc-permanent-drawer&quot;
--  },
--  persistent: {
--    class: &quot;MDCPersistentDrawer&quot;,
--    selector: &quot;.mdc-persistent-drawer&quot;
--  },
--  temporary: {
--    class: &quot;MDCTemporaryDrawer&quot;,
--    selector: &quot;.mdc-temporary-drawer&quot;
--  }
--};
--
--var Widget = require(&quot;$:/core/modules/widgets/widget.js&quot;).widget;
--
--var ActionToggleDrawerWidget = function(parseTreeNode,options) {
--	this.initialise(parseTreeNode,options);
--};
--
--/*
--Inherit from the base widget class
--*/
--ActionToggleDrawerWidget.prototype = new Widget();
--
--/*
--Render this widget into the DOM
--*/
--ActionToggleDrawerWidget.prototype.render = function(parent,nextSibling) {
--	this.computeAttributes();
--	this.execute();
--};
--
--/*
--Compute the internal state of the widget
--*/
--ActionToggleDrawerWidget.prototype.execute = function() {
--  this.type = this.getAttribute(&quot;type&quot;, &quot;temporary&quot;)
--  if (!drawerTypes[this.type]) {
--    throw Error(&quot;invalid drawer type: &quot; + this.type);
--  }
--  this[&quot;class&quot;] = drawerTypes[this.type][&quot;class&quot;];
--  this.selector = drawerTypes[this.type].selector;
--  // Compute the internal state of child widgets.
--  this.makeChildWidgets();
--};
--
--/*
--Selectively refreshes the widget if needed. Returns true if the widget or any of its children needed re-rendering
--*/
--ActionToggleDrawerWidget.prototype.refresh = function(changedTiddlers) {
--  var changedAttributes = this.computeAttributes();
--
--  if (changedAttributes[&quot;class&quot;] || changedAttributes.selector) {
--    this.refreshSelf();
--    return true;
--  }
--
--  return this.refreshChildren(changedTiddlers);
--};
--
--/*
-- * Invoke the action associated with this widget
-- */
--ActionToggleDrawerWidget.prototype.invokeAction = function(triggeringWidget,event) {
--  var self = this;
--  var el = this.document.querySelector(this.selector);
--
--  if (el) {
--    var constructor = global.mdc.drawer[this[&quot;class&quot;]];
--    var drawer = new constructor(el);
--
--    drawer.open = !drawer.open;
--  }
--
--  return true; // Action was invoked
--}
--
--/*
-- * Don't allow actions to propagate, because we invoke actions ourself
-- */
--ActionToggleDrawerWidget.prototype.allowActionPropagation = function() {
--  return false;
--};
--
--exports[&quot;action-toggledrawer&quot;] = ActionToggleDrawerWidget;
--
--})(this);
-```
+<div caption="&gt;0.1.4" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="mdc/v0.1.4-current">
+<pre>No changes between version 0.1.4 and HEAD.
 </pre>
 </div>
 <div created="20171103055524930" modified="20171103055530031" title="minions.jpg" type="image/jpeg">
@@ -10153,7 +10042,7 @@ deleted file mode 100644
 <pre>!!! Changed
 * All grid layout animations are permanently disabled. Layout changes are instant.</pre>
 </div>
-<div caption="&gt;0.1.2" created="20171104121326000" modified="20171104121326000" released="20171104121326" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
+<div caption="&gt;0.1.2" created="20171104153119000" modified="20171104153119000" released="20171104153119" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
 <pre>No changes between version 0.1.2 and HEAD.
 </pre>
 </div>

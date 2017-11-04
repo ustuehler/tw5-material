@@ -2576,6 +2576,11 @@ div[aria-hidden="true"].mdc-snackbar {
   opacity: 0;
 }
 
+/* Display the snackbar at notification level */
+div.mdc-snackbar {
+	z-index: 1300;
+}
+
 /*
  * Hide the outline that may be shown briefly around buttons when they're clicked
  */

@@ -1,9 +1,9 @@
 title: mdc/v0.1.4-current
 caption: >0.1.4
 tags: $:/tags/ReleaseNotes
-created: 20171104154314
-modified: 20171104154314
-released: 20171104154314
+created: 20171104154535
+modified: 20171104154535
+released: 20171104154535
 
 Changes between version 0.1.4 and HEAD:
 
@@ -27,7 +27,7 @@ new file mode 100644
 +  $tw.rootWidget.findFirstDomNode().querySelector('.mdc-snackbar').widget.show({
 +    message: message,
 +    timeout: timeout || 2750
-+  })
++  });
 +};
 +
 +}());

@@ -1,19 +1,21 @@
 title: caption/v0.1.0-current
 caption: >0.1.0
 tags: $:/tags/ReleaseNotes
-created: 20171104064609
-modified: 20171104064609
-released: 20171104064609
+created: 20171104064617
+modified: 20171104064617
+released: 20171104064617
 
 Changes between version 0.1.0 and HEAD:
 
 ```
 --- a/src/plugins/caption/changelog.tid
 +++ b/src/plugins/caption/changelog.tid
-@@ -4,6 +4,8 @@ modified: 20171103053815569
+@@ -4,6 +4,10 @@ modified: 20171103053815569
  title: $:/plugins/ustuehler/caption/changelog
  type: text/vnd.tiddlywiki
  
++This plugin is not required by the Material theme. Drag the icon to install it.
++
 +<$link to="$:/plugins/ustuehler/caption"><<material-icon "extension">></$link>
 +
  <$list filter="[prefix[caption/v]!sort[released]limit[1]]">

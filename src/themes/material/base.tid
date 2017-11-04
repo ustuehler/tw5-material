@@ -2578,7 +2578,7 @@ div[aria-hidden="true"].mdc-snackbar {
 
 /* Display the snackbar at notification level */
 div.mdc-snackbar {
-	z-index: 1300;
+	z-index: 10000;
 }
 
 /*

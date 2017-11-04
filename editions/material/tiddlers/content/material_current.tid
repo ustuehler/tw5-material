@@ -1,13 +1,27 @@
 title: material/v0.1.10-current
 caption: >0.1.10
 tags: $:/tags/ReleaseNotes
-created: 20171104154535
-modified: 20171104154535
-released: 20171104154535
+created: 20171104154550
+modified: 20171104154550
+released: 20171104154550
 
 Changes between version 0.1.10 and HEAD:
 
 ```
+--- a/src/themes/material/base.tid
++++ b/src/themes/material/base.tid
+@@ -2576,6 +2576,11 @@ div[aria-hidden="true"].mdc-snackbar {
+   opacity: 0;
+ }
+ 
++/* Display the snackbar at notification level */
++div.mdc-snackbar {
++	z-index: 1300;
++}
++
+ /*
+  * Hide the outline that may be shown briefly around buttons when they're clicked
+  */
 new file mode 100644
 --- /dev/null
 +++ b/src/themes/material/config/TitleLinks.tid

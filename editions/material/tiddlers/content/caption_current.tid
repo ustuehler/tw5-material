@@ -1,9 +1,9 @@
 title: caption/v0.1.0-current
 caption: >0.1.0
 tags: $:/tags/ReleaseNotes
-created: 20171104070112
-modified: 20171104070112
-released: 20171104070112
+created: 20171104070146
+modified: 20171104070146
+released: 20171104070146
 
 Changes between version 0.1.0 and HEAD:
 
@@ -29,7 +29,7 @@ Changes between version 0.1.0 and HEAD:
  	"core-version": ">=5.1.14",
  	"author": "Uwe Stuehler",
 -	"description": "Handles the caption field in more places",
-+	"description": "Replace link text with caption in automatic WikiLinks",
++	"description": "Captions in WikiLinks",
  	"list": "readme usage license"
  }
 ```

@@ -1,9 +1,9 @@
 title: caption/v0.1.0-current
 caption: >0.1.0
 tags: $:/tags/ReleaseNotes
-created: 20171104070057
-modified: 20171104070057
-released: 20171104070057
+created: 20171104070112
+modified: 20171104070112
+released: 20171104070112
 
 Changes between version 0.1.0 and HEAD:
 
@@ -22,4 +22,14 @@ Changes between version 0.1.0 and HEAD:
    <$macrocall $name="tabs" tabsList="[prefix[caption/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
  </$list>
 \ No newline at end of file
+--- a/src/plugins/caption/plugin.info
++++ b/src/plugins/caption/plugin.info
+@@ -3,6 +3,6 @@
+ 	"version": "0.1.0",
+ 	"core-version": ">=5.1.14",
+ 	"author": "Uwe Stuehler",
+-	"description": "Handles the caption field in more places",
++	"description": "Replace link text with caption in automatic WikiLinks",
+ 	"list": "readme usage license"
+ }
 ```

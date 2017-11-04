@@ -1,0 +1,19 @@
+caption: Public Site
+created: 20171104000156141
+modified: 20171104062118333
+span: 6
+tags: 
+title: PublicSite
+type: text/vnd.tiddlywiki
+url: https://ustuehler.github.io/tw5-material
+
+\define hack-url() $(url)$/hack.html
+
+{{!!url}}/<br>
+<$set name="url" value={{!!url}}><<hack-url>></$set>
+
+Merged PullRequests and commits on the `master` branch of the [[repository on GitHub|https://github.com/ustuehler/ustuehler.github.io]] are published automatically. This can take a few minutes, because the `index.html` page needs to be rebuilt by [[Travis CI|https://travis-ci.org/ustuehler/ustuehler.github.io]].
+
+An easier way to publish your changes rapidly from within ~TiddlyWiki is described in the PublishingFlow. For that you need commit access to your fork of the GitRepository.
+
+{{BuildInfo}}

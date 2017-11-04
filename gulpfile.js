@@ -81,8 +81,12 @@ gulp.task("buildinfo", [], shell.task([
   "hack/buildinfo"
 ], { verbose: true }));
 
+gulp.task("hack.html", ['buildinfo', 'tiddlers', 'javascript'], shell.task([
+  "tiddlywiki editions/hack-fs --build"
+]));
+
 gulp.task('hack', function() {
 	nodemon({
 		watch: ["src", "editions/material"]
-	}).on('restart', ['build', 'commit', 'push']);
+	}).on('restart', ['build', 'hack.html', 'commit', 'push']);
 });

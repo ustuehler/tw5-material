@@ -1,0 +1,34 @@
+title: mdc/v0.1.4-current
+caption: >0.1.4
+tags: $:/tags/ReleaseNotes
+created: 20171104181651
+modified: 20171104181651
+released: 20171104181651
+
+Changes between version 0.1.4 and HEAD:
+
+```
+new file mode 100644
+--- /dev/null
++++ b/src/plugins/mdc/utils.js
+@@ -0,0 +1,19 @@
++/*\
++title: $:/plugins/ustuehler/mdc/utils.js
++type: application/javascript
++module-type: utils
++
++Utility methods like showSnackbar()
++
++\*/
++(function() {
++'use strict';
++
++exports.showSnackbar = function(message, timeout) {
++  $tw.rootWidget.findFirstDomNode().querySelector('.mdc-snackbar').widget.show({
++    message: message,
++    timeout: timeout || 2750
++  });
++};
++
++}());
+```

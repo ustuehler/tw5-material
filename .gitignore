@@ -12,7 +12,6 @@
 /hack/content/-*
 /hack/content/$__StoryList*.tid
 /hack/content/Draft of *.tid
-/hack/content/*_current.tid
 
 # Generated for gh-pages branch
 #/index.html

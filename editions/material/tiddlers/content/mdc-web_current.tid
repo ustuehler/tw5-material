@@ -1,22 +1,16 @@
 title: mdc-web/v0.1.1-current
 caption: >0.1.1
 tags: $:/tags/ReleaseNotes
-created: 20171104154206
-modified: 20171104154206
-released: 20171104154206
+created: 20171104154306
+modified: 20171104154306
+released: 20171104154306
 
 Changes between version 0.1.1 and HEAD:
 
 ```
 --- a/src/plugins/mdc-web/utils.js
 +++ b/src/plugins/mdc-web/utils.js
-@@ -1,15 +1,13 @@
- /*\
- title: $:/plugins/ustuehler/mdc-web/utils.js
- type: application/javascript
--module-type: library
-+module-type: utils
- 
+@@ -6,10 +6,8 @@ module-type: library
  Initializes MDC-Web
  
  \*/
@@ -28,17 +22,11 @@ Changes between version 0.1.1 and HEAD:
  
  var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
  
-@@ -20,6 +18,11 @@ function mdcAutoInit() {
+@@ -20,6 +18,4 @@ function mdcAutoInit() {
  
  exports.mdcAutoInit = mdcAutoInit;
  
 -}
-+exports.showSnackbar = function(message, timeout) {
-+  $tw.rootWidget.querySelector('.mdc-snackbar').widget.show({
-+    message: message,
-+    timeout: timeout || 2750
-+  })
-+};
- 
+-
  }());
 ```

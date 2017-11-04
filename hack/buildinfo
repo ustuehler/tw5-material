@@ -54,6 +54,6 @@ make_buildinfo() {
 
 make_buildinfo "src/themes/material" "material/v"
 
-for plugin in mdc mdc-web mdc-web-cdn muuri; do
+for plugin in caption mdc mdc-web mdc-web-cdn muuri; do
   make_buildinfo "src/plugins/$plugin" "$plugin/v"
 done

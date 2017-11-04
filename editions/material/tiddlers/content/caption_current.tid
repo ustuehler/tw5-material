@@ -1,9 +1,9 @@
 title: caption/v0.1.0-current
 caption: >0.1.0
 tags: $:/tags/ReleaseNotes
-created: 20171104073127
-modified: 20171104073127
-released: 20171104073127
+created: 20171104073239
+modified: 20171104073239
+released: 20171104073239
 
 Changes between version 0.1.0 and HEAD:
 
@@ -32,4 +32,13 @@ Changes between version 0.1.0 and HEAD:
 +	"description": "Use caption as link text in WikiLinks",
  	"list": "readme usage license"
  }
+new file mode 100644
+--- /dev/null
++++ b/src/plugins/caption/readme.tid
+@@ -0,0 +1,4 @@
++title: $:/plugins/ustuehler/caption
++url: https://ustuehler.github.io/tw5-material
++
++The latest version of this plugin can be obtained from {{!!url}}.
+\ No newline at end of file
 ```

@@ -50,7 +50,7 @@ gulp.task("javascript", function (cb) {
 })
 
 gulp.task("build", [], function (cb) {
-  runSequence('clean', ['buildinfo', 'tiddlers', 'javascript', 'package.json'], cb)
+  runSequence('clean', ['buildinfo', 'tiddlers', 'javascript', 'package.json', 'hack.html'], cb)
 });
 
 gulp.task("package.json", [], function (cb) {
@@ -88,5 +88,5 @@ gulp.task("hack.html", ['buildinfo', 'tiddlers', 'javascript'], shell.task([
 gulp.task('hack', function() {
 	nodemon({
 		watch: ["src", "editions/material"]
-	}).on('restart', ['build', 'hack.html', 'commit', 'push']);
+	}).on('restart', ['build', 'commit', 'push']);
 });

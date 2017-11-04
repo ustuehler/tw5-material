@@ -22,7 +22,7 @@
     "run-sequence": "^2.2.0"
   },
   "scripts": {
-    "build": "gulp build && gulp hack.html && tiddlywiki editions/material --build",
+    "build": "gulp build && tiddlywiki editions/material --build",
     "test": "tiddlywiki editions/test --build 2>&1 | tee test.out; ! grep -q ^Failures: test.out",
     "start": "git clean -xf editions/material/tiddlers && gulp build && gulp server",
     "wip": "gulp build && gulp wip"

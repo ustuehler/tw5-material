@@ -9,11 +9,10 @@
 /editions/material/themes/
 
 # Created when opening the dev edition locally
-/editions/material/tiddlers/content/$__StoryList*.tid
-/editions/material/tiddlers/content/$__config_*.tid
-/editions/material/tiddlers/content/-$*
-/editions/material/tiddlers/content/Draft of *.tid
-/editions/material/tiddlers/content/*_current.tid
+/hack/content/-*
+/hack/content/$__StoryList*.tid
+/hack/content/Draft of *.tid
+/hack/content/*_current.tid
 
 # Generated for gh-pages branch
 #/index.html

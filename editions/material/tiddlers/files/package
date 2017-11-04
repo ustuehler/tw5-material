@@ -1,6 +1,4 @@
 {
-  "title": "package.json",
-  "text": "{{!!version}}",
   "name": "tw5-material",
   "version": "0.1.3",
   "description": "Material Design edition of TiddlyWiki",

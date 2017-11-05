@@ -1,13 +1,13 @@
 caption: Public Site
 created: 20171104000156141
-modified: 20171104224948051
+modified: 20171104231233551
 span: 6
 tags: 
 title: PublicSite
 type: text/vnd.tiddlywiki
 url: https://ustuehler.github.io/tw5-material
 
-\define hack-url() $(url)$/hack.html
+\define hack-url() $(url)$/hack
 
 {{!!url}}<br>
 <$set name="url" value={{!!url}}><<hack-url>></$set>

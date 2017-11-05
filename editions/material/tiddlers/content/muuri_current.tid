@@ -1,13 +1,24 @@
 title: muuri/v0.1.2-current
 caption: >0.1.2
 tags: $:/tags/ReleaseNotes
-created: 20171104180752
-modified: 20171104180752
-released: 20171104180752
+created: 20171105020748
+modified: 20171105020748
+released: 20171105020748
 
 Changes between version 0.1.2 and HEAD:
 
 ```
+--- a/src/plugins/muuri/storyviews/muuri.js
++++ b/src/plugins/muuri/storyviews/muuri.js
+@@ -71,7 +71,7 @@ MuuriStoryView.prototype.insert = function(widget) {
+ 	]);
+   */
+ 
+-  this.addGridItem(targetElement, { instant: true });
++  this.addGridItem(targetElement, { instant: true, index: 0 });
+ };
+ 
+ MuuriStoryView.prototype.remove = function(widget) {
 --- a/src/plugins/muuri/widgets/muuri.js
 +++ b/src/plugins/muuri/widgets/muuri.js
 @@ -120,7 +120,7 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {

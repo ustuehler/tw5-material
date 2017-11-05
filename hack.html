@@ -10124,10 +10124,21 @@ new file mode 100644
 <pre>!!! Changed
 * All grid layout animations are permanently disabled. Layout changes are instant.</pre>
 </div>
-<div caption="&gt;0.1.2" created="20171104180752000" modified="20171104180752000" released="20171104180752" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
+<div caption="&gt;0.1.2" created="20171105020748000" modified="20171105020748000" released="20171105020748" tags="$:/tags/ReleaseNotes" title="muuri/v0.1.2-current">
 <pre>Changes between version 0.1.2 and HEAD:
 
 ```
+--- a/src/plugins/muuri/storyviews/muuri.js
++++ b/src/plugins/muuri/storyviews/muuri.js
+@@ -71,7 +71,7 @@ MuuriStoryView.prototype.insert = function(widget) {
+ 	]);
+   */
+ 
+-  this.addGridItem(targetElement, { instant: true });
++  this.addGridItem(targetElement, { instant: true, index: 0 });
+ };
+ 
+ MuuriStoryView.prototype.remove = function(widget) {
 --- a/src/plugins/muuri/widgets/muuri.js
 +++ b/src/plugins/muuri/widgets/muuri.js
 @@ -120,7 +120,7 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
@@ -14910,10 +14921,10 @@ new file mode 100644
 <div created="20171101192744031" modified="20171101194613431" tags="Features" title="Permanent Toolbar" type="text/vnd.tiddlywiki">
 <pre>The permanent toolbar stays on the top of the page, even as you scroll through the page vertically. It displays a hamburger menu to toggle the drawer, and the $:/SiteTitle tiddler followed by the [[$:/SiteSubtitle]] tiddler as a heading.</pre>
 </div>
-<div caption="Public Site" created="20171104000156141" modified="20171104062118333" span="6" tags="" title="PublicSite" type="text/vnd.tiddlywiki" url="https://ustuehler.github.io/tw5-material">
-<pre>\define hack-url() $(url)$/hack.html
+<div caption="Public Site" created="20171104000156141" modified="20171104231233551" span="6" tags="" title="PublicSite" type="text/vnd.tiddlywiki" url="https://ustuehler.github.io/tw5-material">
+<pre>\define hack-url() $(url)$/hack
 
-{{!!url}}/&lt;br&gt;
+{{!!url}}&lt;br&gt;
 &lt;$set name=&quot;url&quot; value={{!!url}}&gt;&lt;&lt;hack-url&gt;&gt;&lt;/$set&gt;
 
 Merged PullRequests and commits on the `master` branch of the [[repository on GitHub|https://github.com/ustuehler/ustuehler.github.io]] are published automatically. This can take a few minutes, because the `index.html` page needs to be rebuilt by [[Travis CI|https://travis-ci.org/ustuehler/ustuehler.github.io]].

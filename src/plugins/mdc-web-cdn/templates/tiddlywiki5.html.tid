@@ -8,9 +8,9 @@ tags: $:/tags/RawMarkup
 
 <script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script>
-console.log('Registering window.onload handler');
+console.debug('Registering window.onload handler');
 document.addEventListener("DOMContentLoaded", function() {
-  console.log('Calling $tw.utils.mdcAutoInit()');
+  console.debug('Calling $tw.utils.mdcAutoInit()');
   $tw.utils.mdcAutoInit();
 });
 </script>

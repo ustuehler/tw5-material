@@ -74,7 +74,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
     muuri.add(elements, options);
   };
   domNode.remove = function(elements, options) {
-    console.log("MuriWidget removing elements " + elements);
+    console.debug("MuuriWidget removing elements " + elements);
     muuri.remove(elements, options);
   };
 
@@ -85,7 +85,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
   var observer = new MutationObserver(function(mutations) {
     mutations.forEach(function(mutation) {
       if (mutation.type == 'childList') {
-        console.log("MuuriWidget observed a change in childList");
+        console.debug("MuuriWidget observed a change in childList");
         // Register resize event handlers for new children
         self.registerMissingResizeListeners(domNode, muuri);
       }
@@ -101,12 +101,12 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
   for (var i = 0; i < domNode.children.length; i++) {
     var item = domNode.children[i];
 
-    console.log(item);
+    console.debug(item);
 
     if (typeof item.resizeHandler === 'undefined') {
       item.resizeHandler = (function(item) {
         return function() {
-          console.log("MuuriWidget got a resize event from " + item.getAttribute('class'));
+          console.debug("MuuriWidget got a resize event from " + item.getAttribute('class'));
           grid.hide(item, {
             instant: true,
             onFinish: function() {
@@ -116,10 +116,10 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
         };
       })(item);
 
-      console.log("MuuriWidget registering for resize events from " + item.getAttribute('class'));
+      console.debug("MuuriWidget registering for resize events from " + item.getAttribute('class'));
       $tw.utils.addResizeListener(item, item.resizeHandler);
 
-      console.log("MuriWidget adding elements " + item);
+      console.debug("MuuriWidget adding elements " + item);
       grid.add(item, { instant: true, index: 0 });
 
       // FIXME: leak: grid.remove() missing

@@ -12,7 +12,7 @@ Initializes MDC-Web
 var mdc = require("$:/plugins/ustuehler/mdc-web/material-components-web.min.js");
 
 function mdcAutoInit() {
-  console.log("Calling mdc.autoInit()");
+  console.debug("Calling mdc.autoInit()");
   mdc.autoInit();
 }
 

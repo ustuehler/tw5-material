@@ -19,10 +19,10 @@ function mdcAutoInit() {
   var mdc = window.mdc;
 
   if (mdc) {
-    console.log("Calling mdc.autoInit()");
+    console.debug("Calling mdc.autoInit()");
     mdc.autoInit();
   } else {
-    console.log("Waiting for window.mdc!=null");
+    console.debug("Waiting for window.mdc!=null");
     setTimeout(mdcAutoInit, 10);
     return;
   }

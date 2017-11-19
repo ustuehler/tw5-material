@@ -51,7 +51,7 @@ gulp.task("buildinfo", [], shell.task([
   "hack/buildinfo"
 ], { verbose: true }));
 
-gulp.task("hack.html", ['buildinfo', 'tiddlers', 'javascript'], shell.task([
+gulp.task("hack.html", ['buildinfo'], shell.task([
   "tiddlywiki editions/hack-fs --build"
 ]));
 

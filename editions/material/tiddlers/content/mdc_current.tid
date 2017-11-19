@@ -1,49 +1,12 @@
-title: mdc/v0.1.4-current
-caption: >0.1.4
+title: mdc/v-current
+caption: >
 tags: $:/tags/ReleaseNotes
-created: 20171104224316
-modified: 20171104224316
-released: 20171104224316
+created: 20171119195517
+modified: 20171119195517
+released: 20171119195517
 
-Changes between version 0.1.4 and HEAD:
+Changes between version  and HEAD:
 
 ```
-new file mode 100644
---- /dev/null
-+++ b/src/plugins/mdc/utils.js
-@@ -0,0 +1,19 @@
-+/*\
-+title: $:/plugins/ustuehler/mdc/utils.js
-+type: application/javascript
-+module-type: utils
-+
-+Utility methods like showSnackbar()
-+
-+\*/
-+(function() {
-+'use strict';
-+
-+exports.showSnackbar = function(message, timeout) {
-+  $tw.rootWidget.findFirstDomNode().querySelector('.mdc-snackbar').widget.show({
-+    message: message,
-+    timeout: timeout || 2750
-+  });
-+};
-+
-+}());
---- a/src/plugins/mdc/widgets/action-showsnackbar.js
-+++ b/src/plugins/mdc/widgets/action-showsnackbar.js
-@@ -65,12 +65,6 @@ ActionShowSnackbarWidget.prototype.invokeAction = function(triggeringWidget,even
-   var self = this;
-   var snackbar = this.document.getElementsByClassName("mdc-snackbar")[0];
- 
--  console.log(triggeringWidget);
--  console.log(event);
--  console.log(this.actionText);
--  console.log(this.children);
--  console.log(this);
--
-   if (snackbar !== undefined) {
-     var data = {
-       message: this.message,
+fatal: bad revision 'mdc/v..HEAD'
 ```

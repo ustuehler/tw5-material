@@ -1,33 +1,12 @@
-title: muuri/v0.1.2-current
-caption: >0.1.2
+title: muuri/v-current
+caption: >
 tags: $:/tags/ReleaseNotes
-created: 20171105020748
-modified: 20171105020748
-released: 20171105020748
+created: 20171119195517
+modified: 20171119195517
+released: 20171119195517
 
-Changes between version 0.1.2 and HEAD:
+Changes between version  and HEAD:
 
 ```
---- a/src/plugins/muuri/storyviews/muuri.js
-+++ b/src/plugins/muuri/storyviews/muuri.js
-@@ -71,7 +71,7 @@ MuuriStoryView.prototype.insert = function(widget) {
- 	]);
-   */
- 
--  this.addGridItem(targetElement, { instant: true });
-+  this.addGridItem(targetElement, { instant: true, index: 0 });
- };
- 
- MuuriStoryView.prototype.remove = function(widget) {
---- a/src/plugins/muuri/widgets/muuri.js
-+++ b/src/plugins/muuri/widgets/muuri.js
-@@ -120,7 +120,7 @@ MuuriWidget.prototype.registerMissingResizeListeners = function(domNode, grid) {
-       $tw.utils.addResizeListener(item, item.resizeHandler);
- 
-       console.log("MuriWidget adding elements " + item);
--      grid.add(item, { instant: true, index: -1 });
-+      grid.add(item, { instant: true, index: 0 });
- 
-       // FIXME: leak: grid.remove() missing
-     }
+fatal: bad revision 'muuri/v..HEAD'
 ```

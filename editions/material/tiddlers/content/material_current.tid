@@ -1,34 +1,12 @@
-title: material/v0.1.10-current
-caption: >0.1.10
+title: material/v-current
+caption: >
 tags: $:/tags/ReleaseNotes
-created: 20171104181651
-modified: 20171104181651
-released: 20171104181651
+created: 20171119195517
+modified: 20171119195517
+released: 20171119195517
 
-Changes between version 0.1.10 and HEAD:
+Changes between version  and HEAD:
 
 ```
---- a/src/themes/material/base.tid
-+++ b/src/themes/material/base.tid
-@@ -2576,6 +2576,11 @@ div[aria-hidden="true"].mdc-snackbar {
-   opacity: 0;
- }
- 
-+/* Display the snackbar at notification level */
-+div.mdc-snackbar {
-+	z-index: 10000;
-+}
-+
- /*
-  * Hide the outline that may be shown briefly around buttons when they're clicked
-  */
-new file mode 100644
---- /dev/null
-+++ b/src/themes/material/config/TitleLinks.tid
-@@ -0,0 +1,4 @@
-+title: $:/config/Tiddlers/TitleLinks
-+type: text/vnd.tiddlywiki
-+
-+yes
-\ No newline at end of file
+fatal: bad revision 'material/v..HEAD'
 ```

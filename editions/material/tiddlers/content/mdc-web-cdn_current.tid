@@ -1,8 +1,12 @@
-title: mdc-web-cdn/v0.1.3-current
-caption: >0.1.3
+title: mdc-web-cdn/v-current
+caption: >
 tags: $:/tags/ReleaseNotes
-created: 20171104180752
-modified: 20171104180752
-released: 20171104180752
+created: 20171119195517
+modified: 20171119195517
+released: 20171119195517
 
-No changes between version 0.1.3 and HEAD.
+Changes between version  and HEAD:
+
+```
+fatal: bad revision 'mdc-web-cdn/v..HEAD'
+```

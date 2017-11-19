@@ -11,46 +11,16 @@ var pump = require('pump'),
 	nodemon = require('gulp-nodemon'),
 	shell = require('gulp-shell'),
   runSequence = require('run-sequence').use(gulp),
-  rename = require("gulp-rename"),
-	dest = "editions/material/";
+  rename = require("gulp-rename");
 
 /********************************************************************
 * Tasks
 *******************************************************************/
 
-gulp.task("clean", function (cb) {
-  pump([
-	  gulp.src([dest + "/themes", dest + "/plugins"], {read: false}),
-    clean()
-	  // no target
-  ], cb);
-});
-
-gulp.task("clean", function (cb) {
-  pump([
-	  gulp.src([dest + "/themes", dest + "/plugins"], {read: false}),
-    clean()
-	  // no target
-  ], cb);
-});
-
-gulp.task("tiddlers", function (cb) {
-  pump([
-		gulp.src(["src/**", "!**/*.js"]),
-		gulp.dest(dest)
-	], cb);
-})
-
-gulp.task("javascript", function (cb) {
-  pump([
-		gulp.src(["src/**/*.js"]),
-		uglify({ compress: false, output: { comments: /^\\/ } }),
-		gulp.dest(dest)
-	], cb);
-})
+gulp.task("clean")
 
 gulp.task("build", [], function (cb) {
-  runSequence('clean', ['buildinfo', 'tiddlers', 'javascript', 'package.json', 'hack.html'], cb)
+  runSequence('clean', ['buildinfo', 'package.json', 'hack.html'], cb)
 });
 
 gulp.task("package.json", [], function (cb) {

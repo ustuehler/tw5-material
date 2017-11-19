@@ -31,13 +31,6 @@ gulp.task("package.json", [], function (cb) {
     .pipe(gulp.dest('./editions/material/tiddlers/files/'))
 })
 
-// ref: https://stackoverflow.com/questions/28048029/running-a-command-with-gulp-to-start-node-js-server
-gulp.task('server', function() {
-	nodemon({
-		watch: ["plugins", "editions/material"]
-	}).on('restart', ['build'])
-})
-
 gulp.task("buildinfo", [], shell.task([
   "hack/buildinfo"
 ], { verbose: true }))
@@ -46,19 +39,26 @@ gulp.task("index.html", ['buildinfo'], shell.task([
   "node tiddlywiki.js editions/material --build"
 ]))
 
-gulp.task("hack.html", ['buildinfo'], shell.task([
-  "node tiddlywiki.js editions/hack-fs --build"
-]))
-
 gulp.task("test", shell.task([
   "node tiddlywiki.js editions/test --build 2>&1 | tee test.out; ! grep -q ^Failures: test.out"
 ]))
 
-gulp.task('hack', ['build', 'test'], function() {
+// ref: https://stackoverflow.com/questions/28048029/running-a-command-with-gulp-to-start-node-js-server
+gulp.task('server', function() {
+	nodemon({
+		watch: ["plugins", "themes", "editions/material"]
+	}).on('restart', ['build'])
+})
+
+gulp.task('hack', function() {
 	nodemon({
 		watch: ["plugins", "themes", "editions/material"]
 	}).on('restart', ['build', 'test'])
 })
+
+gulp.task("hack.html", ['buildinfo'], shell.task([
+  "node tiddlywiki.js editions/hack-fs --build"
+]))
 
 gulp.task("commit", [], shell.task([
   "git add -A",

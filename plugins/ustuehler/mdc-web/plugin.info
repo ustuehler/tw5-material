@@ -1,6 +1,6 @@
 {
 	"title": "$:/plugins/ustuehler/mdc-web",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"core-version": ">=5.1.14",
 	"author": "Uwe Stuehler",
 	"description": "MDC-Web assets (fonts, styles and scripts included)",

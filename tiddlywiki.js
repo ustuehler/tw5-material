@@ -14,7 +14,5 @@ if ($tw.boot.argv.length == 0) {
   $tw.boot.argv = ['editions/dev', '--server', '8080']
 }
 
-console.log('boot args:', $tw.boot.argv)
-
 // Boot the TW5 app
 $tw.boot.boot()

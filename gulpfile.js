@@ -34,7 +34,7 @@ gulp.task("package.json", [], function (cb) {
 // ref: https://stackoverflow.com/questions/28048029/running-a-command-with-gulp-to-start-node-js-server
 gulp.task('server', function() {
 	nodemon({
-		watch: ["src", "editions/material"]
+		watch: ["plugins", "editions/material"]
 	}).on('restart', ['build']);
 });
 
@@ -57,6 +57,6 @@ gulp.task("hack.html", ['buildinfo'], shell.task([
 
 gulp.task('hack', function() {
 	nodemon({
-		watch: ["src", "editions/material"]
+		watch: ["plugins", "editions/material"]
 	}).on('restart', ['build', 'commit', 'push']);
 });

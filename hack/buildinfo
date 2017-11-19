@@ -70,8 +70,12 @@ make_buildinfo() {
   printf '%s' "$new" >"$out"
 }
 
-make_buildinfo "src/themes/material" "material/v"
+author='ustuehler'
 
 for plugin in caption mdc mdc-web mdc-web-cdn muuri; do
-  make_buildinfo "src/plugins/$plugin" "$plugin/v"
+  make_buildinfo "plugins/$author/$plugin" "$plugin/v"
+done
+
+for theme in material; do
+  make_buildinfo "themes/$author/$theme" "$theme/v"
 done

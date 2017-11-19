@@ -7,7 +7,14 @@ process.env['TIDDLYWIKI_PLUGIN_PATH'] = path.resolve('plugins')
 process.env['TIDDLYWIKI_THEME_PATH'] = path.resolve('themes')
 
 // Pass the command line arguments to the boot kernel
-$tw.boot.argv = ["editions/dev", '--server', '8080']
+$tw.boot.argv = process.argv.slice(2)
+
+// Assume some default arguments for nodemon
+if ($tw.boot.argv.length == 0) {
+  $tw.boot.argv = ['editions/dev', '--server', '8080']
+}
+
+console.log('boot args:', $tw.boot.argv)
 
 // Boot the TW5 app
 $tw.boot.boot()

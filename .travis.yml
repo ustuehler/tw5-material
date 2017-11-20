@@ -6,8 +6,7 @@ script:
   - git pull --tags
   - npm run build
   - npm run test
-  - grep -v ^/index.html .gitignore >.gitignore.tmp
-  - mv .gitignore.tmp .gitignore
+  - cp .travis.gitignore .gitignore
 
 cache:
   directories:

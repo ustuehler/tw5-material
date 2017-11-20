@@ -1,0 +1,9 @@
+# Hidden files
+.*
+
+# Created by "tiddlywiki --build"
+/editions/*/output/
+
+# Created by "npm install"
+/node_modules/
+/npm-debug.log

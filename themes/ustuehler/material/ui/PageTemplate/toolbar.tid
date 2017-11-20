@@ -35,7 +35,7 @@ type: text/vnd.tiddlywiki
 
 <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
 
-<$list filter="[tag[$:/tags/PageTemplate/ToolbarRight]]">
+<$list filter="[tag[$:/tags/PageTemplate/ToolbarRight]!has[draft.of]]">
 
 <$transclude mode="inline"/>
 

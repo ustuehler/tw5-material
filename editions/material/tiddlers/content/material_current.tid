@@ -1,8 +1,34 @@
 title: material/v0.2.0-current
 caption: >0.2.0
 tags: $:/tags/ReleaseNotes
-created: 20171119214753
-modified: 20171119214753
-released: 20171119214753
+created: 20171120035526
+modified: 20171120035526
+released: 20171120035526
 
-No changes between version 0.2.0 and HEAD.
+Changes between version 0.2.0 and HEAD:
+
+```
+--- a/themes/ustuehler/material/ui/PageTemplate/toolbar.tid
++++ b/themes/ustuehler/material/ui/PageTemplate/toolbar.tid
+@@ -1,5 +1,8 @@
+ created: 20171102053758393
++creator: ustuehler
++modifier: ustuehler
++span: 12
+ title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
+ type: text/vnd.tiddlywiki
+ 
+@@ -30,6 +33,12 @@ type: text/vnd.tiddlywiki
+ 
+ -->
+ 
++<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
++
++<$list filter="[tag[$:/tags/PageTemplate/ToolbarRight]]"><$transclude mode="inline"/></$list>
++
++</section>
++
+ </div>
+ 
+ </header>
+```

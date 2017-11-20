@@ -25,7 +25,8 @@
     "build": "gulp build",
     "test": "gulp test",
     "start": "git clean -xf editions/material/tiddlers && gulp build && gulp server",
-    "wip": "gulp build && gulp wip"
+    "wip": "gulp build && gulp wip",
+    "hack": "gulp hack"
   },
   "repository": {
     "type": "git",

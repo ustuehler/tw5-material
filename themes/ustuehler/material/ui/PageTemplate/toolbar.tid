@@ -1,5 +1,8 @@
 created: 20171102053758393
-modified: 20171102054209032
+creator: ustuehler
+modified: 20171120034225135
+modifier: ustuehler
+span: 12
 title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
 type: text/vnd.tiddlywiki
 
@@ -29,6 +32,14 @@ type: text/vnd.tiddlywiki
 </div>
 
 -->
+
+<div style="float: right;">
+
+<$list filter="[tag[$:/tags/PageTemplate/ToolbarRight]]">
+<$transclude mode="inline"/>
+</$list>
+
+</div>
 
 </div>
 

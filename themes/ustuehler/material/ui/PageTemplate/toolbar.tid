@@ -33,13 +33,11 @@ type: text/vnd.tiddlywiki
 
 -->
 
-<div style="float: right;">
-
+<section class="mdc-toolbar__section mdc-toolbar__section--align-end">
 <$list filter="[tag[$:/tags/PageTemplate/ToolbarRight]]">
 <$transclude mode="inline"/>
 </$list>
-
-</div>
+</section>
 
 </div>
 

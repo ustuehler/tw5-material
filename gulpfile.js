@@ -36,11 +36,11 @@ gulp.task("buildinfo", [], shell.task([
 ], { verbose: true }))
 
 gulp.task("index.html", ['buildinfo'], shell.task([
-  "node tiddlywiki.js editions/material --build"
+  "node index.js editions/material --build"
 ]))
 
 gulp.task("test", shell.task([
-  "node tiddlywiki.js editions/test --build 2>&1 | tee test.out; ! grep -q ^Failures: test.out"
+  "node index.js editions/test --build 2>&1 | tee test.out; ! grep -q ^Failures: test.out"
 ]))
 
 // ref: https://stackoverflow.com/questions/28048029/running-a-command-with-gulp-to-start-node-js-server
@@ -57,7 +57,7 @@ gulp.task('hack', function() {
 })
 
 gulp.task("hack.html", ['buildinfo'], shell.task([
-  "node tiddlywiki.js editions/hack-fs --build"
+  "node index.js editions/hack-fs --build"
 ]))
 
 gulp.task("commit", [], shell.task([

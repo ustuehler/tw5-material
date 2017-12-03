@@ -1,8 +1,0 @@
-{
-	"title": "$:/plugins/ustuehler/caption",
-	"version": "0.2.0",
-	"core-version": ">=5.1.14",
-	"author": "Uwe Stuehler",
-	"description": "Use caption as link text in WikiLinks",
-	"list": "readme usage license"
-}

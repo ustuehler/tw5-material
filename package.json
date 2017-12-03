@@ -2,9 +2,10 @@
   "name": "tw5-material",
   "version": "0.2.0",
   "description": "Material Design edition of TiddlyWiki",
-  "main": "tiddlywiki.js",
+  "main": "index.js",
   "dependencies": {
-    "tiddlywiki": "~5.1.14"
+    "tiddlywiki": "~5.1.14",
+    "tw5-plugin": "git+https://github.com/ustuehler/tw5-plugin.git"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

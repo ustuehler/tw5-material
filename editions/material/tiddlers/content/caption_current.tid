@@ -1,8 +1,12 @@
-title: caption/v0.2.0-current
-caption: >0.2.0
+title: caption/v-current
+caption: >
 tags: $:/tags/ReleaseNotes
-created: 20171119214753
-modified: 20171119214753
-released: 20171119214753
+created: 20171203194121
+modified: 20171203194121
+released: 20171203194121
 
-No changes between version 0.2.0 and HEAD.
+Changes between version  and HEAD:
+
+```
+fatal: bad revision 'caption/v..HEAD'
+```

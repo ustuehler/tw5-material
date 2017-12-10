@@ -39,7 +39,7 @@ MuuriWidget.prototype.render = function(parent,nextSibling) {
 	this.execute();
 
   // Insert DOM node
-  var domNode = this.document.createElement("div");
+  var domNode = this.document.createElement("section");
   domNode.setAttribute("class","grid");
 	parent.insertBefore(domNode,nextSibling);
 	this.renderChildren(domNode,null);

@@ -1,0 +1,7 @@
+created: 20171103211534929
+modified: 20171103212445333
+tags: [[Known Issues]]
+title: Editing moves tiddlers to the end of the grid
+type: text/vnd.tiddlywiki
+
+Editing a tiddler should open the editor in its place, or next to it, but not alter the grid's order of tiddlers unless repositioning is required.

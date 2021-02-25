@@ -1,0 +1,46 @@
+caption: {{$:/themes/ustuehler/material/icons/star}} {{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}
+created: 20171031232012556
+description: {{$:/themes/ustuehler/material/language/Buttons/Star/Hint}}
+modified: 20171103190428605
+span: 12
+tags: $:/tags/ViewToolbar/Title
+title: $:/themes/ustuehler/material/ui/Buttons/star
+type: text/vnd.tiddlywiki
+
+\define oldPinButtonTag()
+$:/tags/Starred
+\end
+\define removeOldPin()
+  <!-- migration support from tags on tiddlers to "list" field -->
+  <$fieldmangler><$action-sendmessage $message="tm-remove-tag" $param=<<oldPinButtonTag>>/></$fieldmangler>
+\end
+\define starredTiddlers()
+$:/StarredTiddlers
+\end
+\define isStarred()
+[list<starredTiddlers>field:title<currentTiddler>]
+\end
+\define addPin()
+  <$action-listops $tiddler=<<starredTiddlers>> $subfilter="[<currentTiddler>]"/>
+  <<removeOldPin>>
+\end
+\define removePin()
+  <$action-listops $tiddler=<<starredTiddlers>> $subfilter="-[<currentTiddler>]"/>
+  <<removeOldPin>>
+\end
+\define pinButton()
+<$button tooltip={{$:/themes/ustuehler/material/language/Buttons/Star/Hint}} aria-label={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}} class=<<tv-config-toolbar-class>>>
+<$list variable="x" filter=<<isStarred>> emptyMessage=<<addPin>>>
+  <<removePin>>
+</$list>
+<$list variable="" filter="[<tv-config-toolbar-icons>prefix[yes]]">
+  {{$:/themes/ustuehler/material/icons/star}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/themes/ustuehler/material/language/Buttons/Star/Caption}}/></span>
+</$list>
+</$button>
+\end
+<$list variable="x" filter=<<isStarred>> emptyMessage=<<pinButton>>>
+  <span class="starred"><<pinButton>></span>
+</$list>

@@ -1,0 +1,5 @@
+title: $:/plugins/ustuehler/mdc-web-cdn/readme
+
+This plugin provides the latest version of the [[MDC-Web|https://github.com/material-components/material-components-web]] fonts, styles and scripts over CDN. However, this means that your TiddlyWiki will no longer be fully self-contained.
+
+[[Source code|https://github.com/ustuehler/tw5-material/blob/master/src/plugins/ustuehler/mdc-web-cdn]]

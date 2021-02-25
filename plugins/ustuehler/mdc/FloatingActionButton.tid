@@ -1,0 +1,36 @@
+caption: Floating Action Button
+created: 20171025190817336
+mdc-class: mdc-fab
+mdc-fab-icon: favorite
+modified: 20171027222525750
+title: $:/plugins/ustuehler/mdc/FloatingActionButton
+type: text/vnd.tiddlywiki
+
+\define this-transclusion()
+{$(currentTiddler)$|$(currentTiddler)$|||}
+\end
+\define this-tiddler()
+[<transclusion>prefix<this-transclusion>]]
+\end
+\define fab(position)
+<span class="mdc-fab material-icons tc-fab--$position$" aria-label="New">
+
+<$link to={{!!link-to}} class="mdc-fab__icon">
+
+<$transclude field="mdc-fab-icon" mode="inline">
+
+<$transclude tiddler="$:/plugins/ustuehler/mdc/FloatingActionButton" field="mdc-fab-icon" mode="inline"/>
+
+</$transclude>
+
+</$link>
+
+</span>
+\end
+
+<$list
+  variable=""
+  filter="[[$:/plugins/ustuehler/mdc/FloatingActionButton]is[current]]"
+  emptyMessage="""<<fab "absolute">>""">
+<<fab "relative">>
+</$list>

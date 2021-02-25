@@ -1,0 +1,17 @@
+title: $:/themes/ustuehler/material/ui/Buttons/zoom-in
+caption: <<material-icon "zoom_in">> Enlarge current tiddler
+created: 20171102223205331
+description: Enlarge the current tiddler
+list-before: $:/themes/ustuehler/material/ui/Buttons/close
+modified: 20171102230648198
+tags: $:/tags/ViewToolbar/Title
+
+<$button tooltip={{$:/language/Buttons/Close/Hint}} aria-label={{$:/language/Buttons/Close/Caption}} class=<<tv-config-toolbar-class>>>
+<$action-adjustspan adjust="1"/>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+<<material-icon "zoom_in">>
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/Close/Caption}}/></span>
+</$list>
+</$button>

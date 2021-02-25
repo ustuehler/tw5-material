@@ -1,0 +1,31 @@
+{
+	"tiddlers": [
+		{
+			"file": "materialicons.ttf",
+			"fields": {
+				"type": "application/font-woff",
+				"title": "$:/plugins/ustuehler/mdc-web/materialicons.ttf"
+			}
+		},{
+			"file": "material-components-web.min.css",
+			"fields": {
+				"type": "text/css",
+				"title": "$:/plugins/ustuehler/mdc-web/material-components-web.min.css",
+				"tags": "[[$:/tags/Stylesheet]]"
+			}
+		},{
+			"file": "material-components-web.min.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/ustuehler/mdc-web/material-components-web.min.js",
+				"module-type": "library"
+			}
+		},{
+			"file": "LICENSE",
+			"fields": {
+				"type": "text/plain",
+				"title": "$:/plugins/ustuehler/mdc-web/license"
+			}
+		}
+	]
+}

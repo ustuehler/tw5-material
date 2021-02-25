@@ -1,0 +1,17 @@
+title: $:/themes/ustuehler/material/ui/PageTemplate/sidebar
+
+<$scrollable fallthrough="no" class="tc-sidebar-scrollable">
+
+<div class="tc-sidebar-header">
+
+<$reveal state="$:/state/sidebar" type="match" text="yes" default="yes" retain="yes" animate="yes">
+
+{{||$:/core/ui/PageTemplate/pagecontrols}}
+
+<$transclude tiddler="$:/core/ui/SideBarLists" mode="inline"/>
+
+</$reveal>
+
+</div>
+
+</$scrollable>

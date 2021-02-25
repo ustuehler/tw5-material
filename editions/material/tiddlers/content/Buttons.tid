@@ -1,0 +1,15 @@
+created: 20171101015029957
+list: 
+list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/button.svg]]
+modified: 20171103195430064
+span: 10
+tags: Documentation
+title: Buttons
+type: text/vnd.tiddlywiki
+
+<table>
+<tr><th>Button</th><th>Tiddler</th></tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/themes/ustuehler/material/ui/Buttons/]]">
+<tr><th><$transclude/></th><td><$link><<currentTiddler>></$link></td></tr>
+</$list>
+</table>

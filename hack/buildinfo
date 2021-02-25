@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+
+cd "$(dirname "$0")/.."
+
+#cat >editions/material/tiddlers/content/material_
+#ssss log --stat --pretty=oneline material/v0.1.9.. -- src/themes/material >
+
+tiddler_text() {
+  awk '!body && /^$/ { body = 1; next; } body { print; }'
+}
+
+buildinfo_tid_body() {
+  local dir="$1"
+  local vprefix="$2"
+  local ver="$3"
+  local changes=$(git diff --pretty=oneline "$vprefix$ver..HEAD" -- "$dir" 2>&1)
+
+  if [[ -n $changes ]]; then
+    echo "Changes between version $ver and HEAD:"
+    echo ''
+    echo '```'
+    echo "$changes" |
+      grep -E -v '^[+-](created|modified):' |
+      grep -E -v '^(diff|index) '
+    echo '```'
+  else
+    echo "No changes between version $ver and HEAD."
+  fi
+}
+
+buildinfo_tid() {
+  local dir="$1"
+  local vprefix="$2"
+  local ver="$3"
+  local now="$(TZ=UTC date +'%Y%m%d%H%M%S')"
+
+  cat <<EOS
+title: $vprefix$ver-current
+caption: >$ver
+tags: $:/tags/ReleaseNotes
+created: $now
+modified: $now
+released: $now
+
+$(buildinfo_tid_body "$dir" "$vprefix" "$ver")
+EOS
+}
+
+make_buildinfo() {
+  local dir="$1"
+  local vprefix="$2"
+  local name=$(dirname $vprefix)
+  local out="editions/material/tiddlers/content/${name}_current.tid"
+  local ver=$(jq -r .version "$dir"/plugin.info)
+  local new="$(buildinfo_tid "$dir" "$vprefix" "$ver")"
+
+  if [[ -f $out ]]; then
+    if [[ "$(tiddler_text <<<"$new")" = "$(tiddler_text <"$out")" ]]; then
+      echo "$out is already up-to-date."
+      return
+    else
+      echo "Writing $out."
+      tiddler_text <<<"$new" >/tmp/a
+      tiddler_text <"$out" >/tmp/b
+      diff -u /tmp/a /tmp/b
+      echo $?
+    fi
+  fi
+
+  printf '%s' "$new" >"$out"
+}
+
+author='ustuehler'
+
+for plugin in caption mdc mdc-web mdc-web-cdn muuri; do
+  make_buildinfo "plugins/$author/$plugin" "$plugin/v"
+done
+
+for theme in material; do
+  make_buildinfo "themes/$author/$theme" "$theme/v"
+done

@@ -1,0 +1,16 @@
+caption: Pull Requests
+created: 20171104023430862
+modified: 20171104062606825
+tags: PublicSite
+title: PullRequests
+type: text/vnd.tiddlywiki
+
+\define pr-link()
+[[Pull Request on GitHub|$(github-url)$/pulls]]
+\end
+
+<$set name="github-url" value={{GitRepository!!text}}>
+
+If you don't have write access to the GitRepository, please submit your changes as a ''<<pr-link>>'', instead.
+
+</$set>

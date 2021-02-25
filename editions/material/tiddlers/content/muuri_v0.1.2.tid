@@ -1,0 +1,11 @@
+caption: 0.1.2
+created: 20171103071008147
+modified: 20171103071259673
+released: 201711030710
+span: 3
+tags: $:/tags/ReleaseNotes
+title: muuri/v0.1.2
+type: text/vnd.tiddlywiki
+
+!!! Changed
+* All grid layout animations are permanently disabled. Layout changes are instant.

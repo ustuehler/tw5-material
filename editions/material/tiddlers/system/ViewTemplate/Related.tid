@@ -1,0 +1,15 @@
+created: 20171027225100632
+list-before: $:/themes/ustuehler/material/ui/ViewToolbar
+modified: 20171101162551977
+tags: $:/tags/ViewTemplate
+title: $:/ViewTemplate/Related
+type: text/vnd.tiddlywiki
+
+<$list variable="" filter="[is[current]!view-related[no]]">
+<$list variable="" filter="[tag<storyTiddler>first[]]">
+{{$:/plugins/ustuehler/mdc/ListItem/Divider}}
+
+<br>Related:
+
+<<list-links "[tag<storyTiddler>sort[]]">>
+</$list></$list>

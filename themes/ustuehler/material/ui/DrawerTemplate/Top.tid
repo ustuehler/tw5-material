@@ -1,0 +1,10 @@
+created: 20171025225148368
+modified: 20171026020020041
+tags: $:/tags/DrawerTemplate
+title: $:/themes/ustuehler/material/ui/DrawerTemplate/Top
+list-before: $:/themes/ustuehler/material/ui/DrawerTemplate/Bottom
+type: text/vnd.tiddlywiki
+
+<$list
+  filter='[all[shadows+tiddlers]!has[draft.of]tag[$:/tags/Drawer]]'
+  template="$:/plugins/ustuehler/mdc/ListItem"/>

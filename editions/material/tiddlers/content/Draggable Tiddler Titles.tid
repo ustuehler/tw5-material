@@ -1,0 +1,8 @@
+created: 20171103071500820
+modified: 20171103071745982
+tags: Features
+title: Draggable Tiddler Titles
+type: text/vnd.tiddlywiki
+
+You can copy tiddlers by dragging their title to another browser window where TiddlyWiki is running. This is enabled by the 
+ standard [[TitleLinks|$:/core/ui/ControlPanel/Settings/TitleLinks]] setting.

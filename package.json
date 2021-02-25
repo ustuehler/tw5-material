@@ -1,0 +1,56 @@
+{
+  "name": "tw5-material",
+  "version": "0.2.0",
+  "description": "Material Design edition of TiddlyWiki",
+  "main": "index.js",
+  "dependencies": {
+    "tiddlywiki": "~5.1.14",
+    "tw5-plugin": "git+https://github.com/ustuehler/tw5-plugin.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.6.3",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "jslint": "^0.11.0",
+    "nodemon": "^1.12.1",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.2.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test",
+    "start": "git clean -xf editions/material/tiddlers && gulp build && gulp server",
+    "wip": "gulp build && gulp wip",
+    "hack": "gulp hack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ustuehler/tw5-material.git"
+  },
+  "keywords": [],
+  "author": "Uwe Stuehler",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/ustuehler/tw5-material/issues"
+  },
+  "homepage": "https://ustuehler.github.com/tw5-material#readme",
+  "nodemonConfig": {
+    "ext": "js,tid,info,multids",
+    "ignore": [
+      "tiddlers/content/*",
+      "editions/material/plugins/*",
+      "editions/material/themes/*",
+      "hack/content/-*.tid",
+      "hack/content/$*.tid",
+      "hack/content/Draft of *.tid",
+      "hack/content/*_current.tid"
+    ],
+    "delay": "1000"
+  }
+}

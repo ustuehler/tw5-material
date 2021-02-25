@@ -1,0 +1,10 @@
+caption: 0.1.1
+created: 20171103053844925
+modified: 20171103053912729
+released: 20171101
+tags: $:/tags/ReleaseNotes
+title: mdc-web/v0.1.1
+type: text/vnd.tiddlywiki
+
+!!! Changed
+* Reworded the plugin description.

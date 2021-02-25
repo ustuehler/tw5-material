@@ -1,0 +1,7 @@
+created: 20171103062002901
+modified: 20171103064852542
+tags: Features
+title: Styled Tiddlers
+type: text/vnd.tiddlywiki
+
+The tiddler view's `class` and `style` attributes can be customized for each tiddler with the `view-class` and `view-style` fields.

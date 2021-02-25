@@ -1,0 +1,18 @@
+{
+	"tiddlers": [
+		{
+			"file": "muuri.min.js",
+			"fields": {
+				"type": "application/javascript",
+				"title": "$:/plugins/ustuehler/muuri/muuri.min.js",
+				"module-type": "library"
+			}
+		},{
+			"file": "LICENSE",
+			"fields": {
+				"type": "text/plain",
+				"title": "$:/plugins/ustuehler/muuri/license"
+			}
+		}
+	]
+}

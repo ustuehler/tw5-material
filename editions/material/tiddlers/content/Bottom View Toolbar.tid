@@ -1,0 +1,9 @@
+created: 20171102004610362
+modified: 20171102005116158
+tags: Features
+title: Bottom View Toolbar
+type: text/vnd.tiddlywiki
+
+The main view toolbar is now a separate bar at the bottom of each tiddler, but actions can also be added to the title bar. Use the tags $:/tags/ViewToolbar/Title, $:/tags/ViewToolbar/BottomLeft and $:/tags/ViewToolbar/BottomRight instead of $:/tags/ViewToolbar.
+
+The action button icons are replaced with Material Icons.

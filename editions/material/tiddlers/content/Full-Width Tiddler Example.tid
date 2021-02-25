@@ -1,0 +1,10 @@
+created: 20171102205533905
+modified: 20171102205732767
+tags: [[Dynamic Grid Layout]]
+title: Full-Width Tiddler Example
+type: text/vnd.tiddlywiki
+view-class: full-width
+
+<div style="width:100%;">
+This tiddler spans the full width of the storyview it appears in.
+</div>

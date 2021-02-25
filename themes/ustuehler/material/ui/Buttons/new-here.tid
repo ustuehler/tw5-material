@@ -1,0 +1,24 @@
+caption: <<material-icon "add_circle_outline">> {{$:/language/Buttons/NewHere/Caption}}
+created: 20171101022508903
+description: {{$:/language/Buttons/NewHere/Hint}}
+list-before: 
+modified: 20171101023147896
+tags: $:/tags/ViewToolbar/BottomLeft
+title: $:/themes/ustuehler/material/ui/Buttons/new-here
+type: text/vnd.tiddlywiki
+
+\define newHereButtonTags()
+[[$(currentTiddler)$]]
+\end
+\define newHereButton()
+<$button tooltip={{$:/language/Buttons/NewHere/Hint}} aria-label={{$:/language/Buttons/NewHere/Caption}} class=<<tv-config-toolbar-class>>>
+<$action-sendmessage $message="tm-new-tiddler" tags=<<newHereButtonTags>>/>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+<<material-icon "add_circle_outline">>
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/NewHere/Caption}}/></span>
+</$list>
+</$button>
+\end
+<<newHereButton>>

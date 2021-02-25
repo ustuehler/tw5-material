@@ -1,0 +1,9 @@
+created: 20171026011028222
+modified: 20171026011152447
+tags: 
+title: $:/plugins/ustuehler/mdc/ListItem/StartDetail
+type: text/vnd.tiddlywiki
+
+<$transclude field="list-item-start-detail">
+<$transclude tiddler="$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon"/>
+</$transclude>

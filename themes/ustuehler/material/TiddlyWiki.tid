@@ -1,0 +1,12 @@
+created: 20171027023608057
+icon: favicon.png
+list-before: 
+list-item-start-detail: [img class="mdc-list-item__start-detail" [favicon.png]]
+modified: 20171103192426191
+span: 6
+tags: $:/tags/DrawerBottom
+title: TiddlyWiki
+type: text/vnd.tiddlywiki
+view-style: background: linear-gradient(135deg, #fdfdfd, #fdfdfd 20%, #feff9c);
+
+{{$:/SiteTitle||$:/core/ui/PageTemplate/sidebar}}

@@ -1,0 +1,38 @@
+created: 20171025225118792
+modified: 20171030144429024
+title: $:/themes/ustuehler/material/ui/DrawerTemplate
+type: text/vnd.tiddlywiki
+
+<$scrollable fallthrough="no" class="tc-sidebar-scrollable mdc-persistent-drawer">
+
+<nav class="tc-sidebar-header sidebar-wrapper">
+
+<div class="sidebar-content mdc-toolbar-fixed-adjust">
+
+<div class="mdc-list-group">
+
+<nav class="mdc-list">
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/DrawerTemplate]!has[draft.of]]">
+
+<$transclude mode="inline"/>
+
+</$list>
+
+</nav>
+
+<nav class="mdc-list">
+
+</nav>
+
+</div>
+
+</div>
+
+<div class="sidebar-footer">
+
+</div>
+
+</nav>
+
+</$scrollable>

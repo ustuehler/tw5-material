@@ -1,0 +1,18 @@
+{
+	"tiddlers": [
+		{
+			"file": "package",
+			"fields": {
+				"type": "application/json",
+				"title": "package.json"
+			}
+		},
+		{
+			"file": "package-lock",
+			"fields": {
+				"type": "application/json",
+				"title": "package-lock.json"
+			}
+		}
+	]
+}

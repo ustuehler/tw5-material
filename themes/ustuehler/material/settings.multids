@@ -1,0 +1,8 @@
+title: $:/themes/ustuehler/material/settings/
+
+fontfamily: Roboto, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "DejaVu Sans", sans-serif
+codefontfamily: "Monaco Mono", Consolas, "Lucida Console", "DejaVu Sans Mono", monospace
+editorfontfamily: "Monaco Mono", Consolas, "Lucida Console", "DejaVu Sans Mono", monospace
+backgroundimageattachment: fixed
+backgroundimagesize: auto
+animationDuration: 0

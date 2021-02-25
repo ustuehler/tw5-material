@@ -1,0 +1,8 @@
+created: 20171027020335751
+modified: 20171027020459944
+title: $:/plugins/ustuehler/mdc/readme
+type: text/vnd.tiddlywiki
+
+This plugin provides macros and widgets to make the [[Material Components Catalog|http://material-components-web.appspot.com/]] accessible in WikiText.
+
+It relies on assets provided by either of the plugins [[mdc-web|$:/plugins/ustuehler/mdc-web]] or [[mdc-web-cdn|$:/plugins/ustuehler/mdc-web-cdn]].

@@ -1,0 +1,7 @@
+created: 20171103212454628
+modified: 20171103212611006
+tags: [[Known Issues]]
+title: Editing may trigger resize handler and trigger the grid layout manager
+type: text/vnd.tiddlywiki
+
+The editor should have a fixed size, so it wouldn't cause unnecessary resize events.

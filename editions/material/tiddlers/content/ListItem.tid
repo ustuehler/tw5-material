@@ -1,0 +1,7 @@
+created: 20171027230014138
+modified: 20171030160220969
+tags: Templates
+title: ListItem
+type: text/vnd.tiddlywiki
+
+{{$:/plugins/ustuehler/mdc/ListItem}}

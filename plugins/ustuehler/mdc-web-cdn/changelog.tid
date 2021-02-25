@@ -1,0 +1,10 @@
+caption: MDC-Web CDN Plugin
+created: 20171025214813867
+modified: 20171103054326241
+tags: 
+title: $:/plugins/ustuehler/mdc-web-cdn/changelog
+type: text/vnd.tiddlywiki
+
+<$list filter="[prefix[mdc-web-cdn/v]!sort[released]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[prefix[mdc-web-cdn/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+</$list>

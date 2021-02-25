@@ -1,0 +1,11 @@
+{
+	"title": "$:/themes/ustuehler/material",
+	"name": "Material",
+	"version": "0.2.0",
+	"core-version": ">=5.1.14",
+	"author": "Uwe Stuehler",
+	"plugin-type": "theme",
+	"description": "Material Design theme (needs Material Design components)",
+	"dependents": "ustuehler/mdc ustuehler/muuri",
+	"list": "readme changelog"
+}

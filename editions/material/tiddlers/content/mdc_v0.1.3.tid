@@ -1,0 +1,24 @@
+caption: 0.1.3
+created: 20171102043834105
+modified: 20171102050055584
+released: 20171101
+tags: $:/tags/ReleaseNotes
+title: mdc/v0.1.3
+type: text/vnd.tiddlywiki
+
+!!! Added
+* New `snackbar` and `action-showsnackbar` widgets.
+* A `drawer` macro and `action-toggledrawer` widget.
+!!! Fixed
+* Use the `favorite` icon by default if the <<fab>> is transcluded in a tiddler without the `mdc-fab-icon` field.
+!!! Changed
+* Set position to `relative` when the <<fab>> is transcluded as the current tiddler.
+!! 0.1.2
+!!! Changed
+* Adjusted naming of plugin tiddlers and moved some List Item related things from the theme into this plugin.
+* Renamed the `icon` field to `list-item-icon` for [[$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon]].
+!!! Added
+* Now recognizing the `list-item-start-detail` field. If present, it will be transcluded instead of [[$:/plugins/ustuehler/mdc/ListItem/StartDetail/Icon]].
+!! 0.1.1
+!!! Changed
+* Reworded the plugin description.

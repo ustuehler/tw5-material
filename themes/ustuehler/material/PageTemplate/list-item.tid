@@ -1,0 +1,13 @@
+title: $:/themes/ustuehler/material/PageTemplate/list-item
+
+<$link to={{!!link-to}} class="mdc-list-item">
+
+{{||$:/themes/ustuehler/material/PageTemplate/list-item-icon}}
+
+<$transclude field="caption">
+
+<$view field="title"/>
+
+</$transclude>
+
+</$link>

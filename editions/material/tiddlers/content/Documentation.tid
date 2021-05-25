@@ -1,0 +1,15 @@
+created: 20171101195529415
+list-item-icon: format_align_left
+modified: 20171103210705822
+span: 3
+tags: $:/tags/Drawer
+title: Documentation
+type: text/vnd.tiddlywiki
+view-related: no
+view-style: background: linear-gradient(135deg, orange, orange 20%, #feff9c);
+
+This is a demonstration of TiddlyWiki with a [[Material Design|https://material.io/guidelines/]] inspired user interface. Documentation of the plugins is sparse, but below is an overview of all the UI components.
+
+<$list
+  filter="[all[system+tiddlers]tag<currentTiddler>]"
+  template="$:/core/ui/ListItemTemplate"/>

@@ -1,0 +1,16 @@
+created: 20171025230445315
+list: 
+list-item-start-detail: [img class="mdc-list-item__start-detail" [$:/images/icon.svg]]
+modified: 20171103195430062
+tags: Documentation
+title: Icons
+type: text/vnd.tiddlywiki
+
+https://material.io/icons/
+
+<table>
+<tr><th>Icon</th><th>Tiddler</th></tr>
+<$list filter="[all[shadows+tiddlers]prefix[$:/themes/ustuehler/material/icons/]]">
+<tr><th><$transclude/></th><td><$link><<currentTiddler>></$link></td></tr>
+</$list>
+</table>

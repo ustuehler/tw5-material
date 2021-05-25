@@ -1,0 +1,50 @@
+created: 20171102053758393
+creator: ustuehler
+modified: 20171120034225135
+modifier: ustuehler
+span: 12
+title: $:/themes/ustuehler/material/ui/PageTemplate/toolbar
+type: text/vnd.tiddlywiki
+
+<$set name="siteTitle" value={{$:/SiteTitle}}>
+
+<header class="mdc-toolbar mdc-toolbar--fixed">
+
+<div class="mdc-toolbar__row">
+
+<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+
+<span class="catalog-back">
+
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar-icon" mode="inline"/>
+
+</span>
+
+<$transclude tiddler="$:/themes/ustuehler/material/ui/PageTemplate/toolbar-title" mode="inline"/>
+
+</section>
+
+<!-- TODO: add a search field. editing the search field should load the matching tiddlers after a delay, if the list is short enough.
+
+<div class="mdc-textfield">
+  <input type="text" id="textfield-no-js" class="mdc-textfield__input" placeholder="Search by Title or Text">
+  <div class="mdc-textfield__bottom-line"></div>
+</div>
+
+-->
+
+<section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/PageTemplate/ToolbarRight]!has[draft.of]]">
+
+<$transclude mode="inline"/>
+
+</$list>
+
+</section>
+
+</div>
+
+</header>
+
+</$set>

@@ -1,0 +1,7 @@
+created: 20171101192721385
+modified: 20171101194309872
+tags: Features
+title: Temporary Drawer
+type: text/vnd.tiddlywiki
+
+TiddlyWiki's sidebar has been replaced with a temporary drawer that is commom in Material Design applications. To add menu items to the drawer, use the tags $:/tags/Drawer or $:/tags/DrawerBotton.

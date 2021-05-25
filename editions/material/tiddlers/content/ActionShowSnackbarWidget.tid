@@ -1,0 +1,54 @@
+caption: action-showsnackbar
+created: 20171030113923725
+modified: 20171030171548905
+tags: ActionWidgets Widgets SnackbarWidget
+title: ActionShowSnackbarWidget
+type: text/vnd.tiddlywiki
+
+! Introduction
+
+The ''action-showsnackbar'' widget shows the first <$link to="SnackbarWidget">''snackbar'' widget</$link> found elsewhere in the DOM with a message and optional action button. The snackbar may be hidden automatically after a specified timeout or when the action is invoked.
+
+! Content and Attributes
+
+The ''action-showsnackbar'' widget is invisible. Only other [[action widgets|ActionWidgets]] should be placed in it.
+
+|!Attribute |!Description |
+|message |The message to show in the snackbar. |
+|actionText |An optional label for the action button. |
+|timeout |The number of milliseconds to show the snackbar for. If not specified, the timeout defaults to 2750 milliseconds. |
+
+! Examples
+
+The examples below rely on a ''snackbar'' widget that gets added to $:/core/ui/PageTemplate by the [[Material Design theme|$:/themes/ustuehler/material]].
+
+This example shows only a message without an action button:
+
+```
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!"/>
+Show Message Only
+</$button>
+```
+
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!"/>
+Show Message Only
+</$button>
+
+For the remaining examples we will omit the [[button|ButtonWidget]] widget that triggers the action.
+
+This example shows how to associate actions with the snackbar's action button.
+
+```
+<$action-showsnackbar message="Hi there!" actionText="Bye">
+<$action-showsnackbar message="Goodbye!"/>
+</$action-showsnackbar>
+```
+
+<$button class="mdc-button mdc-button--raised">
+<$action-showsnackbar message="Hi there!" actionText="Bye">
+<$action-showsnackbar message="Goodbye!"/>
+</$action-showsnackbar>
+Show Message and Action
+</$button>

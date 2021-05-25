@@ -1,0 +1,26 @@
+caption: drawer
+created: 20171025225118792
+modified: 20171101205007857
+tags: $:/tags/Macro
+title: $:/plugins/ustuehler/mdc/macros/drawer
+type: text/vnd.tiddlywiki
+
+\define drawer(filter:"[all[shadows+tiddlers]tag[$:/tags/DrawerTemplate]]" class:"mdc-temporary-drawer" headerText:"")
+<aside class="$class$">
+  <nav class='$class$__drawer'>
+    <header class="$class$__header">
+      <div class="$class$__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
+        {{$:/GitHubForkRibbon}}
+        [img width="100%" height="100%"
+ [https://material.io/components/images/welcome/root.svg]]
+        $headerText$
+      </div>
+    </header>
+    <nav class="$class$__content mdc-list-group">
+      <$list filter="$filter$">
+        <$transclude/>
+      </$list>
+    </nav>
+  </nav>
+</aside>
+\end

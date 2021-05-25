@@ -1,0 +1,9 @@
+caption: MDC Plugin
+created: 20171026021820182
+modified: 20171103053815569
+title: $:/plugins/ustuehler/mdc/changelog
+type: text/vnd.tiddlywiki
+
+<$list filter="[prefix[mdc/v]!sort[released]limit[1]]">
+  <$macrocall $name="tabs" tabsList="[prefix[mdc/v]!sort[released]]" default={{!!title}} class="tc-vertical" template="ReleaseTemplate" />
+</$list>

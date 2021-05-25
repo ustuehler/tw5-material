@@ -1,0 +1,12 @@
+title: caption/v-current
+caption: >
+tags: $:/tags/ReleaseNotes
+created: 20171203194121
+modified: 20171203194121
+released: 20171203194121
+
+Changes between version  and HEAD:
+
+```
+fatal: bad revision 'caption/v..HEAD'
+```

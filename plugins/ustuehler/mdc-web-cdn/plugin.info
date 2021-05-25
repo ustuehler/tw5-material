@@ -1,0 +1,8 @@
+{
+	"title": "$:/plugins/ustuehler/mdc-web-cdn",
+	"version": "0.2.0",
+	"core-version": ">=5.1.14",
+	"author": "Uwe Stuehler",
+	"description": "MDC-Web assets (fonts, styles and scripts over CDN)",
+	"list": "readme changelog license"
+}

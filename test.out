@@ -1,0 +1,9 @@
+setPluginsEnv: plugins:node_modules/tiddlywiki/plugins:node_modules/tw5-material/plugins:node_modules/tw5-plugin/node_modules/tiddlywiki/plugins:node_modules/tw5-plugin/plugins
+setPluginsEnv: themes:node_modules/tiddlywiki/themes:node_modules/tw5-material/themes:node_modules/tw5-plugin/node_modules/tiddlywiki/themes
+
+test PLUGINNAME filter
+
+Finished in 0.003 seconds
+[32m0 tests, 0 assertions, 0 failures
+[0m
+(node:5774) [DEP0026] DeprecationWarning: util.print is deprecated. Use console.log instead.

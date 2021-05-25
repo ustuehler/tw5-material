@@ -1,0 +1,28 @@
+{
+    "description": "Material Design development edition",
+    "plugins": [
+        "tiddlywiki/github-fork-ribbon",
+	"tiddlywiki/filesystem",
+        "ustuehler/caption",
+        "ustuehler/mdc",
+        "ustuehler/mdc-web",
+        "ustuehler/mdc-web-cdn",
+        "ustuehler/muuri"
+    ],
+    "themes": [
+	"tiddlywiki/vanilla",
+	"tiddlywiki/snowwhite",
+	"ustuehler/material"
+    ],
+    "includeWikis": {
+	"path": "../material"
+    },
+    "build": {
+        "index": [
+	    "--output",".",
+	    "--rendertiddler","$:/core/save/all","hack.html","text/plain"]
+    },
+    "config": {
+	"retain-original-tiddler-path": true
+    }
+}

@@ -1,0 +1,3 @@
+title: $:/core/ui/EditTemplate
+
+{{||$:/themes/ustuehler/material/ui/EditTemplate}}

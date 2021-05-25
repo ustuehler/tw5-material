@@ -1,0 +1,11 @@
+caption: 0.1.1
+created: 20171103030136696
+modified: 20171103030630393
+released: 201711030301
+span: 3
+tags: $:/tags/ReleaseNotes
+title: muuri/v0.1.1
+type: text/vnd.tiddlywiki
+
+!!! Fixed
+* Attempted fix of the grid layout registration of initial tiddlers as opposed to ones added to the storyview later.

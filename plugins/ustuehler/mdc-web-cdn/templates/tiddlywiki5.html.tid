@@ -1,0 +1,16 @@
+title: $:/plugins/ustuehler/mdc-web/templates/tiddlywiki5.html
+tags: $:/tags/RawMarkup
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<script>
+console.debug('Registering window.onload handler');
+document.addEventListener("DOMContentLoaded", function() {
+  console.debug('Calling $tw.utils.mdcAutoInit()');
+  $tw.utils.mdcAutoInit();
+});
+</script>

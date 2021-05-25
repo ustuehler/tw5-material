@@ -1,0 +1,16 @@
+caption: {{$:/themes/ustuehler/material/icons/content_copy}} {{$:/language/Buttons/Clone/Caption}}
+created: 20171101014427704
+description: {{$:/language/Buttons/Clone/Hint}}
+modified: 20171101014903399
+tags: $:/tags/ViewToolbar/BottomLeft
+title: $:/themes/ustuehler/material/ui/Buttons/clone
+type: text/vnd.tiddlywiki
+
+<$button message="tm-new-tiddler" param=<<currentTiddler>> tooltip={{$:/language/Buttons/Clone/Hint}} aria-label={{$:/language/Buttons/Clone/Caption}} class=<<tv-config-toolbar-class>>>
+<$list filter="[<tv-config-toolbar-icons>prefix[yes]]">
+{{$:/themes/ustuehler/material/icons/content_copy}}
+</$list>
+<$list filter="[<tv-config-toolbar-text>prefix[yes]]">
+<span class="tc-btn-text"><$text text={{$:/language/Buttons/Clone/Caption}}/></span>
+</$list>
+</$button>
